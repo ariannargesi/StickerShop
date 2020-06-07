@@ -1,17 +1,23 @@
 import React from 'react'
+import {Link,NavLink} from 'react-router-dom'
+//TODO: replace all the <a> tags with Link from react-router dom
 const ProductItem = (props) => {
+    let { id } = props
+    id ++
+    const link = `/product/${id}`
     return (
         <div className="product-item">
-            <a href="#">
+            <NavLink to={link} >
+
                 <img src="https://i.picsum.photos/id/316/200/250.jpg" alt=""/>
-            </a>
+            </NavLink>
 
             <div className="product-item-detail">
-                <a href="#">
-                    <h2>{props.title}</h2>
-                    <span style={{display: "block"}}>3$</span>
+                <NavLink to={link}>
+                    <h2>{props.item.name}</h2>
+                    <span style={{display: "block"}}>{props.item.price}$</span>
                     <span className="view-product">View and buy</span>
-                </a>
+                </NavLink>
                     <button onClick={()=> console.log('click')}>add to card</button>
             </div>
 

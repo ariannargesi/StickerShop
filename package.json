@@ -6,10 +6,13 @@
   "author": "Arian Hasanzadeh Nargesi",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.19.2",
+    "babel-polyfill": "^6.26.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
     "react-responsive-carousel": "^3.2.7",
+    "react-router-dom": "^5.2.0",
     "redux": "^4.0.5"
   },
   "scripts": {

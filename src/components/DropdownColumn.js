@@ -3,7 +3,6 @@ export default (props) => {
     let className = "dropdown-column"
     if(props.mode == "bold")
         className += " dropdown-bold"
-    console.log(className)
     return (
         <ul className={className}>
             <li className="dropdown-title"><a href={props.href}>{props.title}</a></li>

@@ -1,24 +1,17 @@
 import React from 'react'
-import Header from './components/Header'
-import Carousel from './components/Carousel'
-import Title from './components/Title'
-import {impureFinalPropsSelectorFactory} from "react-redux/lib/connect/selectorFactory";
-import ProductItem from "./components/ProductItem";
-export default () => (
-    <div>
-       <Header/>
-        <Carousel/>
-        <Title title="Newest Products"/>
-        <div className="product-items-container">
-            <ProductItem title="Peaky Blinders"/>
-            <ProductItem title="Peaky Blinders"/>
-            <ProductItem title="Peaky Blinders"/>
-            <ProductItem title="Peaky Blinders"/>
-            <ProductItem title="Peaky Blinders"/>
-            <ProductItem title="Peaky Blinders"/>
-            <ProductItem title="Peaky Blinders"/>
-            <ProductItem title="Peaky Blinders"/>
-        </div>
+import {BrowserRouter as Router, Link, Route, Switch} from 'react-router-dom'
+import axios from 'axios'
+import Home from './components/Home'
+import Product from './components/Product'
 
-    </div>
-)
+const App = () => {
+    return (
+        <Router>
+            <Switch>
+                <Route path="/" exact component={Home}/>
+                <Route path="/product/:id" component={Product}  />
+            </Switch>
+        </Router>
+    )
+}
+export default App
