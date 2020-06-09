@@ -1,10 +1,9 @@
 import React from 'react'
-import Header from './Header'
-import Carousel from './Carousel'
-import Title from './Title'
-import ProductsGroup from './Products'
-import ProductItem from "./ProductItem";
-import ProductGroup from './Products'
+import Header from '../components/Header'
+import Carousel from '../components/Carousel'
+import Title from '../components/Title'
+import ProductsGroup from '../components/Products'
+
 export default () => (
     <div>
         <Header/>
