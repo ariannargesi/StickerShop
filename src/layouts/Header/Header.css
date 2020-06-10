@@ -1,0 +1,29 @@
+.header-wrapper {
+    background: url('/src/assets/wave.svg');
+    padding-top:3rem;
+}
+header {
+    width: 1200px;
+    margin: 0 auto;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(50,50,93,.12), 0 -1px 4px rgba(0,0,0,.06);
+    position: relative;
+}
+header img {
+    width: 120px;
+}
+header a {
+    margin: 0 1rem;
+    font-weight: normal;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition-duration: 100ms;
+}
+header a:hover {
+    color: white;
+    background: rgba(0, 0, 0, 0.66);
+}

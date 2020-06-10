@@ -1,28 +1,27 @@
 import React from 'react'
+import './ProductCard.css'
 import {Link,NavLink} from 'react-router-dom'
-//TODO: replace all the <a> tags with Link from react-router dom
-const ProductItem = (props) => {
+export default props => {
     let { id } = props
+    // write a good comment for line 7 and explaine the resone behinde this 
     id ++
-    const link = `/product/${id}`
+    console.log(props)
+    // href for links
+    const productLink = `/product/${id}`
     return (
-        <div className="product-item">
-            <NavLink to={link} >
-
-                <img src="https://i.picsum.photos/id/316/200/250.jpg" alt=""/>
+        <div className="product-card">
+            <NavLink to={productLink} >
+                {/* product image */}
+                <img src={props.item.img1} alt=""/>
             </NavLink>
-
-            <div className="product-item-detail">
-                <NavLink to={link}>
+            <div className="product-card-detail">
+                <NavLink to={productLink}>
                     <h2>{props.item.name}</h2>
                     <span style={{display: "block"}}>{props.item.price}$</span>
                     <span className="view-product">View and buy</span>
                 </NavLink>
                     <button onClick={()=> console.log('click')}>add to card</button>
             </div>
-
-
         </div>
     )
 }
-export default ProductItem

@@ -1,0 +1,28 @@
+.product-images{
+    width: 470px;
+}
+.product-images img {
+    border-radius: 10px;
+}
+.carousel .thumb.selected, .carousel .thumb:hover {
+    border: none!important;
+}
+.thumb {
+    width: 100px!important;
+}
+.thumbs {
+    padding: 0 ;
+}
+.thumbs-wrapper {
+
+    margin: 0!important;
+    padding :0 ;
+}
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+}
+.carousel-arrow-right {
+    right: 0;
+    z-index: 1;
+}
