@@ -20,10 +20,7 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use: ['style-loader', 'css-loader'],
-                options: {
-                    modules: true
-                }
+                use: ['style-loader', 'css-loader']
             },
             {
                 test: /\.(png|svg|jpg|gif)$/,
