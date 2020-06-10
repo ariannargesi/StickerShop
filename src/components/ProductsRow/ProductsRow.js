@@ -8,8 +8,9 @@ const ProductsRow = (props) => {
     console.log(products)
     useEffect(()=>{
         // fetching products using api and updating the state
-        axios.get(`http://localhost:3000/api/products-list?from=1&to=${props.num}`).then(response => {
-           setProducts(response.data)
+        axios.get(`http://localhost:3000/api/products-list?from=1&to=${props.num}`).then(({data})=> {
+            if(data.status == 200)
+                setProducts(data.products)
         })
     },[])
     if(products.length === 0)
