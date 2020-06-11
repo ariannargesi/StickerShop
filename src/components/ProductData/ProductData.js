@@ -3,39 +3,40 @@ import './ProductData.css'
 import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
 import Dropdown from "../Dropdown/Dropdown"
 const ProductData = (props) => {
-    const data = props.data
+    const { title, category, price, description, sizes, types } = props
+    console.log("product data props")
+    console.log(props)
     return (
         <div className="product-data">
             <div style={{display:"flex"}}>
-                <span className="badge">phicical product</span>
+                <span className="badge">physical product</span>
                 <Breadcrumbs>
                     <a href="/">home</a>
-                    <a href={`/${data.category}`}>{data.category}</a>
-                    <a href={`/${data.category}/${data.name}`}>{data.name}</a>
+                    <a href={`/${category}`}>{category}</a>
+                    <a href={`/${category}/${title}`}>{title}</a>
                 </Breadcrumbs>
             </div>
 
-            <h1>{data.name}</h1>
-            <span className="price">{data.price}</span>
+            <h1>{title}</h1>
+            <span className="price">{price}</span>
             <div>
                 <div style={{width:"45%",display:"inline-block"}}>
-                    <Dropdown current={data.type} title="Select type" items= {[]} />
+                    <Dropdown current={types[0]} title="Select type" items= {types} />
                 </div>
                 <div style={{width:"45%",display:"inline-block"}}>
-                    <Dropdown current={data.price}  title ="Select size" items= {[]} />
+                    <Dropdown current={sizes}  title ="Select size" items= {sizes} />
                 </div>
 
             </div>
             <div style={{display: "flex",position:"relative",}}>
-                <button className="add-to-card">add t  card</button>
+                <button className="add-to-card">add to card</button>
                 <div className="share-to">
                     {/*<button>telegram</button>*/}
                     {/*<button>watsApp</button>*/}
                     {/*<button>facebook</button>*/}
                 </div>
             </div>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
+            <p> {description} </p>
         </div>
     )
 }
