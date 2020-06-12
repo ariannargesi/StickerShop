@@ -1,12 +1,15 @@
 .dropdown-wrapper {
     position: relative;
+    width: 95%;
     height:150px;
+    text-align: left;
 }
 .dropdown-wrapper .dropdown{
     position: absolute;
     list-style: none;
     background: white;
     width: calc(100% - 52px);
+    margin: 0 auto;
     cursor: pointer;
     transition-duration: 200ms;
     top:60%;

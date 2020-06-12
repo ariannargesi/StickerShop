@@ -23,3 +23,32 @@
 .product-card:hover .product-card-detail {
     bottom: 10%;
 }
+.view-product{
+    display: inline-block;
+    min-width: auto;
+    width: 74%;
+    background: #e5aa61;
+    color: #fff;
+    height: 45px;
+    line-height: 45px;
+    font-size: 20px;
+    border-radius:10px;
+    box-shadow: 0 3px 6px rgba(229,170,97,.15), 0 1px 3px rgba(0,0,0,.11);
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+.add-to-card-small {
+    line-height: 45px;
+    background: #019501;
+    color: white;
+    border-radius:10px;
+    border:none;
+    box-shadow: 0 3px 6px rgba(229,170,97,.15), 0 1px 3px rgba(0,0,0,.11);
+
+}
+.add-to-card-small:hover{
+    background: #017401;
+}

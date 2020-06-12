@@ -10,8 +10,12 @@
     border-radius: 15px;
 }
 .price {
-    font-size: 250%;
-    color: #e5aa61
+    font-size: 2rem;
+    color: #e5aa61;
+    margin-left: 1rem;
+}
+.price:after{
+    content: " $";
 }
 .add-to-card {
     height: 55px;

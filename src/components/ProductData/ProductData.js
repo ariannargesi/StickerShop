@@ -19,7 +19,7 @@ const ProductData = (props) => {
 
             <h1>{title}</h1>
             <span className="price">{price}</span>
-            <div>
+            <div style={{width:"700px",textAlign: "center"}}>
                 <div style={{width:"45%",display:"inline-block"}}>
                     <Dropdown current={types[0]} title="Select type" items= {types} />
                 </div>

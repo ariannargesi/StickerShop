@@ -20,9 +20,24 @@
 }
 .carousel-arrow {
     position: absolute;
-    top: 50%;
+    top: 45%;
+}
+.carousel-arrow svg {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    fill: rgba(69, 66, 78, 0.57);
+    transition: 200ms;
+    padding: 0 10px;
+}
+.carousel-arrow svg:hover{
+    fill: #525252;
 }
 .carousel-arrow-right {
     right: 0;
     z-index: 1;
+    transform: rotate(180deg);
+}
+.selected{
+    border: none;
 }

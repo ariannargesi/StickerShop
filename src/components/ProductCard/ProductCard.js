@@ -18,9 +18,17 @@ export default props => {
                 <NavLink to={productLink}>
                     <h2>{product.title}</h2>
                     <span style={{display: "block"}}>{product.price}$</span>
-                    <span className="view-product">View and buy</span>
                 </NavLink>
-                    <button onClick={()=> console.log('click')}>add to card</button>
+                <div>
+                    <NavLink to={productLink}>
+                        <div className="view-product">
+                            view product
+                        </div>
+                    </NavLink>
+                    <button className="add-to-card-small" onClick={()=> console.log('click')}>
+                            
+                    </button>
+                </div>
             </div>
         </div>
     )
