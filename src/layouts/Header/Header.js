@@ -3,7 +3,7 @@ import './Header.css'
 import logo from '../../assets/logo.png'
 import Menu from '../../components/Menu/Menu'
 import MenuItem from '../../components/MenuItem/MenuItem'
-import Search from '../../components/Serach/Search'
+import Search from '../../components/SearchBox/SearchBox'
 export default () => (
    <div className="header-wrapper">
        <header>

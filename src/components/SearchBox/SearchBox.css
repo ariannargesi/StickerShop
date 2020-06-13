@@ -1,0 +1,14 @@
+.search-wrapper {
+    cursor: pointer;
+    position: relative;
+}
+.search-open {
+    width: 300px;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    position: absolute;
+    z-index: 5;
+    left: -100%;
+    top: -50%;
+}
