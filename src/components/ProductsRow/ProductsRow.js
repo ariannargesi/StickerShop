@@ -15,7 +15,7 @@ const ProductsRow = (props) => {
     if(products.length === 0)
         return "... Loading"
     return (
-        <div style={{textAlign:"center"}}>
+        <div style={{textAlign:"center",paddingBottom:"20px"}}>
             {
                 products.map((item,index) => {
                     return  <ProductItem key={index} item={item} id={index} />

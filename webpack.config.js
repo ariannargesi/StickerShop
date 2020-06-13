@@ -30,6 +30,10 @@ module.exports = {
            }
         ]
     },
+    devServer: {
+        historyApiFallback: true,
+        publicPath:"/"
+    },
     plugins: [
         new htmlWebpackPlugin({
             template: "./public/index.html",

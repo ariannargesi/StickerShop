@@ -8,9 +8,9 @@ import ProductsRow from '../components/ProductsRow/ProductsRow'
 export default () => (
     <div>
         <Header/>
-        <Carousel/>
+        {/*<Carousel/>*/}
         <Title title="Newest Products"/>
-        <ProductsRow num="4"/>
+        {/*<ProductsRow num="4"/>*/}
         <Footer/>
     </div>
 )
