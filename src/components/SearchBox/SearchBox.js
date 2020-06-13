@@ -1,30 +1,31 @@
-import React,{useState} from 'react'
+import React,{useState,useRef} from 'react'
 import './SearchBox.css'
 
 const SearchBox = () => {
-    const [ui,setUi] = useState({
-        open: false
-    })
-    const [data, setData] = useState([])
+    const [isOpen, setOpen] = useState(false)
+    const [input, setInput] = useState("")
+    const ref = useRef(null)
+    function handelOpen(){
+        if(isOpen == false )
+            setOpen(true)
+    }
 
     function handelClose(){
-        if(!ui.open){
-            setUi({
-                open: true
-            })
-        }
+        setOpen(false)
     }
-    function handelOpen(){
-        setUi({
-            open: false
-        })
-    }
-    console.log(ui.open)
+    function handelInputChange(event){
+        setInput(event.target.value)
+     }
     return (
         <div className="search-wrapper" onClick={handelOpen}>
-            search
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 className="feather feather-search">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
             {
-                ui.open ?
+                isOpen ?
                 <div className="search-open">
                     <div onClick={handelClose} className="close-search-box">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -35,10 +36,10 @@ const SearchBox = () => {
                         </svg>
                     </div>
                     <form action="">
-                        <input type="text" placeholder="Name or Category"/>
-                        <button type="submit" className="search-search-box">search</button>
-                    </form>
+                        <input value={input} onChange={handelInputChange} type="text" placeholder="Name or Category" className="input-search-box"/>
+                        <button disabled={input.length == 0 ? true : false}  type="submit" className="search-search-box" className="submit-search-box" >search</button>
 
+                    </form>
                 </div>
                 :
                 <></>
