@@ -1,0 +1,39 @@
+.pagination {
+    width: 100%;
+    height: auto;
+    border-radius:10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #edeef4;
+
+}
+.pagination > * {
+    height: 50px;
+    font-size: 18px;
+}
+.pagination button {
+    margin:0.7rem 1rem;
+    border: none;
+    background: #e5aa61;
+    width: 160px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.pagination button:disabled{
+    background: gray;
+}
+.pagination input {
+    width: 100px;
+    height: 45px;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.pagination .input-wrapper span {
+    margin: 20px;
+}
