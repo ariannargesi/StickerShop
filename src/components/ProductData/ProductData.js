@@ -4,6 +4,7 @@ import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
 import Dropdown from "../Dropdown/Dropdown"
 const ProductData = (props) => {
     const { title, category, price, description, sizes, types } = props
+    console.log(description)
     console.log("product data props")
     console.log(props)
     return (
@@ -36,7 +37,7 @@ const ProductData = (props) => {
                     {/*<button>facebook</button>*/}
                 </div>
             </div>
-            <p> {description} </p>
+            <p> {description}  </p>
         </div>
     )
 }

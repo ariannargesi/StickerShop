@@ -7,7 +7,7 @@ const SingleProduct = (props) => {
     const [product, setProduct] = useState({})
 
     useEffect(()=>{
-        const baseUrl = "http://localhost:3000/api"
+        const baseUrl = "https://flerbo.herokuapp.com/api"
         const pathname = props.location.pathname
         const endpoint = baseUrl + pathname
         axios.get(endpoint).then( ({ data }) => {

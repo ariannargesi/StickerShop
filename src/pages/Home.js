@@ -12,6 +12,6 @@ export default () => (
         {/*<Carousel/>*/}
         <Title title="Newest Products"/>
         <ProductsRow num="4"/>
-        <Pagination/>
+    
     </div>
 )

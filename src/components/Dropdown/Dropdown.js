@@ -20,21 +20,21 @@ const Dropdown = (props) => {
     }
      return (
             <div onClick={clickHanlder} className="dropdown-wrapper">
-                <span style={{display:"inline-block",margin:"13px"}}>{props.title}</span><br/>
-                <span className="current-item">
-                    {state.current}
-                </span>
-                { state.open ? false :
-                    <ul className="dropdown">
-                        {state.items.map((item,index) => {
-                            return <li key={index} onClick={()=>{
-                                setState({
-                                    current: item
-                                })
-                            }}>{item}</li>
-                        })}
-                    </ul>
-                }
+                {/*<span style={{display:"inline-block",margin:"13px"}}>{props.title}</span><br/>*/}
+                {/*<span className="current-item">*/}
+                {/*    {state.current}*/}
+                {/*</span>*/}
+                {/*{ state.open ? false :*/}
+                {/*    <ul className="dropdown">*/}
+                {/*        {state.items.map((item,index) => {*/}
+                {/*            return <li key={index} onClick={()=>{*/}
+                {/*                setState({*/}
+                {/*                    current: item*/}
+                {/*                })*/}
+                {/*            }}>{item}</li>*/}
+                {/*        })}*/}
+                {/*    </ul>*/}
+                {/*}*/}
             </div>
         )
     }
