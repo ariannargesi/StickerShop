@@ -21,7 +21,7 @@ export default (props) => {
            }
         })
         setInput(page)
-    },[page])
+    },[page, props.location.pathname])
 
     const increasePage = () => {
             setPage( page +1 )
