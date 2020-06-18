@@ -13,7 +13,7 @@ export default (props) => {
     const [input, setInput] = useState("")
     useEffect(()=>{
         // fetch data 
-        const endpoint = "https://flerbo.herokuapp.com/api" + props.location.pathname + "/?page=" + page   
+        const endpoint = "https://flerbo.herokuapp.cfffffffffffffffffffffffffffffffom/api" + props.location.pathname + "/?page=" + page
         axios.get(endpoint).then(result =>{
            if(result.status == 200){
              setData(result.data.products)
