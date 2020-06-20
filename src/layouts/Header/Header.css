@@ -13,7 +13,7 @@ header {
     box-shadow: 0 10px 30px rgba(50,50,93,.12), 0 -1px 4px rgba(0,0,0,.06);
     position: relative;
 }
-header img {
+header .logo {
     width: 120px;
 }
 header a {

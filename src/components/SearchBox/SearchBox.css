@@ -48,6 +48,19 @@
 .submit-search-box:disabled{
     background: gray;
 }
+.search-result {
+    width: 335px;
+    border: 1px solid #eee;
+    position: absolute;
+    margin-top: 50px;
+    background: white;
+    padding: 1rem;
+    border-radius: 5px;
+    z-index: 99;
+}
+
+
+
 @keyframes search {
     from {
         opacity: 0;
