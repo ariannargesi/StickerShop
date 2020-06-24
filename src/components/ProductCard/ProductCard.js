@@ -1,7 +1,9 @@
 import React from 'react'
 import './ProductCard.css'
-import {Link,NavLink} from 'react-router-dom'
-export default props => {
+import {NavLink} from 'react-router-dom'
+import { addToCard } from '../../redux/actions'
+import { connect } from 'react-redux'
+const ProductCard =  props => {
     let { id } = props
     const product = props.item
     // write a good comment for line 7 and explaine the resone behinde this 
@@ -25,7 +27,7 @@ export default props => {
                             view product
                         </div>
                     </NavLink>
-                    <button className="add-to-card-small" onClick={()=> console.log('click')}>
+                    <button className="add-to-card-small" onClick={()=> props.addToCard(product) }>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                              stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
                              className="feather feather-shopping-bag">
@@ -39,3 +41,7 @@ export default props => {
         </div>
     )
 }
+
+
+
+export default connect(null, {addToCard})(ProductCard)
