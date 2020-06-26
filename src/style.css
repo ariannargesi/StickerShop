@@ -1,6 +1,7 @@
 /*public*/
 * {
-    font-family: 'Roboto', sans-serif;;
+  font-family: 'Balsamiq Sans', cursive;
+
 }
 a {
     text-decoration: none;
@@ -11,7 +12,7 @@ a {
 body {
     margin: 0;
     padding: 0;
-
+    background-color: #f7f7ff;
 }
 ul{
     list-style: none;

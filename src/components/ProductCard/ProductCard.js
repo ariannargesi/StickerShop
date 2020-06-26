@@ -4,11 +4,8 @@ import {NavLink} from 'react-router-dom'
 import { addToCard } from '../../redux/actions'
 import { connect } from 'react-redux'
 const ProductCard =  props => {
-    let { id } = props
     const product = props.item
-    // write a good comment for line 7 and explaine the resone behinde this 
-    id ++
-    // href for links
+    const id = props.id
     const productLink = `/product/${id}`
     return (
         <div className="product-card">
@@ -19,7 +16,7 @@ const ProductCard =  props => {
             <div className="product-card-detail">
                 <NavLink to={productLink}>
                     <h2>{product.title}</h2>
-                    <span style={{display: "block"}}>{product.price}$</span>
+                    <span className="product-price" style={{display: "block"}}>{product.price} $</span>
                 </NavLink>
                 <div className="product-details-bottom">
                     <NavLink to={productLink}>

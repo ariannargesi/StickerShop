@@ -12,8 +12,8 @@ export default (props) => {
     const [pagesCount, setPagesCount] = useState(1)
     const [input, setInput] = useState("")
     useEffect(()=>{
-        // fetch data 
-        const endpoint = "https://flerbo.herokuapp.cfffffffffffffffffffffffffffffffom/api" + props.location.pathname + "/?page=" + page
+        // fetch data
+        const endpoint = "https://flerbo.herokuapp.com/api" + props.location.pathname + "/?page=" + page
         axios.get(endpoint).then(result =>{
            if(result.status == 200){
              setData(result.data.products)
@@ -40,7 +40,7 @@ export default (props) => {
     return (
         <div>
             <Header/>
-            <div style={{width:"1200px", margin: "0 auto" ,justifyContent:"center"}}>
+            <div style={{ textAlign: "center",margin: "0 auto" ,justifyContent:"center"}}>
                <CategoryItems data={data}/>
                <Pagination
                    onNextClick={increasePage}

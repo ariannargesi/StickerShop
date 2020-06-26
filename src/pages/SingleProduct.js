@@ -3,6 +3,7 @@ import axios from 'axios'
 import ProductImages from "../components/ProductImages/ProductImage"
 import ProductData from '../components/ProductData/ProductData'
 import Header from '../layouts/Header/Header'
+import Spinner from '../components/Spinner/Spinner'
 const SingleProduct = (props) => {
     const [product, setProduct] = useState({})
 
@@ -20,7 +21,7 @@ const SingleProduct = (props) => {
         })
     },[])
     return (
-        Object.keys(product).length === 0? "Loading" :
+        Object.keys(product).length === 0? <Spinner height="100vh"/> :
     <div>
         <Header/>
         <div className="container">
