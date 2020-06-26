@@ -7,6 +7,8 @@ import MenuItem from '../../components/MenuItem/MenuItem'
 import Search from '../../components/SearchBox/SearchBox'
 import Modal from '../../components/Modal/Modal'
 import Input from "../../components/Input/Input";
+import Panel from '../../components/Panel/Panel'
+import CardItems from '../../components/CardItems/CardItems'
 import validator from "validator";
 export default () => {
     const getEmailHint = (text) => {
@@ -47,6 +49,9 @@ return (
                     </Modal>
                </form>
            </Modal>
+           <Panel>
+              <CardItems />
+           </Panel>
        </header>
    </div>
 )
@@ -71,6 +76,3 @@ const hints = {
 
     }
 }
-
-
-

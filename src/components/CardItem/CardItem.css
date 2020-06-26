@@ -1,0 +1,31 @@
+.card-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border:1px solid #eee;
+  border-radius: 5px;
+  padding: 5px;
+}
+.card-item .card-image img{
+  width:80px;
+  border-radius:5px;
+}
+.card-item .card-info {
+}
+.title-wrapper {
+  display: flex;
+}
+.title-wrapper h4{
+  padding-right: 60px;
+}
+.title-wrapper img {
+  cursor: pointer;
+}
+.size-type-wrapper *{
+  font-size:14px;
+  color:gray;
+}
+.card-item .product-counter{
+  border:1px solid gray;
+  border-radius: 10px;
+}

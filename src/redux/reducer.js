@@ -1,4 +1,4 @@
-import { ADD_TO_CARD, REMOVE_FROM_CARD } from './types'
+import { ADD_TO_CARD, REMOVE_FROM_CARD, INCREASE_PRODUCT_QANTITY, DECREASE_PRODUCT_QANTITY } from './types'
 const initalStae = []
 const reducer = (state = initalStae, action) => {
     if(action.type === ADD_TO_CARD){
@@ -29,7 +29,19 @@ const reducer = (state = initalStae, action) => {
       }
 
     }
-
+    if(action.type === REMOVE_FROM_CARD){
+      const newState = state
+      return newState.filter(item => {
+        return item.product.title != action.payload.title
+      })
+    }
+    if(action.type === INCREASE_PRODUCT_QANTITY){
+      const newState = state
+      return newState.map( item => {
+        if(item.product.title === action.payload.title)
+          item.quantity++
+      })
+    }
     return state
 }
 

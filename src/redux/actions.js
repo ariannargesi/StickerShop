@@ -1,9 +1,9 @@
-import { ADD_TO_CARD, REMOVE_FROM_CARD } from './types'
+import { ADD_TO_CARD, REMOVE_FROM_CARD, INCREASE_PRODUCT_QANTITY, DECREASE_PRODUCT_QANTITY } from './types'
 
 export const addToCard = product => {
     return {
         type: ADD_TO_CARD,
-        payload: product 
+        payload: product
     }
 }
 export const removeFromCard = product => {
@@ -11,4 +11,18 @@ export const removeFromCard = product => {
         type: REMOVE_FROM_CARD,
         payload: product
     }
+}
+
+export const increaseProductQantity = product => {
+  return {
+    type: INCREASE_PRODUCT_QANTITY,
+    payload: product
+  }
+}
+
+export const decreaseProductQantity = product => {
+  return {
+    type: DECREASE_PRODUCT_QANTITY,
+    payload: product 
+  }
 }

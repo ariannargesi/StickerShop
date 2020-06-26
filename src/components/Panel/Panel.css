@@ -1,0 +1,27 @@
+.panel-container {
+  position: relative;
+}
+
+.panel-wrapper{
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  left:0;
+  top:0;
+  height: 100vh;
+  animation: panel-wrapper-animation;
+  animation-duration: 0.3s;
+}
+@keyframes .panel-animation{
+  from { left: -400px; }
+  to {left: 400px;}
+}
+.panel{
+  background:white;
+  width: 400px;
+  height:100vh;
+  position: absolute;
+  animation: panel-animation;
+  animation-duration: 200ms;
+  border:1px solid #eee;
+}
