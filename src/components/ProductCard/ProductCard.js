@@ -5,8 +5,8 @@ import { addToCard } from '../../redux/actions'
 import { connect } from 'react-redux'
 const ProductCard =  props => {
     const product = props.item
-    const id = props.id
-    const productLink = `/product/${id}`
+    const url = product.url
+    const productLink = `/product/${url}`
     return (
         <div className="product-card">
             <NavLink to={productLink} >
