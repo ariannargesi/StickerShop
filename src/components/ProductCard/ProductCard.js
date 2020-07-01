@@ -1,7 +1,7 @@
 import React from 'react'
 import './ProductCard.css'
 import {NavLink} from 'react-router-dom'
-import { addToCard } from '../../redux/actions'
+import { addToCard, showToast } from '../../redux/actions'
 import { connect } from 'react-redux'
 const ProductCard =  props => {
     const product = props.item
@@ -24,7 +24,7 @@ const ProductCard =  props => {
                             view product
                         </div>
                     </NavLink>
-                    <button className="add-to-card-small" onClick={()=> props.addToCard(product) }>
+                    <button className="add-to-card-small" onClick={()=> { props.addToCard(product); props.showToast("Hello")  }}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                              stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
                              className="feather feather-shopping-bag">
@@ -41,4 +41,4 @@ const ProductCard =  props => {
 
 
 
-export default connect(null, {addToCard})(ProductCard)
+export default connect(null, {addToCard, showToast})(ProductCard)

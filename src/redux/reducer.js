@@ -1,6 +1,7 @@
-import { ADD_TO_CARD, REMOVE_FROM_CARD, INCREASE_PRODUCT_QANTITY, DECREASE_PRODUCT_QANTITY } from './types'
-const initalStae = []
-const reducer = (state = initalStae, action) => {
+import { combineReducers } from 'redux'
+import { ADD_TO_CARD, REMOVE_FROM_CARD, INCREASE_PRODUCT_QANTITY, DECREASE_PRODUCT_QANTITY, SHOW_TOAST } from './types'
+
+export const card = (state = [], action) => {
     if(action.type === ADD_TO_CARD){
       const newState = state
       const payload = action.payload
@@ -46,4 +47,15 @@ const reducer = (state = initalStae, action) => {
 }
 
 
-export default reducer
+export const toast = (state = null, action) => {
+  if(action.type == SHOW_TOAST) {
+    return action.payload
+  }
+  return state
+}
+
+export default combineReducers({
+  card,
+  toast
+})
+

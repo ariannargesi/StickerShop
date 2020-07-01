@@ -10,6 +10,7 @@ import Input from "../../components/Input/Input";
 import Panel from '../../components/Panel/Panel'
 import CardItems from '../../components/CardItems/CardItems'
 import validator from "validator";
+import Toast from '../../components/Toast/Toast'
 export default () => {
     const getEmailHint = (text) => {
         if(text == "")
@@ -51,8 +52,9 @@ return (
            </Modal>
            <Panel>
               <CardItems />
-           </Panel>
+           </Panel> 
        </header>
+       <Toast/>
    </div>
 )
 }

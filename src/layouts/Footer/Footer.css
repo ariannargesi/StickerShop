@@ -1,0 +1,16 @@
+.footer-wrapper {
+    background:orange;
+}
+.footer{
+    width: 1200px;
+    margin: 0 auto; 
+    padding: 2rem 0 ;
+    display: flex;
+    justify-content: center;
+}
+.footer-column {
+   width: 23%;
+   text-align: center;
+}
+.footer-column-head{
+}

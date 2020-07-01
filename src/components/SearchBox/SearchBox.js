@@ -1,4 +1,5 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState,useEffect, useRef} from 'react'
+import useClickOutside from '../../hooks/useClickOutside'
 import searchSvg from '../../assets/icons/search.svg'
 import closeSvg from '../../assets/icons/close.svg'
 import axios from 'axios'
@@ -10,7 +11,15 @@ const SearchBox = () => {
     const [isOpen, setOpen] = useState(false)
     const [input, setInput] = useState("")
     const [data, setData] = useState(null)
-
+    const ref = useRef(null)
+    const clickOutsideHandler = () => {
+        if(isOpen) {
+            setOpen(false)
+            setInput("")
+        }
+     
+    }
+    useClickOutside(ref, clickOutsideHandler)
     useEffect(() => {
         axios.get("https://flerbo.herokuapp.com/api/s/search/?term="+input)
             .then((data) => {
@@ -42,7 +51,7 @@ const SearchBox = () => {
             <img src={searchSvg} width="24px" height="24px"/>
             {
                 isOpen &&
-                <div className="search-open">
+                <div className="search-open" ref={ref}>
                     <div onClick={handelClose} className="close-search-box">
                         <img src={closeSvg} width="24px" height="24px" />
                     </div>
@@ -56,8 +65,7 @@ const SearchBox = () => {
                             <Loading/>
                     }
                 </div>
-
-
+                
             }
             {
                 input &&

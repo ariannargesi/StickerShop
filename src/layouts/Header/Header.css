@@ -17,11 +17,10 @@ header .logo {
     width: 120px;
 }
 header a {
-    margin: 0 1rem;
     font-weight: normal;
-    padding: 5px 10px;
     border-radius: 20px;
     transition-duration: 100ms;
+    padding: 0.5rem 1rem;
 }
 header a:hover {
     color: white;

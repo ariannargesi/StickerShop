@@ -22,9 +22,9 @@ const CardItems = (props) => {
     </div>
   )
 }
-const mapStateToProps = state => {
+const mapStateToProps = ({card}) => {
   return {
-    card: state
+    card
   }
 }
 export default connect(mapStateToProps)(CardItems)
