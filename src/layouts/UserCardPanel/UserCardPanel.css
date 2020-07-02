@@ -1,0 +1,24 @@
+.user-card-panel-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.user-card-panel-footer-final-price{
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 1rem 0;
+}
+.user-card-panel-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 5%;
+}
+.user-card-panel-button {
+  color: white;
+  background: orange;
+  width: 100%;
+}

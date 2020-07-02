@@ -1,13 +1,15 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { removeFromCard, increaseProductQantity } from '../../redux/actions'
+import { removeFromCard, increaseProductQantity, decreaseProductQantity } from '../../redux/actions'
 import trashIcon from '../../assets/icons/trash.svg'
-import './CardItem.css'
+import './CardItem.sass'
 
 const CardItem = props => {
   const { product } = props.data
-  const {quantity } = props.data
-  console.log(props)
+  const { quantity } = props.data
+  React.useEffect(() => {
+    console.log("re-render")
+  })
   return (
     <div className="card-item">
       <div className="card-image" >
@@ -27,7 +29,7 @@ const CardItem = props => {
           <div className="product-counter">
           <button onClick={()=> props.increaseProductQantity(product)}>+</button>
           <span>{quantity}</span>
-          <button>-</button>
+          <button onClick= {() => props.decreaseProductQantity(product)}>-</button>
           </div>
         </div>
       </div>
@@ -35,4 +37,4 @@ const CardItem = props => {
   )
 }
 
-export default connect(null, {increaseProductQantity, removeFromCard})(CardItem)
+export default connect(null, {increaseProductQantity, removeFromCard, decreaseProductQantity})(CardItem)

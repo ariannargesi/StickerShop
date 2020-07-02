@@ -21,15 +21,16 @@ export const increaseProductQantity = product => {
 }
 
 export const decreaseProductQantity = product => {
-  return {
-    type: DECREASE_PRODUCT_QANTITY,
-    payload: product 
-  }
+    return {
+      type: DECREASE_PRODUCT_QANTITY,
+      payload: product
+    }
 }
+
 
 export const showToast =  txt => {
   return {
     type: SHOW_TOAST,
-    payload: txt 
+    payload: txt
   }
 }

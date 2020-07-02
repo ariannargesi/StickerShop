@@ -3,7 +3,7 @@ import { ADD_TO_CARD, REMOVE_FROM_CARD, INCREASE_PRODUCT_QANTITY, DECREASE_PRODU
 
 export const card = (state = [], action) => {
     if(action.type === ADD_TO_CARD){
-      const newState = state
+      const newState = [...state]
       const payload = action.payload
       function isNewItem (product){
         const result = newState.find(item => {
@@ -31,17 +31,32 @@ export const card = (state = [], action) => {
 
     }
     if(action.type === REMOVE_FROM_CARD){
-      const newState = state
+      const newState = [...state]
       return newState.filter(item => {
         return item.product.title != action.payload.title
       })
     }
     if(action.type === INCREASE_PRODUCT_QANTITY){
-      const newState = state
-      return newState.map( item => {
-        if(item.product.title === action.payload.title)
+      const newState = [...state]
+      const result  = newState.map(item => {
+        if(item.product.title === action.payload.title){
           item.quantity++
+        }
+        return item
       })
+      console.log('state is ')
+      console.log(state);
+    }
+    if(action.type === DECREASE_PRODUCT_QANTITY) {
+      return {
+          ...state,
+          products: newState.map( item => {
+           if(item.product.title === action.payload.title)
+               item.quantity--
+           return item
+         })
+      }
+
     }
     return state
 }
@@ -58,4 +73,3 @@ export default combineReducers({
   card,
   toast
 })
-

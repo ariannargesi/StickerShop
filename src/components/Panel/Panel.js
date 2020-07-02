@@ -15,7 +15,7 @@ const Panel = (props) => {
   }
 
   useClickOutside(ref, clickOutsideHandler)
-  
+
 
   return (
     <div className="panel-container">
@@ -23,6 +23,11 @@ const Panel = (props) => {
       { state &&
         <div className="panel-wrapper">
           <div className="panel" ref={ref}>
+          <div className="user-card-panel-header">
+           <button onClick={() => setState(!state)}>Close</button>
+           <h1>{props.title}</h1>
+           <span>{props.badge}</span>
+          </div>
               {props.children}
           </div>
         </div>

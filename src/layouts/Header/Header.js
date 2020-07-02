@@ -7,8 +7,7 @@ import MenuItem from '../../components/MenuItem/MenuItem'
 import Search from '../../components/SearchBox/SearchBox'
 import Modal from '../../components/Modal/Modal'
 import Input from "../../components/Input/Input";
-import Panel from '../../components/Panel/Panel'
-import CardItems from '../../components/CardItems/CardItems'
+import UserCardPanel from '../../layouts/UserCardPanel/UserCardPanel'
 import validator from "validator";
 import Toast from '../../components/Toast/Toast'
 export default () => {
@@ -50,9 +49,7 @@ return (
                     </Modal>
                </form>
            </Modal>
-           <Panel>
-              <CardItems />
-           </Panel> 
+           <UserCardPanel />
        </header>
        <Toast/>
    </div>
@@ -74,7 +71,7 @@ const hints = {
         if(value === "")
             return "Enter Password"
         else if(value.length < 6 )
-            return "password must be atlist 6 words"
+            return "password must be 6 words"
 
     }
 }
