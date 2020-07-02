@@ -48,6 +48,7 @@ export const card = (state = [], action) => {
       console.log(state);
     }
     if(action.type === DECREASE_PRODUCT_QANTITY) {
+		const newState = [...state]
       return {
           ...state,
           products: newState.map( item => {

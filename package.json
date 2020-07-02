@@ -1,42 +1,41 @@
 {
-  "name": "portofilio",
-  "version": "1.0.0",
-  "description": "a part of #100DaysOfCode challenge",
-  "main": "index.js",
-  "author": "Arian Hasanzadeh Nargesi",
-  "license": "MIT",
+  "name": "react-app",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
-    "babel-polyfill": "^6.26.0",
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
-    "react-responsive-carousel": "^3.2.7",
+    "react-responsive-carousel": "^3.2.9",
     "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
     "redux": "^4.0.5",
     "validator": "^13.1.1"
   },
   "scripts": {
-    "start": "webpack-dev-server --open --mode development",
-    "build": "webpack --mode production"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "devDependencies": {
-    "@babel/core": "^7.10.0",
-    "@babel/preset-env": "^7.10.0",
-    "@babel/preset-react": "^7.10.0",
-    "babel-loader": "^8.1.0",
-    "css-loader": "^3.5.3",
-    "eslint": "^7.3.1",
-    "eslint-plugin-react": "^7.20.1",
-    "file-loader": "^6.0.0",
-    "html-loader": "^1.1.0",
-    "html-webpack-plugin": "^4.3.0",
-    "node-sass": "^4.14.1",
-    "sass": "^1.26.8",
-    "sass-loader": "^8.0.2",
-    "style-loader": "^1.2.1",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.11.0"
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
