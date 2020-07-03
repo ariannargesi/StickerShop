@@ -1,5 +1,5 @@
 import React from 'react'
-import './ProductCard.css'
+import './ProductCard.sass'
 import {NavLink} from 'react-router-dom'
 import { addToCard, showToast } from '../../redux/actions'
 import { connect } from 'react-redux'

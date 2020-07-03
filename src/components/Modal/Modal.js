@@ -1,7 +1,7 @@
 import React,{useState, useRef} from 'react'
 import useToggle from '../../hooks/useToggle'
 import useClickOutside from '../../hooks/useClickOutside'
-import './Modal.css'
+import './Modal.sass'
 export default (props) => {
     const [state, setState] = useToggle(false)
     const divRef = useRef(null)

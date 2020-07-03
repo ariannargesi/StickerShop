@@ -1,0 +1,62 @@
+.search-wrapper
+  cursor: pointer
+  position: relative
+
+@keyframes search
+  from
+    opacity: 0
+
+  to
+    opacity: 1
+
+.search-open
+  width: 335px
+  border: 1px solid #eee
+  display: flex
+  align-items: center
+  position: absolute
+  z-index: 5
+  left: -100%
+  top: -50%
+  animation: search
+  animation-duration: .3s
+
+.close-search-box svg:hover
+  color: #e5aa61
+
+.input-search-box
+  line-height: 40px
+  border: none
+  outline: none
+  font-size: 16px
+
+.submit-search-box
+  font-size: 16px
+  border: none
+  outline: none
+  background: #e5aa61
+  color: white
+  box-shadow: #525252
+  padding: 9px 35px
+  border-radius: 5px
+  cursor: pointer
+
+  &:disabled
+    background: gray
+
+.search-result
+  width: 335px
+  border: 1px solid #eee
+  position: absolute
+  margin-top: 50px
+  background: white
+  padding: 1rem
+  border-radius: 5px
+  z-index: 99
+
+@keyframes search
+  from
+    opacity: 0
+
+  to
+    opacity: 1

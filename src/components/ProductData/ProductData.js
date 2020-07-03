@@ -1,7 +1,7 @@
 import React from 'react'
-import './ProductData.css'
+import './ProductData.sass'
 import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
-import Dropdown from "../Dropdown/Dropdown"
+// import Dropdown from "../Dropdown/Dropdown"
 const ProductData = (props) => {
     const { title, category, price, description, sizes, types } = props
     console.log(description)
@@ -22,10 +22,10 @@ const ProductData = (props) => {
             <span className="price">{price}</span>
             <div style={{width:"700px",textAlign: "center"}}>
                 <div style={{width:"45%",display:"inline-block"}}>
-                    <Dropdown current={types[0]} title="Select type" items= {types} />
+                    {/* <Dropdown current={types[0]} title="Select type" items= {types} /> */}
                 </div>
                 <div style={{width:"45%",display:"inline-block"}}>
-                    <Dropdown current={sizes}  title ="Select size" items= {sizes} />
+                    {/* <Dropdown current={sizes}  title ="Select size" items= {sizes} /> */}
                 </div>
 
             </div>

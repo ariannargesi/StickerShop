@@ -2,7 +2,7 @@ import React, {useEffect} from 'react'
 import { connect } from 'react-redux'
 import {showToast} from '../../redux/actions'
 import useToggle from '../../hooks/useToggle'
-import './Toast.css'
+import './Toast.sass'
 const Toast = (props) => {   
     const toastTxt = props.toast 
     useEffect(() => {

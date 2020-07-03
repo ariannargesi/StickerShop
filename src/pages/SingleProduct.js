@@ -31,7 +31,6 @@ const SingleProduct = (props) => {
                 console.log("single product state")
             }
             {
-                console.log(product)
             }
             <ProductData title={product.title}
                          category={product.category}

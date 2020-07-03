@@ -1,5 +1,5 @@
 import React from 'react'
-import './Menu.css'
+import './Menu.sass'
 import MenuItem from "../MenuItem/MenuItem";
 export default (props) => {
     return (

@@ -3,7 +3,7 @@ import useClickOutside from '../../hooks/useClickOutside'
 import searchSvg from '../../assets/icons/search.svg'
 import closeSvg from '../../assets/icons/close.svg'
 import axios from 'axios'
-import './SearchBox.css'
+import './SearchBox.sass'
 import Loading from "../Loading/Loading";
 import SearchResultItem from "../SearchResultItem/SearchResultItem";
 

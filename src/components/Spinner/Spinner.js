@@ -1,5 +1,5 @@
 import React from 'react'
-import './Spinner.css'
+import './Spinner.sass'
 const Spinner = (props) => {
   return (
     <div

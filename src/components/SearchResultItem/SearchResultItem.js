@@ -1,5 +1,5 @@
 import React from 'react'
-import './SearchResultItem.css'
+import './SearchResultItem.sass'
 import {NavLink} from "react-router-dom";
 
 export default (props) => (

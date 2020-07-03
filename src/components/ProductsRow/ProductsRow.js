@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-import './ProductsRow.css'
+import './ProductsRow.sass'
 import axios from 'axios'
 import ProductCard from '../ProductCard/ProductCard';
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import './Breadcrumbs.css'
+import './Breadcrumbs.sass'
 const Breadcrumbs = (props) => {
     return (
         <div className="breadcrumbs">

@@ -2,7 +2,7 @@ import React,{ useRef } from 'react'
 import useToggle from '../../hooks/useToggle'
 import useClickOutside from '../../hooks/useClickOutside'
 import {connect} from 'react-redux'
-import './Panel.css'
+import './Panel.sass'
 
 const Panel = (props) => {
   const [state,setState] = useToggle(false)
