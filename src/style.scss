@@ -1,0 +1,30 @@
+@import 'base';
+
+body {
+  background-color: $bg-color;
+  font-family: $font-family;
+}
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.76);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7ff;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.container {
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+
+}
+
+.footer{
+  background: $primary-color;
+}
