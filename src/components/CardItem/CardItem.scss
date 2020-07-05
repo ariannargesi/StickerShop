@@ -1,0 +1,21 @@
+@import '../../base';
+
+.card-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #eee;
+  border-radius: $radius;
+  .card-image img {
+    width: 80px;
+    border-radius: $radius;
+  }
+}
+
+.title-wrapper {
+  display: flex;
+  img {
+    cursor: pointer;
+  }
+}
+

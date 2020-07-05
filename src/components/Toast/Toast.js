@@ -1,8 +1,7 @@
 import React, {useEffect} from 'react' 
 import { connect } from 'react-redux'
 import {showToast} from '../../redux/actions'
-import useToggle from '../../hooks/useToggle'
-import './Toast.sass'
+import './Toast.scss'
 const Toast = (props) => {   
     const toastTxt = props.toast 
     useEffect(() => {
@@ -14,7 +13,7 @@ const Toast = (props) => {
 
     return (
         <div className={"toast-container"}>
-            { toastTxt && <span className="toast"> {toastTxt} </span> }
+            
         </div>
     )
 }

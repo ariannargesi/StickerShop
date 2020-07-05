@@ -1,0 +1,18 @@
+@import '../../base';
+.toast-container {
+  position: fixed;
+  z-index: 1;
+  bottom: 5%;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.toast {
+  background: $bg-success;
+  width: 500px;
+  display: inline-block;
+  padding: 1rem;
+  color: white;
+  border-radius: 5px;
+}

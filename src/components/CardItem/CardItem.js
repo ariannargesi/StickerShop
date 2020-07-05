@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { removeFromCard, increaseProductQantity, decreaseProductQantity } from '../../redux/actions'
 import trashIcon from '../../assets/icons/trash.svg'
-import './CardItem.sass'
+import './CardItem.scss'
 
 const CardItem = props => {
   const { product } = props.data
