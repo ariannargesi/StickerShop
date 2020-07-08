@@ -2,12 +2,7 @@
   cursor: pointer
   position: relative
 
-@keyframes search
-  from
-    opacity: 0
 
-  to
-    opacity: 1
 
 .search-open
   width: 335px
@@ -18,9 +13,7 @@
   z-index: 5
   left: -100%
   top: -50%
-  animation: search
-  animation-duration: .3s
-
+  transition: 0.3s
 .close-search-box svg:hover
   color: #e5aa61
 

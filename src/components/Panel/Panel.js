@@ -19,7 +19,7 @@ const Panel = (props) => {
 
   return (
     <div className="panel-container">
-      <button className="panel-trigger" onClick={()=> setState(!state)}>open</button>
+      <ion-icon name={props.icon} size={props.iconSize} className="panel-trigger" onClick={()=> setState(!state)}></ion-icon>
       { state &&
         <div className="panel-wrapper">
           <div className="panel" ref={ref}>

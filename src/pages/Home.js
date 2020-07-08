@@ -10,7 +10,7 @@ import InstagramGride from '../layouts/InstagramGride/InstagramGride'
 export default () => (
     <div>
         <Header/>
-        {/*<Carousel/>*/}
+        <Carousel/>
         <Title title="Newest Products"/>
         <div style={{height: "750px"}}>
           <ProductsRow num="8"/>

@@ -16,6 +16,6 @@ const App = () => {
                 </Switch>
             </Router>
         </Provider>
-    )
-}
+        )
+    }
 export default App

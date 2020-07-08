@@ -14,7 +14,7 @@ export default (props) => {
     useClickOutside(divRef, clickOutsideHandler)
     return (
         <div className="modal-wrapper">
-            <button onClick={clickHandler}>{props.title}</button>
+            <span className={"modal-title"} onClick={clickHandler}>{props.title}</span>
             { state &&
             <div className="modal">
                 <button onClick={clickHandler} className="close-modal" >close</button>

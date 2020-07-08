@@ -1,4 +1,10 @@
-import { ADD_TO_CARD, REMOVE_FROM_CARD, INCREASE_PRODUCT_QANTITY, DECREASE_PRODUCT_QANTITY, SHOW_TOAST } from './types'
+import {
+    ADD_TO_CARD,
+    REMOVE_FROM_CARD,
+    INCREASE_PRODUCT_QANTITY,
+    DECREASE_PRODUCT_QANTITY, SHOW_TOAST
+}
+    from './types'
 
 export const addToCard = product => {
     return {

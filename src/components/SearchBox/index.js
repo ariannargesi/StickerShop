@@ -48,7 +48,7 @@ const SearchBox = () => {
 
     return (
         <div className="search-wrapper" onClick={handelOpen}>
-            <img src={searchSvg} width="24px" height="24px"/>
+            <ion-icon name="search-outline" size={"large"}></ion-icon>
             {
                 isOpen &&
                 <div className="search-open" ref={ref}>

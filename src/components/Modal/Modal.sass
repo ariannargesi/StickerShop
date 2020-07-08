@@ -1,3 +1,4 @@
+@import '../../base'
 .modal
   position: fixed
   width: 100%
@@ -20,3 +21,10 @@
   position: absolute
   top: 5%
   left: 5%
+.modal-wrapper > span
+  cursor: pointer
+.modal-title
+  transition: $default-transition-duration
+  padding: 0.5rem
+  &:hover
+    color: $primary-color
