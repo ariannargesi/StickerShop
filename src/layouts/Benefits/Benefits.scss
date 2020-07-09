@@ -1,4 +1,25 @@
+@import '../../base';
 .benefits {
   width: 100%;
   text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 500px;
+}
+.benefits-item {
+  width: 300px;
+  box-shadow:  5px 5px 10px #eee,
+  -5px -5px 10px #eee;
+  padding: 1.5rem;
+  border-radius: $radius;
+  margin: 20px;
+  flex:1 1 auto;
+
+}
+.benefits-item > img {
+  width: 40px;
+  transition: 400ms;
+}
+.benefits-item:hover img{
+  transform: scale(1.2)
 }

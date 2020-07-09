@@ -63,6 +63,10 @@ export default () => (
             size={"large"}
         />
         <Slider/>
+        <Title
+            content={"a satisfying purchase"}
+            size={"large"}
+        />
         <Benefits/>
         <Footer/>
     </div>
