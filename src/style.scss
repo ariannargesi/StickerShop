@@ -31,3 +31,29 @@ ul {
 ion-icon {
   color: blue!important;
 }
+.about-us-index p {
+  justify-content: center;
+  text-align: center;
+}
+.Hexagon-sticker-index {
+  display: flex;
+  align-items: center;
+}
+.banners-index {
+  padding: 0;
+  width: 1200px;
+  margin: 0 auto;
+  display:flex;
+}
+.banners-index div div  {
+  margin: 0.4rem;
+}
+.banners-index > div {
+  margin: 0.2rem;
+}
+.banner-image {
+  width: 60%;
+}
+.banner-button {
+
+}
