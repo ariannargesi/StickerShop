@@ -5,6 +5,7 @@ import Carousel from '../components/Carousel/Carousel'
 import Title from '../components/Title/Title'
 import Banners from '../layouts/Banners'
 import Slider from '../layouts/Slider'
+import Benefits from '../layouts/Benefits'
 import hexagonStickerImage from '../assets/Hexagon-stickers.png'
 import creditCardStickerImage from '../assets/credit-card-sticker.png'
 import virgoolLogo from '../assets/virgool.png'
@@ -62,6 +63,7 @@ export default () => (
             size={"large"}
         />
         <Slider/>
+        <Benefits/>
         <Footer/>
     </div>
 )
