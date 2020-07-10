@@ -24,7 +24,7 @@ const SingleProduct = (props) => {
         Object.keys(product).length === 0? <Spinner height="100vh"/> :
     <div>
         <Header/>
-        <div className="container">
+        <div className="container"  style={{display: "flex", justifyContent: "space-around"}}>
             <ProductImages
                 images={product.images} />
             {

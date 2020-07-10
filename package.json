@@ -11,6 +11,7 @@
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-id-swiper": "^4.0.0",
     "react-redux": "^7.2.0",
     "react-responsive-carousel": "^3.2.9",
     "react-router-dom": "^5.2.0",
@@ -19,12 +20,13 @@
     "react-transition-group": "^4.4.1",
     "redux": "^4.0.5",
     "swiper": "^6.0.1",
+    "user-instagram": "^2.0.9",
     "validator": "^13.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-script s test",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

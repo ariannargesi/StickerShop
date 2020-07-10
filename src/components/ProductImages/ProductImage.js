@@ -1,5 +1,5 @@
 import React from 'react'
-import './ProductImages.sass'
+import './ProductImages.scss'
 import {Carousel} from "react-responsive-carousel";
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 const ProductImages = (props) => {
@@ -27,7 +27,7 @@ const ProductImages = (props) => {
                     images.map((src, index) => {
                         return (
                             <div>
-                                <img src={src}/>
+                                <img className="slider-image" src={src}/>
                             </div>
                         )
                     })

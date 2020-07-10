@@ -20,7 +20,7 @@ import InstagramImages from '../layouts/InstagramImages'
 export default () => (
     <div>
         <Header/>
-        <Carousel/>
+        {/*<Carousel/>*/}
         <Title
             content={"Newst Products"}
             size={"large"}
