@@ -1,6 +1,6 @@
 import React from 'react'
 import './Breadcrumbs.scss'
-const Breadcrumbs = (props) => {
+const Index = (props) => {
     return (
         <div className="breadcrumbs">
             {
@@ -12,4 +12,4 @@ const Breadcrumbs = (props) => {
     )
 }
 
-export default Breadcrumbs
+export default Index

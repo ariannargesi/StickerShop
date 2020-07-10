@@ -1,0 +1,13 @@
+@import '../../base';
+.button {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1rem 3rem;
+  border-radius: $radius;
+}
+.success {
+  background: $success-color;
+  color: white;
+}

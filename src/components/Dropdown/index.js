@@ -1,10 +1,10 @@
 import React, {useState, useEffect, useRef } from 'react'
 
-import useToggle from './hooks/useToggle'
-import useClickOutside from './hooks/useClickOutSide'
+import useToggle from '../../hooks/useToggle'
+import useClickOutside from '../../hooks/useClickOutside'
 import './Dropdown.scss'
 
-const Dropdown = (props) => {
+const Index = (props) => {
     const [isOpen, setState] = useToggle(false) 
     const [selectedItem, setSelectedItem] = useState(props.current)
     const divRef = useRef(null)
@@ -16,6 +16,7 @@ const Dropdown = (props) => {
 
     return (
         <div className="dropdown" ref={divRef}>
+                <h4>{props.title}</h4>
             <div className="dropdown-selected" onClick={() => setState(!isOpen) }>
                 <span>{selectedItem}</span> 
             </div>
@@ -36,4 +37,4 @@ const Dropdown = (props) => {
         </div>
     )
 }
-export default Dropdown
+export default Index

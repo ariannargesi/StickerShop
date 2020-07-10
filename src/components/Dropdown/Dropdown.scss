@@ -1,8 +1,9 @@
 .dropdown {
     width: 100%;
     font-size: 18px;
+    position: relative;
     cursor: pointer;
-    transition: 1000ms;
+    margin-right: 10px;
     .dropdown-selected{
         border: 1px solid rgb(199, 199, 199);
         border-radius: 5px;
@@ -14,8 +15,12 @@
     }
     ul.dropdown-items{
         list-style: none;
+        width: 100%;
+        position: absolute;
         border:1px solid #eee;
+        background: white;
         border-radius: 5px;
+        z-index: 999;
         color: #3ecf8e;
         transition: 500ms;
         padding-left:0;

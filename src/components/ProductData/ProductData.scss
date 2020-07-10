@@ -1,6 +1,11 @@
+@import '../../base';
 .product-data {
   width: 50%;
   display: inline-block;
   flex: 1 1 auto;
   padding:1rem;
+}
+.product-data .product-price {
+  color: $primary-color;
+  font-size: 32px;
 }
