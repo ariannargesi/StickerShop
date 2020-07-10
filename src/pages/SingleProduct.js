@@ -4,6 +4,7 @@ import ProductImages from "../components/ProductImages/ProductImage"
 import ProductData from '../components/ProductData/ProductData'
 import Header from '../layouts/Header/Header'
 import Spinner from '../components/Spinner/Spinner'
+import Breadcrumbs from "../components/Breadcrumbs/Breadcrumbs";
 const SingleProduct = (props) => {
     const [product, setProduct] = useState({})
 
@@ -24,7 +25,14 @@ const SingleProduct = (props) => {
         Object.keys(product).length === 0? <Spinner height="100vh"/> :
     <div>
         <Header/>
+        <div style={{width: "1200px", justifyContent:"center", margin: "0 auto"}}>
+            <Breadcrumbs>
+                <a href="/">Home</a>
+                <a href={`/${product.category}`}>{product.category}</a>
+                <a href={`/${product.category}/${product.title}`}>{product.title}</a>
+            </Breadcrumbs>
         <div className="container"  style={{display: "flex", justifyContent: "space-around"}}>
+
             <ProductImages
                 images={product.images} />
             {
@@ -40,6 +48,7 @@ const SingleProduct = (props) => {
                          sizes={product.sizes}
             />
         </div>
+    </div>
     </div>
     )
 }

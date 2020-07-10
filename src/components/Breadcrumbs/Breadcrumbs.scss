@@ -1,0 +1,25 @@
+@import '../../base';
+.breadcrumbs {
+  display: inline-block;
+  padding: 10px 150px 10px 10px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 5px  5px 20px 4px #eee;
+  span {
+    &:after {
+      content: "   /   ";
+      color: rgba(213, 213, 213, 0.93);
+    }
+    &:last-child {
+      &:after {
+        content: " ";
+      }
+    }
+    a {
+      transition: $default-transition-duration;
+      &:hover {
+        color:$primary-color;
+      }
+    }
+  }
+}
