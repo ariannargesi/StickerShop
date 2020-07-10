@@ -1,6 +1,7 @@
 import React from 'react'
 import './InstagramImages.scss'
 import Title from "../../components/Title/Title";
+import instagramUser from 'instagram-user'
 import wave2 from '../../assets/wave2.svg'
 const Index = () => {
     return (

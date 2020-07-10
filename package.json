@@ -7,6 +7,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
+    "instagram-user": "^2.0.1",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -18,13 +19,12 @@
     "react-transition-group": "^4.4.1",
     "redux": "^4.0.5",
     "swiper": "^6.0.1",
-    "user-instagram": "^2.0.9",
     "validator": "^13.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-script s test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
