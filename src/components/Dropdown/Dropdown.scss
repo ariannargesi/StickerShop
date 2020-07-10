@@ -1,0 +1,29 @@
+.dropdown {
+    width: 100%;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 1000ms;
+    .dropdown-selected{
+        border: 1px solid rgb(199, 199, 199);
+        border-radius: 5px;
+        padding: 1rem;
+        transition: 200ms;
+        &:hover{
+            border: 1px solid rgb(145, 145, 145);
+        }
+    }
+    ul.dropdown-items{
+        list-style: none;
+        border:1px solid #eee;
+        border-radius: 5px;
+        color: #3ecf8e;
+        transition: 500ms;
+        padding-left:0;
+        li {
+            padding: 1rem;
+        }
+    }
+}
+
+
+
