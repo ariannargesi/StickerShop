@@ -15,7 +15,7 @@ import dribbleLogo from '../assets/flerbo_2.5Dribbble.png'
 import gameLogo from '../assets/flerbo_2.5God-of-War-2.png'
 import Pagination from '../layouts/Pagination/Pagination'
 import ProductsRow from '../components/ProductsRow/ProductsRow'
-import InstagramGride from '../layouts/InstagramGride/InstagramGride'
+import InstagramImages from '../layouts/InstagramImages'
 
 export default () => (
     <div>
@@ -68,6 +68,7 @@ export default () => (
             size={"large"}
         />
         <Benefits/>
+        <InstagramImages/>
         <Footer/>
     </div>
 )

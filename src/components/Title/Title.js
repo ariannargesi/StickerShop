@@ -2,7 +2,7 @@ import React from 'react'
 
 const Title = ({content, styled, size}) => {
     const styles = {
-        fontSize: size == "large" ? 32 : 18,
+        fontSize: size == "large" ? 32 : 24,
         textAlign: "center"
     }
     return (
