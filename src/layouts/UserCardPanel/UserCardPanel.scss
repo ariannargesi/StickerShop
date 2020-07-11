@@ -1,3 +1,4 @@
+@import "../../base";
 .user-card-panel-header{
   display: flex;
   align-items: center;
@@ -6,20 +7,30 @@
   border-bottom: 1px solid #eee;
   padding: 1rem 1.2rem;
 }
-.user-card-panel-footer-final-price{
-  display: flex;
-  justify-content: space-between;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-  padding: 1rem 0;
-}
 .user-card-panel-footer {
+  width: 100%;
   position: absolute;
-  width: 100%;
-  bottom: 5%;
-}
-.user-card-panel-button {
-  color: white;
-  background: orange;
-  width: 100%;
+  bottom: 0;
+  .final-price{
+    display: flex;
+    margin: 1rem 1.2rem;
+    padding: 1rem 1.2rem;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    justify-content: space-between;
+  }
+  .order-now {
+    width: 90%;
+    margin: 0 auto;
+    background: $primary-color;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: $radius;
+    padding: 1rem;
+    font-size: 16px;
+    margin: 1rem 1.2rem;
+    padding: 1rem 1.2rem;
+    cursor: pointer;
+  }
 }

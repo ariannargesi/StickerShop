@@ -2,6 +2,7 @@ import React from 'react'
 import './UserCardPanel.scss'
 import Panel from '../../components/Panel/Panel'
 import CardItems from '../../components/CardItems/CardItems'
+import Button from "../../components/Button";
 const UserCardPanel = () => {
   return (
     <Panel title="Your Basket"
@@ -10,16 +11,24 @@ const UserCardPanel = () => {
            iconSize = "large"
     >
        <CardItems />
-       {/*<div className="user-card-panel-footer">*/}
-       {/*    <div className="user-card-panel-footer-final-price">*/}
-       {/*       <span>Final Price</span>*/}
-       {/*       <span>1200 $</span>*/}
-       {/*    </div>*/}
-       {/*     <button className="user-card-panel-button">Order Now</button>*/}
-       {/*</div>*/}
+       <Footer/>
     </Panel>
   )
 }
 
+
+const Footer = (props) => {
+    return (
+        <div className={"user-card-panel-footer"}>
+            <div className="final-price">
+                <b>Final Price</b>
+                <span> $ {3000}</span>
+            </div>
+            <div>
+                <button className="order-now"> Order Now </button>
+            </div>
+        </div>
+    )
+}
 
 export default UserCardPanel
