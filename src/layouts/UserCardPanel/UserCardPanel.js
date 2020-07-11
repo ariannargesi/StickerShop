@@ -10,13 +10,13 @@ const UserCardPanel = () => {
            iconSize = "large"
     >
        <CardItems />
-       <div className="user-card-panel-footer">
-           <div className="user-card-panel-footer-final-price">
-              <span>Final Price</span>
-              <span>1200 $</span>
-           </div>
-            <button className="user-card-panel-button">Order Now</button>
-       </div>
+       {/*<div className="user-card-panel-footer">*/}
+       {/*    <div className="user-card-panel-footer-final-price">*/}
+       {/*       <span>Final Price</span>*/}
+       {/*       <span>1200 $</span>*/}
+       {/*    </div>*/}
+       {/*     <button className="user-card-panel-button">Order Now</button>*/}
+       {/*</div>*/}
     </Panel>
   )
 }

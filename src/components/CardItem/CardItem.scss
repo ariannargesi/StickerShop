@@ -1,21 +1,64 @@
 @import '../../base';
-
 .card-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 95%;
+  position: relative;
+  height: 100px;
   border: 1px solid #eee;
+  margin: 5px auto;
   border-radius: $radius;
-  .card-image img {
-    width: 80px;
-    border-radius: $radius;
+  h5{
+    font-size: 16px;
+    padding: 0.5rem;
+  }
+  .card-details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    h5{
+      padding-left: 25px;
+      height: 30px;
+      line-height: 30px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    height: 100%;
+    .size-and-type {
+      display: flex;
+      justify-content: space-around;
+      font-size: 12px;
+      flex: 1 1 auto;
+      text-align: left;
+    }
+    .card-item-footer {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 25px ;
+      button {
+        outline: none;
+        border: none;
+        font-size: 22px;
+        margin: 0 5px;
+        background: white;
+        cursor: pointer;
+      }
+      .material-icons{
+        color: gray;
+        font-size: 16px ;
+        transition: $default-transition-duration;
+        &:hover{
+          color: $primary-color;
+        }
+      }
+    }
+  }
+  .card-thumb {
+    img {
+      width: 100px;
+    }
   }
 }
 
-.title-wrapper {
-  display: flex;
-  img {
-    cursor: pointer;
-  }
-}
 

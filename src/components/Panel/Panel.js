@@ -19,7 +19,7 @@ const Panel = (props) => {
 
   return (
     <div className="panel-container">
-      <ion-icon name={props.icon} size={props.iconSize} className="panel-trigger" onClick={()=> setState(!state)}></ion-icon>
+      <span className="material-icons" onClick={()=> setState(!state)}>shopping_cart</span>
       { state &&
         <div className="panel-wrapper">
           <div className="panel" ref={ref}>

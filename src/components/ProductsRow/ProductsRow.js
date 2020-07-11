@@ -31,8 +31,8 @@ const ProductsRow = (props) => {
                         {
                             products.map((item, index) => {
                                 return (
-                                    <SwiperSlide>
-                                        <ProductCard key={index} item={item} id={index}/>
+                                    <SwiperSlide  key={index}>
+                                        <ProductCard item={item} id={index}/>
                                     </SwiperSlide>
                                 )
                             })

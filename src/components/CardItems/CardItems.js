@@ -13,6 +13,8 @@ const CardItems = (props) => {
     </div>
   )
 }
+
+
 const mapStateToProps = ({ card }) => {
   return {
     card
