@@ -4,7 +4,7 @@ import ProductImages from "../components/ProductImages/ProductImage"
 import ProductData from '../components/ProductData/ProductData'
 import Header from '../layouts/Header/Header'
 import Spinner from '../components/Spinner/Spinner'
-import Index from "../components/Breadcrumbs";
+import Breadcrumbs from "../components/Breadcrumbs";
 const SingleProduct = (props) => {
     const [product, setProduct] = useState({})
 
@@ -26,11 +26,11 @@ const SingleProduct = (props) => {
     <div>
         <Header/>
         <div style={{width: "1200px", justifyContent:"center", margin: "0 auto"}}>
-            <Index>
+            <Breadcrumbs>
                 <a href="/">Home</a>
                 <a href={`/${product.category}`}>{product.category}</a>
                 <a href={`/${product.category}/${product.title}`}>{product.title}</a>
-            </Index>
+            </Breadcrumbs>
         <div className="container"  style={{display: "flex", justifyContent: "space-around"}}>
 
             <ProductImages

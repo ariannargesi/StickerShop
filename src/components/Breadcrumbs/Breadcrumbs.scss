@@ -2,9 +2,11 @@
 .breadcrumbs {
   display: inline-block;
   padding: 10px 150px 10px 10px;
+  margin-bottom: 1rem;
+  display: block;
   height: auto;
   border-radius: 5px;
-  box-shadow: 5px  5px 20px 4px #eee;
+  border-bottom: 1px solid #eee ;
   span {
     &:after {
       content: "   /   ";
