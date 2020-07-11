@@ -24,8 +24,8 @@ const Panel = (props) => {
         <div className="panel-wrapper">
           <div className="panel" ref={ref}>
           <div className="user-card-panel-header">
-           <button onClick={() => setState(!state)}>Close</button>
-           <h1>{props.title}</h1>
+           <span className="material-icons" onClick={() => setState(!state)}>close</span>
+            <h1>{props.title}</h1>
            <span>{props.badge}</span>
           </div>
               {props.children}

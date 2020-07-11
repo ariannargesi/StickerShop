@@ -1,10 +1,10 @@
 import React from 'react'
-import './UserCardPanel.css'
+import './UserCardPanel.scss'
 import Panel from '../../components/Panel/Panel'
 import CardItems from '../../components/CardItems/CardItems'
 const UserCardPanel = () => {
   return (
-    <Panel title="something"
+    <Panel title="Your Basket"
            badge="4"
            icon="cart-outline"
            iconSize = "large"
