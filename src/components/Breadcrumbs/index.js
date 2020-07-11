@@ -5,7 +5,7 @@ const Index = (props) => {
         <div className="breadcrumbs">
             {
                 props.children.map((item,index) => {
-                    return <span className="breadcrumb-item"><a href={item.props.href} key={index}> {item.props.children} </a></span>
+                    return <span key={index} className="breadcrumb-item"><a href={item.props.href} key={index}> {item.props.children} </a></span>
                 })
             }
         </div>
