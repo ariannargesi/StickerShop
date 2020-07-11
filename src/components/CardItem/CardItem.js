@@ -7,13 +7,16 @@ import './CardItem.scss'
 const CardItem = props => {
   const { product } = props.data
   const { quantity } = props.data
-  React.useEffect(() => {
 
-  })
+  const removeClickHandler = () => {
+    props.removeFromCard(product)
+  }
+
   return (
       <div className={"card-item"}>
         <div className="card-thumb"><img src={product.images[0]} alt=""/> </div>
         <div className="card-details">
+          <button className="remove-item" onClick={removeClickHandler}> <span className="material-icons">delete_outline</span> </button>
           <h5> {product.title} </h5>
           <div className="size-and-type">
             <span>type: {product.types[0]}</span>
@@ -25,7 +28,7 @@ const CardItem = props => {
             </div>
             <div style={{ border: "1px solid #eee", borderRadius: "5px" }}>
               <button><span className="material-icons">add</span></button>
-              <span style={{marginTop: "2px"}}> { 5 } </span>
+              <span style={{marginTop: "2px"}}> { quantity } </span>
               <button><span className="material-icons">remove</span></button>
             </div>
           </div>
