@@ -9,15 +9,12 @@ import Search from '../../components/SearchBox'
 import UserCardPanel from '../../layouts/UserCardPanel/UserCardPanel'
 import SignIn from '../../layouts/SignIn'
 import Login from '../../layouts/Login'
-import validator from "validator";
 export default () => {
-
 return (
    <div className="header-wrapper">
        <header>
            <div>
                <img className="logo" src={logo}/>
-               <a href="#">Blog</a>
                <Menu title="Stickers" href="#">
                    <MenuItem title="For Geeks" href="/Geeks" mode="bold">
                        <NavLink to="/Developers">For Developers</NavLink>

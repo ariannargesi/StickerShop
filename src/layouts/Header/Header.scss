@@ -1,18 +1,21 @@
 @import '../../base';
 .header-wrapper {
-    background: url('/src/assets/wave.svg');
-    margin-top: 2rem;
+    background: url('../../assets/wave.svg') no-repeat ;
+    background-position: center;
+    background-size: cover;
+    padding: 2rem;
+    position: relative;
+    z-index:1000;
 }
 header {
     margin: 0 auto;
     background: white;
     display: flex;
+    padding: 1rem;
     align-items: center;
     justify-content: space-between;
     border-radius: $radius;
-    padding: 2rem;
-    box-shadow: 0 10px 30px rgba(50,50,93,.12), 0 -1px 4px rgba(0,0,0,.06);
-    position: relative;
+    box-shadow: 0 10px 30px 5px rgba(50,50,93,.12), 0 -1px 4px rgba(0,0,0,.06);
 }
 header > div {
     width: 400px;
