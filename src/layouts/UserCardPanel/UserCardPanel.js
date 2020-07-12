@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom"
 import './UserCardPanel.scss'
 import Panel from '../../components/Panel/Panel'
 import CardItems from '../../components/CardItems/CardItems'
@@ -25,7 +26,7 @@ const Footer = (props) => {
                 <span> $ {3000}</span>
             </div>
             <div>
-                <button className="order-now"> Order Now </button>
+                <button className="order-now"> <Link to={"/checkout"}>Order Now</Link> </button>
             </div>
         </div>
     )

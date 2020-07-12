@@ -1,6 +1,7 @@
 import React from 'react'
 import Input from "../../../components/Input/Input"
 import Dropdown from '../../../components/Dropdown'
+import CardItems from "../../../components/CardItems/CardItems";
 import './ShippingInfo.scss'
 
 import {states} from '../../../staticDatas'
@@ -8,6 +9,9 @@ import {states} from '../../../staticDatas'
 const ShippingInfo = () => {
     return (
         <div className="order-info">
+            <div className="cart-info">
+                <CardItems/>
+            </div>
             <div className="shipping-info">
                 <div>
                     <div style={{flex: "1 4 auto"}}>
@@ -31,9 +35,12 @@ const ShippingInfo = () => {
                         <Input type={"text"} name={"Phone Number"}/>
                     </div>
                 </div>
-            </div>
-            <div className="cart-info">
-
+                <div>
+                    <Input type={"text"} name={"description (optional)"} placeholder="Description about shipping that maybe we need to know "/>
+                </div>
+                <div>
+                    <Input type={"text"} name={"Full Address"} />
+                </div>
             </div>
         </div>
     )
