@@ -1,7 +1,9 @@
 import React from 'react'
 import Input from "../../../components/Input/Input"
-
+import Dropdown from '../../../components/Dropdown'
 import './ShippingInfo.scss'
+
+import {states} from '../../../staticDatas'
 
 const ShippingInfo = () => {
     return (
@@ -19,6 +21,12 @@ const ShippingInfo = () => {
                     </div>
                 </div>
                 <div>
+                    <div style={{flex: "1 1 auto"}}>
+                        <Dropdown items={states} current={states[0]} title={"State"} />
+                    </div>
+                    <div style={{flex: "1 1 auto"}}>
+                        <Input type={"text"} name={"Zip Code"}/>
+                    </div>
 
                 </div>
             </div>

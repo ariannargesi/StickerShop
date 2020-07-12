@@ -16,6 +16,9 @@
     ul.dropdown-items{
         list-style: none;
         width: 100%;
+        max-height: 180px;
+        overflow-x: hidden;
+        overflow-y: scroll;
         position: absolute;
         border:1px solid #eee;
         background: white;
