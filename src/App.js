@@ -4,13 +4,15 @@ import { Provider } from 'react-redux'
 import store from './redux/store'
 import Home from './pages/Home'
 import SingleProduct from './pages/SingleProduct'
-import Category from "./pages/category/Category";
+import Category from "./pages/category/Category"
+import Checkout from './layouts/Checkout'
 const App = () => {
     return (
         <Provider store={store}>
             <Router>
                 <Switch>
                     <Route path="/" exact component={Home}/>
+                    <Route path="/checkout" component={Checkout}/>
                     <Route path="/product/:id" component={SingleProduct} />
                     <Route path="/:catTitle" component={Category}/>
                 </Switch>
