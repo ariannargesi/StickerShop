@@ -1,13 +1,17 @@
 import React, { useState } from 'react'
 import './Select.scss'
 
-const Select = ({children}) => {
+const Select = ({children, direction}) => {
     const [currentItemIndex, setCurrentItemIndex] = useState(0)
+    const styles = {
+        display: "flex",
+        flexDirection: direction || "row"
+    }
     return (
-        <div>
+        <div style={styles} >
             {
                 children.map((item, index) => {
-                    return <div>{item}</div>
+                    return <div className={ (index == currentItemIndex ? "active" : "") } onClick={ () => setCurrentItemIndex(index) }>{item}</div>
                 })
             }
         </div>
