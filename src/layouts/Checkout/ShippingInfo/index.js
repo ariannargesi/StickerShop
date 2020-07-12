@@ -21,13 +21,15 @@ const ShippingInfo = () => {
                     </div>
                 </div>
                 <div>
-                    <div style={{flex: "1 1 auto"}}>
+                    <div style={{flex: "1 1 auto", width: "280px"}}>
                         <Dropdown items={states} current={states[0]} title={"State"} />
                     </div>
                     <div style={{flex: "1 1 auto"}}>
                         <Input type={"text"} name={"Zip Code"}/>
                     </div>
-
+                    <div style={{flex: "1 1 auto"}}>
+                        <Input type={"text"} name={"Phone Number"}/>
+                    </div>
                 </div>
             </div>
             <div className="cart-info">
