@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom"
 import './UserCardPanel.scss'
 import Panel from '../../components/Panel/Panel'
-import CardItems from '../../components/CardItems/CardItems'
+import CardItems from '../../components/CartItems/CardItems'
 import Button from "../../components/Button";
 const UserCardPanel = () => {
   return (

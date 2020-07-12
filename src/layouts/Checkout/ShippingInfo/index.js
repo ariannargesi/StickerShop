@@ -1,7 +1,7 @@
 import React from 'react'
 import Input from "../../../components/Input/Input"
 import Dropdown from '../../../components/Dropdown'
-import CardItems from "../../../components/CardItems/CardItems";
+import CardItems from "../../../components/CartItems/CardItems";
 import './ShippingInfo.scss'
 
 import {states} from '../../../staticDatas'

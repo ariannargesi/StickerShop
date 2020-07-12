@@ -1,5 +1,5 @@
 import React from 'react'
-import CardItem from '../CardItem/CardItem'
+import CardItem from '../CartItem/CardItem'
 import { connect } from 'react-redux'
 import './CardItems.scss'
 const CardItems = (props) => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import CardItems from "../../../components/CardItems/CardItems"
+import CardItems from "../../../components/CartItems/CardItems"
 
 const CartReview = () => {
     return <div> <CardItems/> </div>
