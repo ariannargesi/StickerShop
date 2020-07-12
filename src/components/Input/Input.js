@@ -17,7 +17,9 @@ export default (props) => {
 
     return (
         <div className="input-wrapper" onBlur={() => setShowMessage(true)}>
+            <label htmlFor={props.name}>{props.name}</label>
             <input type={props.type}
+                   name={props.name}
                    placeholder={props.placeholder}
                    value={input}
                    onChange = {changeHandler}
