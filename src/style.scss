@@ -62,4 +62,8 @@ ion-icon {
 }
 .material-icons {
   cursor: pointer;
+  transition: $default-transition-duration;
+  &:hover{
+    color: $gray-color;
+  }
 }
