@@ -10,7 +10,11 @@
   box-shadow: $basic-shadow;
   margin: 1rem;
   img {
+    transition: .4s;
     width: 100%;
+    &:hover{
+      transform: scale(1.1);
+    }
   }
 }
 .product-card-detail{
@@ -20,6 +24,7 @@
   width: 100%;
   height: 100px;
   transition-duration: 300ms;
+  padding-bottom: .5rem;
   bottom: -6%;
 }
 .product-card:hover .product-card-detail {
