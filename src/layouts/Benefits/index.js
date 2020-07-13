@@ -19,11 +19,11 @@ const Benefits = () => {
                 <p>Easy and secure payment with bitcoin</p>
                 <span>secure payment</span>
             </div>
-            <di className="benefits-item">
+            <div className="benefits-item">
                 <img src={supportIocn} alt=""/>
                 <p>Online support 24 Hores day | 7 days week</p>
                 <span>online support</span>
-            </di>
+            </div>
         </div>
     )
 }
