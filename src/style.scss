@@ -8,9 +8,17 @@ a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.76);
 }
+h1,h2,h3,h4,h5 {;
+  padding: 0.5rem 0 ;
+  margin: 0.5rem 0;
+}
 *{
   margin: 0;
   padding: 0;
+}
+p {
+  line-height: 1.8rem;
+  font-size: 18px;
 }
 body {
   margin: 0;
@@ -35,7 +43,6 @@ ion-icon {
   color: blue!important;
 }
 .about-us-index p {
-  justify-content: center;
   text-align: center;
 }
 .Hexagon-sticker-index {
@@ -66,4 +73,7 @@ ion-icon {
   &:hover{
     color: $gray-color;
   }
+}
+.p-1{
+  padding: 1.5rem;
 }
