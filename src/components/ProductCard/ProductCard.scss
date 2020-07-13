@@ -6,6 +6,8 @@
   width: 280px;
   position: relative;
   overflow: hidden;
+  border-radius: $radius;
+  box-shadow: $basic-shadow;
   margin: 1rem;
   img {
     width: 100%;
