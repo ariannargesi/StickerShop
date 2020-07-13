@@ -4,10 +4,25 @@
   background: none;
   outline: none;
   cursor: pointer;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
   border-radius: $radius;
 }
 .success {
-  background: $success-color;
+  background: #3ecf8e;
+  transition: $default-transition-duration;
   color: white;
+  &:hover{
+    background: #39bf83;
+  }
+}
+.white {
+  background: white;
+  transition: $default-transition-duration;
+  border-radius: 20px;
+  border: 1px solid #c7c7c7;
+  color: black;
+  &:hover{
+    color: $primary-color;
+  }
 }

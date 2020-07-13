@@ -6,6 +6,7 @@ import Title from '../components/Title/Title'
 import Banners from '../layouts/Banners'
 import Slider from '../layouts/Slider'
 import Benefits from '../layouts/Benefits'
+import Button from "../components/Button"
 import hexagonStickerImage from '../assets/Hexagon-stickers.png'
 import creditCardStickerImage from '../assets/credit-card-sticker.png'
 import virgoolLogo from '../assets/virgool.png'
@@ -16,7 +17,7 @@ import gameLogo from '../assets/flerbo_2.5God-of-War-2.png'
 import Pagination from '../layouts/Pagination/Pagination'
 import ProductsRow from '../components/ProductsRow/ProductsRow'
 import InstagramImages from '../layouts/InstagramImages'
-
+import {Link, NavLink} from 'react-router-dom'
 export default () => (
     <div>
         <Header/>
@@ -38,14 +39,14 @@ export default () => (
             <div>
                 <h2>hexagon Stickers</h2>
                 <p>If you love stickers like us, but the unmatched size and shape of your Flaro laptop stickers will cause your OCD to recur, hexagonal stickers will be made for you! You can attach hexagonal stickers to your laptop like Beehive.</p>
-                <button>View and buy</button>
+                <Button size={"medium"} type={"success"}> <Link to="/">View And Buy</Link></Button>
             </div>
         </div>
             <div className={"Hexagon-sticker-index p-1"}>
             <div>
                 <h2>Credit card stickers</h2>
                 <p>Like us, you may be tired of the simple and ugly appearance of your credit cards. Credit card sticker made for you! You can stick the card sticker on the front and back of bank cards or other cards you have. You can even order any posts you want from us so that we can print cards on this sticker for you!</p>
-                <button>view and buy</button>
+                <Button size={"medium"}  type={"success"}> <Link to="/">View And Buy</Link></Button>
             </div>
             <div>
                 <img src={creditCardStickerImage} alt=""/>
