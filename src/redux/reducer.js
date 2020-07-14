@@ -36,6 +36,7 @@ export const card = (state = [], action) => {
         return item.product.title != action.payload.title
       })
     }
+
     if(action.type === INCREASE_PRODUCT_QANTITY){
       const newState = [...state]
       const result  = newState.map(item => {
@@ -44,20 +45,18 @@ export const card = (state = [], action) => {
         }
         return item
       })
-      console.log('state is ')
-      console.log(state);
+        return result
     }
     if(action.type === DECREASE_PRODUCT_QANTITY) {
-		const newState = [...state]
-      return {
-          ...state,
-          products: newState.map( item => {
-           if(item.product.title === action.payload.title)
-               item.quantity--
-           return item
-         })
-      }
+        const newState = [...state]
+        const result  = newState.map(item => {
+            if(item.product.title === action.payload.title){
+                item.quantity--
+            }
+            return item
+        })
 
+        return result
     }
     return state
 }

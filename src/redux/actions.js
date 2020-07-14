@@ -28,8 +28,8 @@ export const increaseProductQantity = product => {
 
 export const decreaseProductQantity = product => {
     return {
-      type: DECREASE_PRODUCT_QANTITY,
-      payload: product
+        type: DECREASE_PRODUCT_QANTITY,
+        payload: product
     }
 }
 

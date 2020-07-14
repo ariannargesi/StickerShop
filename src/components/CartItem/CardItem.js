@@ -8,15 +8,30 @@ const CardItem = props => {
   const { product } = props.data
   const { quantity } = props.data
 
+  const getQuantity = () => {
+    const result = props.card.map(item => {
+      if(item.product.title == product.title) {
+        return item
+      }
+    })
+    return result[0].quantity
+  }
   const removeClickHandler = () => {
     props.removeFromCard(product)
   }
-
+  const increaseQuantityHandler = () => {
+    props.increaseProductQantity(product)
+  }
+  const decreaseQuantityHandler = () => {
+    props.decreaseProductQantity(product)
+  }
   return (
       <div className={"card-item"}>
         <div className="card-thumb"><img src={product.images[0]} alt=""/> </div>
         <div className="card-details">
-          <button className="remove-item" onClick={removeClickHandler}> <span className="material-icons">delete_outline</span> </button>
+          <button className="remove-item" onClick={removeClickHandler}>
+            <span className="material-icons">delete_outline</span>
+          </button>
           <h5> {product.title} </h5>
           <div className="size-and-type">
             <span>type: {product.types[0]}</span>
@@ -27,14 +42,23 @@ const CardItem = props => {
               <span className="price"> $ { product.price } </span>
             </div>
             <div style={{ border: "1px solid #eee", borderRadius: "5px" }}>
-              <button><span className="material-icons">add</span></button>
-              <span style={{marginTop: "2px"}}> { quantity } </span>
-              <button><span className="material-icons">remove</span></button>
+              <button onClick={increaseQuantityHandler}>
+                <span className="material-icons">add</span>
+              </button>
+              <span style={{marginTop: "2px"}}> {getQuantity()} </span>
+              <button onClick={decreaseQuantityHandler}>
+                <span className="material-icons">remove</span>
+              </button>
             </div>
           </div>
         </div>
       </div>
   )
 }
+const mapStateToProps = ({card}) => {
+  return {
+    card
+  }
 
-export default connect(null, {increaseProductQantity, removeFromCard, decreaseProductQantity})(CardItem)
+}
+export default connect(mapStateToProps, {increaseProductQantity, removeFromCard, decreaseProductQantity})(CardItem)

@@ -3,6 +3,7 @@ import CardItem from '../CartItem/CardItem'
 import { connect } from 'react-redux'
 import './CardItems.scss'
 const CardItems = (props) => {
+
   const renderCardItems = props.card.map((item,index) => {
     return <CardItem data={item} key={index} />
   })

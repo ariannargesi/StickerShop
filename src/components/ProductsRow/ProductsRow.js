@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-import './ProductsRow.sass'
+import './ProductsRow.scss'
 import axios from 'axios'
 import SwiperCore, { Controller } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -7,7 +7,7 @@ import ProductCard from '../ProductCard/ProductCard';
 
 const ProductsRow = (props) => {
     const [products, setProducts] = useState([])
-        const [controlledSwiper, setControlledSwiper] = useState(null);
+    const [controlledSwiper, setControlledSwiper] = useState(null);
     useEffect(()=>{
         // fetching products using api and updating the state
         axios.get(`https://flerbo.herokuapp.com/api/products-list?from=1&to=${props.num}`).then(({data})=> {
@@ -28,6 +28,7 @@ const ProductsRow = (props) => {
                         slidesPerView={4}
                         controller={{ control: controlledSwiper }}
                     >
+
                         {
                             products.map((item, index) => {
                                 return (
@@ -39,9 +40,9 @@ const ProductsRow = (props) => {
                         }
                     </Swiper>
                     :
-                products.map((item,index) => {
-                    return  <ProductCard key={index} item={item} id={index} />
-                })
+                    products.map((item,index) => {
+                        return  <ProductCard key={index} item={item} id={index} />
+                    })
             }
         </div>
 

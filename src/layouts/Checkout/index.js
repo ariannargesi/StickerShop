@@ -10,8 +10,8 @@ const Checkout = () => {
     return (
         <div>
             <WizardTab>
-                <CartReview/>
                 <ShippingInfo/>
+                <CartReview/>
                 <PaymentWays/>
             </WizardTab>
         </div>

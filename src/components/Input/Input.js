@@ -1,5 +1,5 @@
 import React, {useState,useEffect} from 'react'
-import './Input.sass'
+import './Input.scss'
 
 export default (props) => {
     const [message, setMessage] = useState("")
