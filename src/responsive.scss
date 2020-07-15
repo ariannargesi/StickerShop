@@ -1,0 +1,11 @@
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  body{
+    background: red;
+  }
+  .header-wrapper{
+    padding: 0.5rem;
+    header{
+      padding: none;
+    }
+  }
+}
