@@ -56,7 +56,7 @@ const CardItem = props => {
         </div>
     )
 }
-const mapStateToProps = ({card}) => {
-    return card
+const mapStateToProps = (state) => {
+    return state
 }
 export default connect(mapStateToProps , {increaseProductQantity, removeFromCard, decreaseProductQantity})(CardItem)
