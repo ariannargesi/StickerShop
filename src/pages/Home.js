@@ -23,7 +23,7 @@ export default () => (
         <Header/>
         <Title content={"Newst Products"} size={"large"}/>
         <div>
-          <ProductsRow num="8"/>
+          <ProductsRow num="8"  />
         </div>
         <Title content={"About Flerbo Stickers"} size={"large"}/>
         <div className="container" style={{flexDirection: "column"}}>
