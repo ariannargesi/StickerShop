@@ -27,8 +27,9 @@
     }
   }
   .container {
-    width: unset;
+    width: 100%!important;
     div {
+      width: unset!important;
       display: block;
     }
     img {
