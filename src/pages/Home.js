@@ -27,7 +27,7 @@ export default () => (
         </div>
         <Title content={"About Flerbo Stickers"} size={"large"}/>
         <div className="container" style={{flexDirection: "column"}}>
-            <div className={"about-us-index p-1"}>
+            <div className={"about-us-index p-1"} style={{width: "100%"}}>
             <p>
                 These days, we all consider our laptops and desktops to be among our most private personal items! Nothing but keeping our Devices clean and beautiful shows our character to others. That's why so many people stick stickers on the back of their laptops, desktop cases, or even their mobile phones. Aside from making it more beautiful, stickers convey the kind of thinking or work we do to others without words</p>
             <p>Florbo prints the laptop sticker himself and cuts with the machine. These stickers are made of vinyl, which is different from other stickers on the market: the fluorine is more durable, has more adhesion and its color does not fade! You can buy directly from the list of Florbo stickers, to which new designs are added every day, and have them delivered to your door. In addition, we have special plans for ordering stickers for events and companies, so be sure to contact us!</p>

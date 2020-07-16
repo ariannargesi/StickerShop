@@ -1,11 +1,38 @@
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  body{
-    background: red;
-  }
-  .header-wrapper{
+  .header-wrapper {
     padding: 0.5rem;
-    header{
-      padding: none;
+    header {
+      padding: 0;
+      position: relative;
+      .modal-wrapper {
+        visibility: hidden;
+      }
     }
   }
+  .product-card {
+    width: 90%;
+    height: 440px;
+    margin:  0.5rem;
+    position: relative;
+    .product-card-detail{
+      position: unset;
+    }
+    .add-to-card-small {
+      position: absolute;
+      top: 2%;
+      left: 2%;
+    }
+    .view-product,.add-to-card-small{
+      visibility: hidden;
+    }
+  }
+  .container {
+    div {
+      display: block;
+    }
+    img {
+     display: none;
+    }
+  }
+
 }
