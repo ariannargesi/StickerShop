@@ -23,9 +23,11 @@ return (
                </Menu>
            </div>
            <div style={{ flexDirection: "row-reverse"}}>
-               <Login/>
-               |
-               <SignIn/>
+               <div className="user-account-modals" style={{display: "flex", flexDirection: "row"}}>
+                   <Login/>
+                   |
+                   <SignIn/>
+               </div>
                <UserCardPanel />
                <Search/>
            </div>

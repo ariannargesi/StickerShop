@@ -1,12 +1,11 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { removeFromCard, increaseProductQantity, decreaseProductQantity } from '../../redux/actions'
+
 import trashIcon from '../../assets/icons/trash.svg'
 import './CardItem.scss'
 
 const CardItem = props => {
     const { product } = props.data
-    const { quantity } = props.data
 
     const getQuantity = () => {
         const result = props.card.map(item => {
@@ -25,6 +24,7 @@ const CardItem = props => {
     const decreaseQuantityHandler = () => {
         props.decreaseProductQantity(product)
     }
+
     return (
         <div className={"card-item"}>
             <div className="card-thumb"><img src={product.images[0]} alt=""/> </div>
@@ -45,7 +45,7 @@ const CardItem = props => {
                         <button onClick={increaseQuantityHandler}>
                             <span className="material-icons">add</span>
                         </button>
-                        <span style={{marginTop: "2px"}}> {getQuantity()} </span>
+                        <span style={{marginTop: "2px"}}>{props.data.quantity}</span>
                         <button onClick={decreaseQuantityHandler}>
                             <span className="material-icons">remove</span>
                         </button>
@@ -55,10 +55,5 @@ const CardItem = props => {
         </div>
     )
 }
-const mapStateToProps = ({card}) => {
-    return {
-        card
-    }
 
-}
-export default connect(mapStateToProps, {increaseProductQantity, removeFromCard, decreaseProductQantity})(CardItem)
+export default CardItem
