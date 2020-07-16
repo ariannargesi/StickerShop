@@ -38,7 +38,7 @@ header .menu a {
     transition-duration: 100ms;
     padding: 0.5rem 1rem;
 }
-header .menu a:hover {
+header .menu > a:hover {
     color: white;
     background: rgba(0, 0, 0, 0.66);
 }
