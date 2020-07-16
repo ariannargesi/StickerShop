@@ -1,7 +1,7 @@
 import React from 'react'
 import './Header.scss'
 import { NavLink } from 'react-router-dom'
-import logo from '../../assets/logo.png'
+import logo from '../../assets/logo.svg'
 import Menu from '../../components/Menu/Menu'
 import MenuItem from '../../components/MenuItem/MenuItem'
 import Toast from '../../components/Toast'
@@ -14,7 +14,9 @@ return (
    <div className="header-wrapper">
        <header>
            <div>
-               <img className="logo" src={logo}/>
+               <a href="/">
+                   <img className="logo" src={logo}/>
+               </a>
                <Menu title="Stickers" href="#">
                    <MenuItem title="For Geeks" href="/Geeks" mode="bold">
                        <NavLink to="/Developers">For Developers</NavLink>
