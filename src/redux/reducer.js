@@ -17,7 +17,6 @@ export const card = (state = [], action) => {
       const newItem = isNewItem(payload)
       if(newItem){
         newState.push({ product: payload, quantity: 1 })
-        console.log("im returning new state ")
         return newState
       }
 
@@ -26,7 +25,6 @@ export const card = (state = [], action) => {
  	        if(item.product.title === payload.title)
     	     item.quantity++
       })
-      console.log("dont run")
       }
 
     }
