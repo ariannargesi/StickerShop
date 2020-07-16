@@ -10,7 +10,7 @@ const ProductsRow = (props) => {
     const [controlledSwiper, setControlledSwiper] = useState(null);
     useEffect(()=>{
         // fetching products using api and updating the state
-        axios.get(`https://flerbo.herokuapp.com/api/products-list?from=1&to=${props.num}`).then(({data})=> {
+        axios.get(`https://flerbo.herokuapp.com/api/products-list?order=${props.order}&from=1&to=${props.num}`).then(({data})=> {
             if(data.status == 200)
                 setProducts(data.products)
         }).catch(err=>{
