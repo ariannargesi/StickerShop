@@ -10,7 +10,7 @@ import {Link} from "react-router-dom";
 const Banners = () =>
     (
         <div className={"banners-index"}>
-    <div style={{width: "300px", height: "710px", background: "#dae0fb", marginTop: "10px", display: "flex", flexDirection: "column",textAlign: "center", justifyContent: "center"}}>
+    <div className={"banner-item"} style={{width: "300px", height: "710px", background: "#dae0fb", marginTop: "10px", display: "flex", flexDirection: "column",textAlign: "center", justifyContent: "center"}}>
         <h3 className="banner-description"> Special Items</h3>
         <h2 className="banner-title">Websites</h2>
         <div>
@@ -21,7 +21,7 @@ const Banners = () =>
         </div>
     </div>
     <div style={{width:"900px", height: "700px", display: "flex", flexWrap: "wrap"}}>
-        <div style={{width: "540px", height: "350px", background: "#f4f4f4", display: "inline-flex", justifyContent: "center", alignItems: "center"}}>
+        <div className="banner-item" style={{width: "540px", height: "350px", background: "#f4f4f4", display: "inline-flex", justifyContent: "center", alignItems: "center"}}>
             <div>
                 <h3 className="banner-description">Laptop Sticker</h3>
                 <h2>For Developers</h2>
@@ -31,21 +31,21 @@ const Banners = () =>
                 <img className="banner-image" src={pythonLogo} alt=""/>
             </div>
         </div>
-        <div style={{width: "300px", height: "350px", background: "#f6dfd0", display: "inline-flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
+        <div className="banner-item" style={{width: "300px", height: "350px", background: "#f6dfd0", display: "inline-flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
             <div style={{textAlign: "center"}}>
                 <img src={movieLogo} alt="" className="banner-image"/>
             </div>
             <h3 className="banner-description">Special Stickers</h3>
             <h2 className="banner-title">Movie and Series</h2>
         </div>
-        <div style={{width: "300px", height: "350px", background: "#f6d0d7", display: "inline-flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
+        <div className="banner-item" style={{width: "300px", height: "350px", background: "#f6d0d7", display: "inline-flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
             <div style={{textAlign: "center"}}>
                 <img src={dribbleLogo} alt="" className="banner-image"/>
             </div>
             <h3 className="banner-description">Laptop Sticker</h3>
             <h2 className="banner-title">For Designers</h2>
         </div>
-        <div style={{width: "540px", height: "350px", background: "#d8e2ea", display: "inline-flex", justifyContent: "center", alignItems: "center"}}>
+        <div className="banner-item" style={{width: "540px", height: "350px", background: "#d8e2ea", display: "inline-flex", justifyContent: "center", alignItems: "center"}}>
             <div>
                 <h3 className="banner-description">For gamers</h3>
                 <h2>Gamers Essential</h2>
