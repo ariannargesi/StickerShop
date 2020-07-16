@@ -1,6 +1,8 @@
 .product-row {
+   justify-content: center;
+   display: flex;
+   flex-wrap: wrap;
   .slick-track{
     width:0!important;
-
   }
 }

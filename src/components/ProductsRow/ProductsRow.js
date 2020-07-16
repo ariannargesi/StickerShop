@@ -20,7 +20,7 @@ const ProductsRow = (props) => {
     if(products.length === 0)
         return "... Loading"
     return (
-        <div style={{textAlign:"center",paddingBottom:"20px"}} className="product-row">
+        <div style={{paddingBottom:"20px"}} className="product-row">
             {
                 props.carousel ?
                     <Swiper
