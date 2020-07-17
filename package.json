@@ -20,6 +20,7 @@
     "react-spring": "^8.0.27",
     "react-transition-group": "^4.4.1",
     "redux": "^4.0.5",
+    "slick-carousel": "^1.8.1",
     "swiper": "^6.0.1",
     "user-instagram": "^2.0.9",
     "validator": "^13.1.1"
