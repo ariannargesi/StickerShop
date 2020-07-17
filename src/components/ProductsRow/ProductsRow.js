@@ -52,4 +52,3 @@ const ProductsRow = (props) => {
 
 export default ProductsRow
 
-// add sort option : sort by price, oldest, newests and thing like that

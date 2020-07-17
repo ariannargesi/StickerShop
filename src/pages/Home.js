@@ -21,7 +21,7 @@ import {Link, NavLink} from 'react-router-dom'
 export default () => (
     <div>
         <Header/>
-        <Title content={"Newst Products"} size={"large"}/>
+        <Title content={"Newest Products"} size={"large"}/>
         <div>
           <ProductsRow num="8" order="1" />
         </div>
@@ -59,7 +59,7 @@ export default () => (
         {/*    content={"Most Sell Product"}*/}
         {/*    size={"large"}*/}
         {/*/>*/}
-        {/*<Slider/>*/}
+        <Slider/>
         {/*<Title*/}
         {/*    content={"a satisfying purchase"}*/}
         {/*    size={"large"}*/}

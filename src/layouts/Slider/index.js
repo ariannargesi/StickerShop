@@ -12,7 +12,7 @@ const Slider = () => {
     //
     //     </Swiper>
     return (
-        <ProductsRow num="8" order={'sell'} carousel />
+        <ProductsRow num="8" order={1} carousel />
     );
 }
 
