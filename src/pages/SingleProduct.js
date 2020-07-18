@@ -47,6 +47,7 @@ const SingleProduct = (props) => {
                          category={product.category}
                          price={product.price}
                          description={product.description}
+                         images={product.images}
                          types={product.types}
                          sizes={product.sizes}
             />

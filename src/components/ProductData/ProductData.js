@@ -5,21 +5,10 @@ import Dropdown from '../Dropdown'
 import Button from '../Button'
 import './ProductData.scss'
 
-const ProductData = ({title, category, price, description, sizes, types, addToCard, showToast }) => {
+const ProductData = ({title, category, price, description, sizes, types, images, addToCard, showToast }) => {
     function getDescription () {
         return { __html: description }
     }
-    function clickHandler() {
-        addToCard({
-            title,
-            category,
-            price,
-            description,
-            sizes,
-            types,
-        })
-    }
-
     return (
         <div className="product-data">
             <h1>{title}</h1>
@@ -41,7 +30,7 @@ const ProductData = ({title, category, price, description, sizes, types, addToCa
 
             <br/>
             <div style={{width: "400px"}} >
-            <Button onClick={() => { addToCard({title,category, price, description,sizes, types}) ;showToast("Product added to your card") } } size="medium" type={"success"}>Add To Card</Button>
+            <Button onClick={() => { addToCard({title,category, price, description,sizes, types, images}) ;showToast("Product added to your card") } } size="medium" type={"success"}>Add To Card</Button>
             </div>
             <div dangerouslySetInnerHTML={getDescription()}/>
         </div>
