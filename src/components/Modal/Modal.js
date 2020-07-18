@@ -1,7 +1,7 @@
 import React,{useState, useRef} from 'react'
 import useToggle from '../../hooks/useToggle'
 import useClickOutside from '../../hooks/useClickOutside'
-import './Modal.sass'
+import './Modal.scss'
 export default (props) => {
     const [state, setState] = useToggle(false)
     const divRef = useRef(null)
@@ -14,10 +14,10 @@ export default (props) => {
     useClickOutside(divRef, clickOutsideHandler)
     return (
         <div className="modal-wrapper">
-            <span className={"modal-title"} onClick={clickHandler}>{props.title}</span>
+            <span className="modal-title" onClick={clickHandler}>{props.title}</span>
             { state &&
             <div className="modal">
-                <button onClick={clickHandler} className="close-modal" >close</button>
+                <span onClick={clickHandler} className="close-modal material-icons">close</span>
                 <div className="modal-content" ref={divRef}>
                     {
                         props.children
