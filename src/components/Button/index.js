@@ -1,7 +1,7 @@
 import React from 'react'
 import './Button.scss'
 
-const Button = ({size, type, children, onClick, style}) => {
+const Button = ({size, type, children, onClick, style, width}) => {
     const sizes = {
         large: "24x",
         medium: "18px",
@@ -12,7 +12,7 @@ const Button = ({size, type, children, onClick, style}) => {
     return (
         <button
         className={["button", type ].join(' ')}
-            style={{fontSize, }}
+            style={{fontSize,width: width || "100%"  }}
             onClick={onClick}
         >
             {children}
