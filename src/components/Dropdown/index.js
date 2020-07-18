@@ -18,9 +18,11 @@ const Index = (props) => {
         <div className="dropdown" ref={divRef}>
                 <h4>{props.title}</h4>
             <div className="dropdown-selected" onClick={() => setState(!isOpen) }>
-                <span>{selectedItem}</span> 
+                <span>{selectedItem}</span>
+                <span className={["material-icons", isOpen ? "down" : ""].join(" ")}>keyboard_arrow_up</span>
             </div>
-        { 
+
+        {
             isOpen &&
                 <ul className="dropdown-items" >
                     {
