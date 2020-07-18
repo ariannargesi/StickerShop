@@ -5,7 +5,8 @@ import axios from 'axios'
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"
-import ProductCard from '../ProductCard/ProductCard';
+import ProductCard from '../ProductCard/ProductCard'
+import Loading from "../Loading/Loading"
 import Button from "../Button";
 
 const ProductsRow = (props) => {
@@ -53,7 +54,7 @@ const ProductsRow = (props) => {
         prevArrow: <SamplePrevArrow />
     };
     if(products.length === 0)
-        return "... Loading"
+        return <Loading height={"300px"}/>
 
     return (
         <>

@@ -15,6 +15,7 @@ import movieLogo from '../assets/giant_yellow_head.png'
 import dribbleLogo from '../assets/flerbo_2.5Dribbble.png'
 import gameLogo from '../assets/flerbo_2.5God-of-War-2.png'
 import Pagination from '../layouts/Pagination/Pagination'
+import Loading from "../components/Loading/Loading";
 import ProductsRow from '../components/ProductsRow/ProductsRow'
 import InstagramImages from '../layouts/InstagramImages'
 import {Link, NavLink} from 'react-router-dom'
