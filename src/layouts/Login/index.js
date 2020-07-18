@@ -1,5 +1,6 @@
-import Input from "../../components/Input/Input";
-import Modal from "../../components/Modal/Modal";
+import Input from "../../components/Input/Input"
+import Modal from "../../components/Modal/Modal"
+import Button from "../../components/Button"
 import React from "react";
 import validator from "validator";
 
@@ -11,7 +12,7 @@ const Login = () => {
                 <form action="" >
                     <Input type="email" placeholder="email" message={hints.email} />
                     <Input type="password" placeholder="password" message={hints.password}/>
-                    <button type="submit"> log in</button>
+                    <Button  size="medium" type={"success"}>Login</Button>
                 </form>
             </div>
         </Modal>

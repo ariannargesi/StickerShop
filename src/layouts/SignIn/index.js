@@ -3,6 +3,7 @@ import Modal from "../../components/Modal/Modal";
 import Login from '../Login'
 import React from "react";
 import validator from "validator";
+import Button from "../../components/Button";
 
 const SignIn = () => {
     return (
@@ -12,7 +13,7 @@ const SignIn = () => {
                 <Input type="text" placeholder="username" message={hints.username} />
                 <Input type="email" placeholder={"Email Address"} message={hints.email} />
                 <Input type="password" placeholder= "password" message={hints.password}/>
-                <button type="submit">Sign in</button>
+                <Button  size="medium" type={"success"}>Sign in</Button>
                 <Login/>
             </form>
         </Modal>
