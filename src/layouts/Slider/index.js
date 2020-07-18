@@ -4,13 +4,7 @@ import 'swiper/swiper.scss'
 import ProductsRow from "../../components/ProductsRow/ProductsRow";
 
 const Slider = () => {
-    // return (
-    //     <Swiper
-    //         spaceBetween={50}
-    //         slidesPerView={4}
-    //     >
-    //
-    //     </Swiper>
+
     return (
         <ProductsRow num="8" order={1} carousel />
     );
