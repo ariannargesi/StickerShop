@@ -1,8 +1,7 @@
 @import "src/base";
 .input-wrapper {
-  padding: 0.4rem;
   * {
-    margin: 0.4rem 0;
+    margin: 0.3rem 0;
     font-size: 18px;
 
     font-weight:400;
@@ -19,6 +18,7 @@
     }
   }
   span {
-    color: red;
+    color: $danger-color;
+    font-size: 14px;
   }
 }
