@@ -16,14 +16,17 @@ export default (props) => {
     }
 
     return (
-        <div className="input-wrapper" onBlur={() => setShowMessage(true)}>
+        <div className="input-wrapper"  onBlur={() => setShowMessage(true)}>
             <label htmlFor={props.name}>{props.name}</label>
+            <br/>
             <input type={props.type}
                    name={props.name}
                    placeholder={props.placeholder}
                    value={input}
                    onChange = {changeHandler}
+                   style={{width: props.width + "px"}}
             />
+            <br/>
             <span>{ showMessage && message }</span>
         </div>
     )

@@ -1,29 +1,24 @@
-@import '../../base';
-.input-wrapper{
-  height: 80px;
-  width: 100%;
-  margin: .5rem;
-  text-align: left;
-  input{
-    outline: none;
-    border: 1px solid #c1c1c1;
-    width: 100%;
+@import "src/base";
+.input-wrapper {
+  padding: 0.4rem;
+  * {
+    margin: 0.4rem 0;
     font-size: 18px;
-    padding: 0.5rem;
-    border-radius: 5px;
-    margin: 0.8rem 0 ;
-    color: gray;
-    font-weight: 100;
+
+    font-weight:400;
+  }
+  input {
+    line-height: 45px;
+    border-radius: $radius;
+    padding: 0 0.5rem;
+    outline: none;
+    border: 1px solid #d4d4d4;
     transition: $default-transition-duration;
-    &:focus  {
-      border: 2px solid $success-color;
+    &:focus {
+      border: 1px solid gray;
     }
   }
-  label {
-    color: gray;
-  }
   span {
-    line-height: 20px;
     color: red;
   }
 }
