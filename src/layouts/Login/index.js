@@ -6,11 +6,14 @@ import validator from "validator";
 const Login = () => {
     return (
         <Modal title={"Log in "}>
-            <form action="">
-                <Input type="email" placeholder="email" message={hints.email} />
-                <Input type="password" placeholder="password" message={hints.password}/>
-                <button type="submit"> log in</button>
-            </form>
+            <div style={{width: "500px"}}>
+                <h2>Login into your account</h2>
+                <form action="" >
+                    <Input type="email" placeholder="email" message={hints.email} />
+                    <Input type="password" placeholder="password" message={hints.password}/>
+                    <button type="submit"> log in</button>
+                </form>
+            </div>
         </Modal>
     )
 }

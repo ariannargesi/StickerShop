@@ -7,6 +7,7 @@ import validator from "validator";
 const SignIn = () => {
     return (
         <Modal title={"Sign in"}>
+            <h2>Create a new account</h2>
             <form action="" className="log-sign-form">
                 <Input type="text" placeholder="username" message={hints.username} />
                 <Input type="email" placeholder={"Email Address"} message={hints.email} />
