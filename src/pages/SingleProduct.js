@@ -5,6 +5,7 @@ import ProductData from '../components/ProductData/ProductData'
 import Header from '../layouts/Header/Header'
 import Spinner from '../components/Spinner/Spinner'
 import Breadcrumbs from "../components/Breadcrumbs";
+import Loading from "../components/Loading/Loading";
 const SingleProduct = (props) => {
     const [product, setProduct] = useState({})
 
@@ -22,7 +23,7 @@ const SingleProduct = (props) => {
         })
     },[])
     return (
-        Object.keys(product).length === 0? <Spinner height="100vh"/> :
+        Object.keys(product).length === 0? <Loading height="100vh"/> :
     <div>
         <Header/>
         <div style={{width: "1200px", justifyContent:"center", margin: "0 auto"}}>
