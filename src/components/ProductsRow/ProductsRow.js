@@ -13,7 +13,12 @@ const ProductsRow = (props) => {
     const [products, setProducts] = useState([])
     useEffect(()=>{
         // fetching products using api and updating the state
-        axios.get(`https://flerbo.herokuapp.com/api/products-list?order=${props.order}&from=1&to=${props.num}`).then(({data})=> {
+        let endpoint
+        if(props.category)
+            endpoint = `https://flerbo.herokuapp.com/api/${props.category}/?page=1&limit=${props.num}`
+        else
+            endpoint = `https://flerbo.herokuapp.com/api/products-list?order=${props.order}&from=1&to=${props.num}`
+        axios.get(endpoint).then(({data})=> {
             if(data.status == 200)
                 setProducts(data.products)
         }).catch(err=>{
