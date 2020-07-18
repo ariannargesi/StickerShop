@@ -19,16 +19,31 @@ const ProductData = ({title, category, price, description, sizes, types, addToCa
             types,
         })
     }
+
     return (
         <div className="product-data">
             <h1>{title}</h1>
-            <i className="product-price"> $ {price}  </i>
-            <div style={{display: "flex", flex: "1 1 auto"}}>
-                <Dropdown items={sizes} current={sizes[0]} title="select size" />
-                <Dropdown items={types} current={types[0]} title="select type" />
-            </div><br/>
-            <div dangerouslySetInnerHTML={getDescription()}/>
+            <i className="product-price"> $ {price} </i>
+<br/><br/>
+            <hr/>
+<br/>
+
+
+            <div className="dropdown-wrapper">
+                <div style={{width: "400px"}}>
+                    <Dropdown items={sizes} current={sizes[0]} title="Choose Size" />
+                </div>
+                <div style={{width: "400px"}}>
+                    <Dropdown items={types} current={types[0]} title="Choose Type" />
+                </div>
+            </div>
+
+
+            <br/>
+            <div style={{width: "400px"}} >
             <Button onClick={() => { addToCard({title,category, price, description,sizes, types}) ;showToast("Product added to your card") } } size="medium" type={"success"}>Add To Card</Button>
+            </div>
+            <div dangerouslySetInnerHTML={getDescription()}/>
         </div>
     )
 }

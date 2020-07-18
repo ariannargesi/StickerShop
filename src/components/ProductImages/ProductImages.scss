@@ -49,6 +49,7 @@
 }
 .thumb {
   cursor: pointer;
+
   width: 100px!important;
 }
 .carousel .thumb.selected, .carousel .thumb:hover, .carousel .thumb {
@@ -57,5 +58,8 @@
   outline: none;
 }
 .carousel .thumb:hover {
-  box-shadow: 5px 5px 10px 10px #eee;
+  border: 1px solid #eee ;
+}
+.carousel .thumbs-wrapper {
+  margin: 10px 0;
 }

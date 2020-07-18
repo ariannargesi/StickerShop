@@ -3,10 +3,9 @@
   width: 50%;
   display: inline-block;
   flex: 1 1 auto;
-  padding:1rem;
+  padding: 0rem 2rem;
   .product-price {
     color: $primary-color;
     font-size: 32px;
-    font-family: italic;
   }
 }
