@@ -1,21 +1,22 @@
+@import "src/base"
 .search-wrapper
   cursor: pointer
   position: relative
 
-
-
 .search-open
-  width: 335px
-  border: 1px solid #eee
+  justify-content: space-between
+  width: 360px
+  border: 1px solid gray
   display: flex
+  border-radius: $radius
   align-items: center
   position: absolute
   z-index: 5
-  left: -100%
-  top: -50%
+  padding: 0.3rem
+  left: -200%
+  top: -10%
   transition: 0.3s
-.close-search-box svg:hover
-  color: #e5aa61
+.close-search-box
 
 .input-search-box
   line-height: 40px
@@ -27,7 +28,7 @@
   font-size: 16px
   border: none
   outline: none
-  background: #e5aa61
+  background: $success-color
   color: white
   box-shadow: #525252
   padding: 9px 35px
@@ -35,7 +36,7 @@
   cursor: pointer
 
   &:disabled
-    background: gray
+    background: $disable-color
 
 .search-result
   width: 335px

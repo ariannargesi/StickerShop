@@ -57,7 +57,7 @@ const SearchBox = () => {
                     </div>
                     <form action="">
                         <input value={input} onChange={handelInputChange} type="text" placeholder="Name or Category" className="input-search-box"/>
-                        <button disabled={input.length == 0 ? true : false}  type="submit" className="search-search-box" className="submit-search-box" >search</button>
+                        <button disabled={input.length == 0 ? true : false}  type="submit"  className="submit-search-box" >search</button>
                     </form>
 
                     {
