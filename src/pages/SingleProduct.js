@@ -5,8 +5,9 @@ import ProductData from '../components/ProductData/ProductData'
 import Header from '../layouts/Header/Header'
 import ProductsRow from "../components/ProductsRow/ProductsRow"
 import Spinner from '../components/Spinner/Spinner'
-import Breadcrumbs from "../components/Breadcrumbs";
-import Loading from "../components/Loading/Loading";
+import Breadcrumbs from "../components/Breadcrumbs"
+import Title from "../components/Title/Title"
+import Loading from "../components/Loading/Loading"
 const SingleProduct = (props) => {
     const [product, setProduct] = useState({})
 
@@ -49,7 +50,11 @@ const SingleProduct = (props) => {
                          types={product.types}
                          sizes={product.sizes}
             />
+
         </div>
+            <br/>
+            <hr/>
+            <Title content={"Related Prodcuts"} size={"large"} styled={true}/>
             <ProductsRow num={8} category={product.category} carousel />
 
         </div>
