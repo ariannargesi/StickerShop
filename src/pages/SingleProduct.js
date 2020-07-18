@@ -3,6 +3,7 @@ import axios from 'axios'
 import ProductImages from "../components/ProductImages/ProductImage"
 import ProductData from '../components/ProductData/ProductData'
 import Header from '../layouts/Header/Header'
+import ProductsRow from "../components/ProductsRow/ProductsRow"
 import Spinner from '../components/Spinner/Spinner'
 import Breadcrumbs from "../components/Breadcrumbs";
 import Loading from "../components/Loading/Loading";
@@ -49,7 +50,9 @@ const SingleProduct = (props) => {
                          sizes={product.sizes}
             />
         </div>
-    </div>
+            <ProductsRow num={8} category={product.category} carousel />
+
+        </div>
     </div>
     )
 }
