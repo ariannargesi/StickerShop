@@ -12,10 +12,10 @@ const Footer = () => {
     return (
         <div className="footer">
             <div className="footer-top">
-                <div>
+                <div className="footer-item">
                     <img src={logo} className="logo" alt=""/>
                 </div>
-                <div>
+                <div className="footer-item">
                     <h5>Products</h5>
                     <ul>
                         <li><Link>Card Stickers</Link></li>
@@ -23,18 +23,20 @@ const Footer = () => {
                         <li><Link>Hexagon Stickers</Link></li>
                     </ul>
                 </div>
-                <div>
+                <div className="footer-item">
                     <h5>About</h5>
                     <ul>
                         <li><Link>About Project</Link></li>
                         <li><Link>About Me</Link></li>
+                        <li><Link>Main site</Link></li>
                     </ul>
                 </div>
-                <div>
+                <div className="footer-item">
                     <h5>Contact Info</h5>
                     <ul>
                         <li><a href="mailto:ariannargesi@gmail.com">ariannargesi@gmail.com</a></li>
-                        <a href="">+00989368069820</a>
+                        <li><a href="">ariannargeis.ir</a></li>
+                        <li><a href="">+00989368069820</a></li>
                     </ul>
                     <div className="contact-info">
                         <img src={linkedin} alt=""/>

@@ -1,7 +1,6 @@
 @import 'src/base';
 .footer {
   margin-top: 2rem;
-  background: #eee;
   .logo {
     width: 80px;
   }
@@ -15,16 +14,28 @@
   .footer-top {
     width: 1200px;
     margin: 0 auto;
+    border: 1px solid #eee;
     padding: 2rem 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    .footer-item {
+      display: flex;
+      flex-direction: column;
+    }
+    h5{
+      font-size: 18px;
+    }
     a {
       display: block;
       margin: 1rem;
-      color: blue;
+      font-weight: normal;
+      border-radius: 20px;
+      transition-duration: 100ms;
+      padding: 0.5rem 1rem;
       &:hover {
-        text-decoration: underline;
+        color: white;
+        background: rgba(0, 0, 0, 0.66);
       }
     }
   }
