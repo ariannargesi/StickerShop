@@ -57,16 +57,16 @@ export default () => (
         </div>
 
         <Banners/>
-        {/*<Title*/}
-        {/*    content={"Most Sell Product"}*/}
-        {/*    size={"large"}*/}
-        {/*/>*/}
+        <Title
+            content={"Most Sell Product"}
+            size={"large"}
+        />
         <Slider/>
-        {/*<Title*/}
-        {/*    content={"a satisfying purchase"}*/}
-        {/*    size={"large"}*/}
-        {/*/>*/}
-        {/*<Benefits/>*/}
+        <Title
+            content={"a satisfying purchase"}
+            size={"large"}
+        />
+        <Benefits/>
         <InstagramImages/>
         {/*<Footer/>*/}
     </div>

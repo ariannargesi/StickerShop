@@ -1,20 +1,25 @@
 @import '../../base';
 .benefits {
-  width: 100%;
+  width: 1200px;
+  margin: 0 auto;
   text-align: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 
 }
 .benefits-item {
-  width: 300px;
-  box-shadow:  5px 5px 10px #eee,
-  -5px -5px 10px #eee;
+  width: 350px;
+  border: 1px solid #eee;
   padding: 1.5rem;
   border-radius: $radius;
-  margin: 20px;
   flex:1 1 auto;
-
+  span {
+   margin: 0.5rem;
+    color: $success-color;
+ }
+  p{
+    margin: 0.5rem;
+  }
 }
 .benefits-item > img {
   width: 40px;
