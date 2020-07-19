@@ -8,14 +8,17 @@ import Button from "../../components/Button";
 const SignIn = () => {
     return (
         <Modal title={"Sign in"}>
-            <h2>Create a new account</h2>
-            <form action="" className="log-sign-form">
-                <Input type="text" placeholder="username" message={hints.username} />
-                <Input type="email" placeholder={"Email Address"} message={hints.email} />
-                <Input type="password" placeholder= "password" message={hints.password}/>
-                <Button  size="medium" type={"success"}>Sign in</Button>
-                <Login/>
-            </form>
+            <div style={{width: "350px"}}>
+                <h2>Create a new account</h2>
+                <form action="" className="log-sign-form">
+                    <Input type="text" placeholder="username" message={hints.username} />
+                    <Input type="email" placeholder={"Email Address"} message={hints.email} />
+                    <Input type="password" placeholder= "password" message={hints.password}/>
+                    <Button  size="medium" type={"success"}>Sign in</Button>
+                    <Login/>
+                </form>
+            </div>
+
         </Modal>
     )
 }

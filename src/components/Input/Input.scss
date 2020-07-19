@@ -1,13 +1,14 @@
 @import "src/base";
 .input-wrapper {
+  text-align: center;
   * {
     margin: 0.3rem 0;
     font-size: 18px;
-
     font-weight:400;
   }
   input {
     line-height: 45px;
+    width: 95%;
     border-radius: $radius;
     padding: 0 0.5rem;
     outline: none;
