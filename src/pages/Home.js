@@ -56,7 +56,7 @@ export default () => (
         </div>
         </div>
 
-        {/*<Banners/>*/}
+        <Banners/>
         {/*<Title*/}
         {/*    content={"Most Sell Product"}*/}
         {/*    size={"large"}*/}
@@ -67,7 +67,7 @@ export default () => (
         {/*    size={"large"}*/}
         {/*/>*/}
         {/*<Benefits/>*/}
-        {/*<InstagramImages/>*/}
+        <InstagramImages/>
         {/*<Footer/>*/}
     </div>
 )
