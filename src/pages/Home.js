@@ -61,7 +61,7 @@ export default () => (
         {/*    content={"Most Sell Product"}*/}
         {/*    size={"large"}*/}
         {/*/>*/}
-        {/*<Slider/>*/}
+        <Slider/>
         {/*<Title*/}
         {/*    content={"a satisfying purchase"}*/}
         {/*    size={"large"}*/}

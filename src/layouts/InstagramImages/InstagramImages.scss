@@ -1,15 +1,23 @@
 @import '../../base';
+.svg-container {
+        width: 100%;
+        height: 300px;
+        background: url('../../assets/wave2.svg') no-repeat;
+        position: relative;
+        transform: rotateX(180deg);
+    button{
+        transform: rotateX(180deg);
+        margin: 3rem 0 ;
+    }
+}
 .instagram-wrapper {
-    background: url('../../assets/wave2.svg') no-repeat ;
-    background-position-y: 550px;
-    position: relative;
-    padding: 100px;
-    transform: rotateX(180deg);
+    background-color: $success-color-light;
+    padding-bottom: 5rem;
+
 }
 .instagram-images {
-    transform: rotateX(180deg);
     width: 1200px;
-    margin: 30px auto;
+    margin: 0 auto;
     img {
         transition: 300ms;
         &:hover {

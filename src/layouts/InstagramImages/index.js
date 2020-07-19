@@ -5,10 +5,15 @@ import {Link} from "react-router-dom";
 
 const Instagram = () => {
     return (
+        <>
+        <div className="svg-container">
+            <div style={{width: "1200px", margin: "0 auto"}}>
+                <Button size={"medium"} width={"300px"}  type={"white"}> <Link to="/">Fallow us on instagram</Link></Button>
+            </div>
+        </div>
         <div className="instagram-wrapper">
         <a href="https://www.instagram.com/ariannargesi">
         <div className="instagram-images">
-            <Button size={"medium"} width={"300px"}  type={"white"}> <Link to="/">Fallow us on instagram</Link></Button>
 
             <div style={{display: "flex", flexDirection: "row"}}>
                 <div className="instagram-images-small">
@@ -31,6 +36,7 @@ const Instagram = () => {
         </div>
         </a>
         </div>
+        </>
     )
 }
 export default Instagram
