@@ -1,13 +1,13 @@
 @import '../../base';
 .instagram-wrapper {
-    //background-color: $success-color-light;
-    //background: url('../../assets/wave.svg') no-repeat ;
-    //background-position: center;
-    background-size: cover;
-    padding: 40px 0;
-    margin: 3rem 0 ;
+    background: url('../../assets/wave2.svg') no-repeat ;
+    background-position-y: 550px;
+    position: relative;
+    padding: 100px;
+    transform: rotateX(180deg);
 }
 .instagram-images {
+    transform: rotateX(180deg);
     width: 1200px;
     margin: 30px auto;
     img {

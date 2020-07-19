@@ -1,11 +1,15 @@
 import React from 'react'
+import Button from "../../components/Button"
 import './InstagramImages.scss'
+import {Link} from "react-router-dom";
 
 const Instagram = () => {
     return (
         <div className="instagram-wrapper">
         <a href="https://www.instagram.com/ariannargesi">
         <div className="instagram-images">
+            <Button size={"medium"} width={"300px"}  type={"white"}> <Link to="/">Fallow us on instagram</Link></Button>
+
             <div style={{display: "flex", flexDirection: "row"}}>
                 <div className="instagram-images-small">
                     <img src="https://instagram.fgbb2-1.fna.fbcdn.net/v/t51.2885-15/e35/97021643_158073915697606_4722173138011095237_n.jpg?_nc_ht=instagram.fgbb2-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=lbzL1c5LYwgAX9oImJJ&oh=c2df5167c7fee95d8ba3f2d4e9864d06&oe=5F3C41CA" alt="" style={{borderTopLeftRadius: "5px"}}/>
