@@ -1,6 +1,6 @@
 @import "src/base";
 .input-wrapper {
-  text-align: center;
+
   * {
     margin: 0.3rem 0;
     font-size: 18px;
@@ -9,6 +9,7 @@
   input {
     line-height: 45px;
     width: 95%;
+    color: gray;
     border-radius: $radius;
     padding: 0 0.5rem;
     outline: none;
@@ -21,5 +22,9 @@
   span {
     color: $danger-color;
     font-size: 14px;
+  }
+  label {
+    color: gray;
+    padding: 1rem 0 ;
   }
 }
