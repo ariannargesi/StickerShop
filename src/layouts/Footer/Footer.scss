@@ -1,16 +1,36 @@
-.footer-wrapper {
-    background:orange;
-}
-.footer{
+@import 'src/base';
+.footer {
+  margin-top: 2rem;
+  background: #eee;
+  .logo {
+    width: 80px;
+  }
+  .contact-info {
+    img {
+      width: 18px;
+      margin: 0 1rem;
+      cursor: pointer;
+    }
+  }
+  .footer-top {
     width: 1200px;
-    margin: 0 auto; 
-    padding: 2rem 0 ;
+    margin: 0 auto;
+    padding: 2rem 0;
     display: flex;
-    justify-content: center;
-}
-.footer-column {
-   width: 23%;
-   text-align: center;
-}
-.footer-column-head{
+    align-items: center;
+    justify-content: space-around;
+    a {
+      display: block;
+      margin: 1rem;
+      color: blue;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .footer-bottom {
+    padding: 1rem;
+    text-align: center;
+    background-color: white;
+  }
 }

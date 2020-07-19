@@ -68,7 +68,7 @@ export default () => (
         />
         <Benefits/>
         <InstagramImages/>
-        {/*<Footer/>*/}
+        <Footer/>
     </div>
 )
 
