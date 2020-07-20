@@ -9,7 +9,7 @@ const CardItems = (props) => {
 
   const CartIsEmpty =
   <div className={"empty-card"}>
-      <h4>Your Card Is Empty</h4>
+      <h3>Your Card Is Empty</h3>
       <div>
         <img src={sad} alt=""/>
       </div>
