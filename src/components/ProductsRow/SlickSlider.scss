@@ -1,5 +1,7 @@
 .slick-arrow {
+  z-index: 99;
   &:before {
     content: none!important;
   }
+  color: unset!important;
 }

@@ -26,11 +26,23 @@ const ProductsRow = (props) => {
         })
     },[])
 
+    const arrowStyles = {
+        width: "60px",
+        height: "60px",
+        borderRadius: "100px",
+        border: "10px solid white",
+        background: "#3ecf8e",
+    }
+
     const NextArrow = (props) => (
-        <button className={props.className}  style={{width: "50px",height: "50px", background: "red"}} onClick={props.onClick} >Next</button>
+        <button className={props.className} style={arrowStyles} onClick={props.onClick} >
+            <span style={{color: "white"}} className="material-icons">navigate_next</span>
+        </button>
     )
     const PrevArrow = (props) => (
-            <button className={props.className} style={{width: "50px", height: "50px", background: "red"}} onClick={props.onClick}>Prev</button>
+            <button className={props.className} style={arrowStyles} onClick={props.onClick}>
+                <span style={{color: "white"}} className="material-icons">navigate_before</span>
+            </button>
         )
     const settings = {
         dots: false,
@@ -49,7 +61,7 @@ const ProductsRow = (props) => {
         <>
             {
                 props.carousel ?
-                    <div style={{width: "1200px",textAlign: "center", margin: "0 auto"}}>
+                    <div style={{width: "1220px",textAlign: "center", margin: "0 auto"}}>
                     <Slider {...settings} >
 
                         {
