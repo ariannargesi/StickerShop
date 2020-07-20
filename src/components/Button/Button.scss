@@ -7,6 +7,9 @@
   line-height: 45px;
   margin: 1rem 0;
   border-radius: $radius;
+  &:disabled {
+    background: gray;
+  }
 }
 .success {
   background: #3ecf8e;
