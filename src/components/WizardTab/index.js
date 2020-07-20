@@ -20,7 +20,7 @@ const Index = ({children, styles}) => {
               { children[currentTab] }
               <div className="wizard-navigation">
                   <Button type="success"  size="medium" width={"200px"} onClick={nextClickHandler} >Next</Button>
-                  <Button type="success"  size="medium" width={"200px"} onClick={prevClickHandler}>Prev</Button>
+                  <Button type="success"  size="medium" width={"200px"} onClick={prevClickHandler} >Prev</Button>
               </div>
           </div>
         </div>
