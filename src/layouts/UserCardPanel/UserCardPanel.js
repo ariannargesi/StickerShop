@@ -27,8 +27,8 @@ const Footer = (props) => {
                 <b>Final Price</b>
                 <span> $ {useFinalPrice()}</span>
             </div>
-            <div>
-                <button className="order-now"> <Link to={"/checkout"}>Order Now</Link> </button>
+            <div style={{padding: "1rem"}}>
+                <Button type={"success"} size={"medium"} > <Link style={{display: "block"}} to={"/checkout"}>Order Now</Link> </Button>
             </div>
         </div>
     )
