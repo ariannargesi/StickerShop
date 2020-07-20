@@ -3,11 +3,12 @@ import { Link } from "react-router-dom"
 import './UserCardPanel.scss'
 import Panel from '../../components/Panel/Panel'
 import CardItems from '../../components/CartItems/CardItems'
+import useCartItemCount from "../../hooks/useCartItemsCount"
 import Button from "../../components/Button";
 const UserCardPanel = () => {
   return (
     <Panel title="Your Basket"
-           badge="4"
+           badge={ useCartItemCount() }
            icon="cart-outline"
            iconSize = "large"
     >
