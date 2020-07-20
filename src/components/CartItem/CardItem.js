@@ -5,7 +5,7 @@ import trashIcon from '../../assets/icons/trash.svg'
 import './CardItem.scss'
 
 const CardItem = props => {
-    const { product } = props.data
+    const { product, quantity } = props.data
 
     const getQuantity = () => {
         const result = props.card.map(item => {
@@ -19,9 +19,11 @@ const CardItem = props => {
         props.removeFromCard(product)
     }
     const increaseQuantityHandler = () => {
-        props.increaseProductQantity(product)
+        if(quantity < 10)
+            props.increaseProductQantity(product)
     }
     const decreaseQuantityHandler = () => {
+        if(quantity > 1)
         props.decreaseProductQantity(product)
     }
 
@@ -46,7 +48,7 @@ const CardItem = props => {
                         <button onClick={increaseQuantityHandler}>
                             <span className="material-icons">add</span>
                         </button>
-                        <span style={{marginTop: "2px"}}>{props.data.quantity}</span>
+                        <span style={{marginTop: "2px"}}>{quantity}</span>
                         <button onClick={decreaseQuantityHandler}>
                             <span className="material-icons">remove</span>
                         </button>
