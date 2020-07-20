@@ -4,6 +4,7 @@ import './UserCardPanel.scss'
 import Panel from '../../components/Panel/Panel'
 import CardItems from '../../components/CartItems/CardItems'
 import useCartItemCount from "../../hooks/useCartItemsCount"
+import useFinalPrice from "../../hooks/useFinalPrice"
 import Button from "../../components/Button";
 const UserCardPanel = () => {
   return (
@@ -24,7 +25,7 @@ const Footer = (props) => {
         <div className={"user-card-panel-footer"}>
             <div className="final-price">
                 <b>Final Price</b>
-                <span> $ {3000}</span>
+                <span> $ {useFinalPrice()}</span>
             </div>
             <div>
                 <button className="order-now"> <Link to={"/checkout"}>Order Now</Link> </button>
