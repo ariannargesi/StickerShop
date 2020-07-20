@@ -2,11 +2,17 @@ import React from 'react'
 import CardItem from '../CartItem/CardItem'
 import { connect } from 'react-redux'
 import './CardItems.scss'
+
+import sad from '../../assets/icons/sad.svg'
+
 const CardItems = (props) => {
 
   const CartIsEmpty =
-  <div>
+  <div className={"empty-card"}>
       <h4>Your Card Is Empty</h4>
+      <div>
+        <img src={sad} alt=""/>
+      </div>
   </div>
 
 

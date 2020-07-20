@@ -4,3 +4,15 @@
   overflow-y: scroll;
   scrollbar-width: none  ;
 }
+.empty-card {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  img {
+    width: 60px;
+  }
+}
