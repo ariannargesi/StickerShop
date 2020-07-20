@@ -1,5 +1,8 @@
 import { useSelector } from 'react-redux'
 
-const useCardItemCount = ({ card }) => {
-    return card.length
+const useCardItemCount = () => {
+    const count = useSelector(state => state.card.length)
+    return count
 }
+
+export default useCardItemCount
