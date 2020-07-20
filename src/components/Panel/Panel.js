@@ -2,7 +2,7 @@ import React,{ useRef } from 'react'
 import useToggle from '../../hooks/useToggle'
 import useClickOutside from '../../hooks/useClickOutside'
 import {connect} from 'react-redux'
-import './Panel.sass'
+import './Panel.scss'
 
 const Panel = (props) => {
   const [state,setState] = useToggle(false)
@@ -26,7 +26,7 @@ const Panel = (props) => {
           <div className="user-card-panel-header">
            <span className="material-icons" onClick={() => setState(!state)}>close</span>
             <h1>{props.title}</h1>
-           <span>{props.badge}</span>
+           <span className="badge">{props.badge}</span>
           </div>
               {props.children}
           </div>

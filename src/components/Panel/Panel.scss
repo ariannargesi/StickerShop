@@ -1,0 +1,33 @@
+@import "src/base";
+.panel-wrapper{
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  .panel {
+    background: white;
+    width: 500px;
+    right: 0;
+    height: 100vh;
+    position: absolute;
+    animation: panel-animation;
+    animation-duration: 200ms;
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    .badge {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 35px;
+      height: 35px;
+      border-radius: 100%;
+      background: $success-color;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
+
