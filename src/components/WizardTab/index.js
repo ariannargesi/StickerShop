@@ -19,8 +19,8 @@ const Index = ({children, styles}) => {
           <div>
               { children[currentTab] }
               <div className="wizard-navigation">
-                  <Button type="success"  size="medium" width={"200px"} onClick={nextClickHandler} >Next</Button>
-                  <Button type="success"  size="medium" width={"200px"} onClick={prevClickHandler} >Prev</Button>
+                  <Button type="success"  size="medium" width={"200px"} onClick={nextClickHandler} disable={currentTab == children.length -1 } >Next</Button>
+                  <Button type="success"  size="medium" width={"200px"} onClick={prevClickHandler} disable={ currentTab == 0 ? true : false } >Prev</Button>
               </div>
           </div>
         </div>
