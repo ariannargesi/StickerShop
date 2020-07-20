@@ -1,14 +1,14 @@
 import { useSelector }  from "react-redux"
 
 const useFinalPrice = () => {
+    let finalPriceCounter = 0
     const price = useSelector(state => {
-        let finalPriceCounter = 0
-        return state.card.map( item => {
-            const [ product, count  ] = item
-            finalPriceCounter += product.price * count
+        return state.card.map( ({product, quantity}) => {
+            finalPriceCounter += product.price * quantity
         } )
     })
-    return price
+    return Math.round((finalPriceCounter + Number.EPSILON) * 100) / 100
+
 }
 
 export default useFinalPrice
