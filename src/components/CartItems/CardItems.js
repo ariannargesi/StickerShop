@@ -4,13 +4,20 @@ import { connect } from 'react-redux'
 import './CardItems.scss'
 const CardItems = (props) => {
 
-  const renderCardItems = props.card.map((item,index) => {
+  const CartIsEmpty =
+  <div>
+      <h4>Your Card Is Empty</h4>
+  </div>
+
+
+
+  const renderCardItems =  props.card.length ? props.card.map((item,index) => {
     return <CardItem data={item} key={index} />
-  })
+  }) : CartIsEmpty
 
   return (
     <div className="card-items">
-      {renderCardItems}
+        { renderCardItems }
     </div>
   )
 }
