@@ -1,11 +1,11 @@
 @import "../../base";
 .user-card-panel-header{
 
-
 }
 .user-card-panel-footer {
   background: white;
   width: 100%;
+  min-height: 150px;
   position: absolute;
   bottom: 0;
   .final-price{
