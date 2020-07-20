@@ -26,28 +26,12 @@ const ProductsRow = (props) => {
         })
     },[])
 
-    function SampleNextArrow(props) {
-        const { className, style, onClick } = props;
-        return (
-            <div
-                className={className}
-                style={{ ...style, display: "block", background: "red" }}
-                onClick={onClick}
-            />
-        );
-    }
-
-    function SamplePrevArrow(props) {
-        const { className, style, onClick } = props;
-        return (
-            <div
-                className={className}
-                style={{ ...style, display: "block", background: "green" }}
-                onClick={onClick}
-            />
-        );
-    }
-
+    const NextArrow = (props) => (
+        <button className={props.className}  style={{width: "50px",height: "50px", background: "red"}} onClick={props.onClick} >Next</button>
+    )
+    const PrevArrow = (props) => (
+            <button className={props.className} style={{width: "50px", height: "50px", background: "red"}} onClick={props.onClick}>Prev</button>
+        )
     const settings = {
         dots: false,
         swipe: false,
@@ -55,8 +39,8 @@ const ProductsRow = (props) => {
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
-        nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />
     };
     if(products.length === 0)
         return <Loading height={"300px"}/>
