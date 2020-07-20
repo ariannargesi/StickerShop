@@ -28,6 +28,21 @@
       color: white;
       cursor: pointer;
     }
+    .panel-header {
+      display: flex;
+      height: 60px;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      padding: 0 1.2rem;
+    }
+    .panel-data {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      border: 1px solid blue;
+    }
   }
 }
 

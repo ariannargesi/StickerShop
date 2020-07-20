@@ -23,12 +23,14 @@ const Panel = (props) => {
       { state &&
         <div className="panel-wrapper">
           <div className="panel" ref={ref}>
-          <div className="user-card-panel-header">
+          <div className="panel-header">
            <span className="material-icons" onClick={() => setState(!state)}>close</span>
             <h1>{props.title}</h1>
            <span className="badge">{props.badge}</span>
           </div>
+            <div className="panel-data">
               {props.children}
+            </div>
           </div>
         </div>
       }
