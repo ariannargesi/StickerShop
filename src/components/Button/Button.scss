@@ -8,7 +8,11 @@
   margin: 1rem 0;
   border-radius: $radius;
   &:disabled {
-    background: gray;
+    background: rgba(128, 128, 128, 0.59);
+    color: white;
+    &:hover {
+      background: rgba(128, 128, 128, 0.66);
+    }
   }
 }
 .success {
