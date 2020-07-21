@@ -1,47 +1,38 @@
 import React from 'react'
+import './ShippingInfo.scss'
 import Input from "../../../components/Input/Input"
 import Dropdown from '../../../components/Dropdown'
-import CardItems from "../../../components/CartItems/CardItems";
-import './ShippingInfo.scss'
-
-import {states} from '../../../staticDatas'
-
+import { states as statesList } from '../../../staticDatas'
 const ShippingInfo = () => {
     return (
-        <div className="order-info">
-            <div className="cart-info">
-                <CardItems/>
-            </div>
-            <div className="shipping-info">
-                <div>
-                    <div style={{flex: "1 4 auto"}}>
-                        <Input type={"text"} name={"First Name"}/>
+        <div className="shipping-info">
+            <div className="order-info">
+                <div className="order-info-column">
+                    <div style={{width: "25%"}}>
+                        <Input name={"Name"}/>
                     </div>
-                    <div style={{flex: "1 4 auto"}}>
-                        <Input type={"text"} name={"Last Name"}/>
+                    <div style={{width: "25%"}}>
+                        <Input name={"Name"}/>
                     </div>
-                    <div style={{flex: "1 1 auto"}}>
-                        <Input type={"email"} name={"Email"}/>
+                    <div style={{width: "45%"}}>
+                        <Input name={"Name"}/>
                     </div>
                 </div>
-                <div>
-                    <div style={{flex: "1 1 auto", width: "280px"}}>
-                        <Dropdown items={states} current={states[0]} title={"State"} />
-                    </div>
-                    <div style={{flex: "1 1 auto"}}>
+                <div className="order-info-column">
+                    <div style={{width: "25%"}}>
                         <Input type={"text"} name={"Zip Code"}/>
                     </div>
-                    <div style={{flex: "1 1 auto"}}>
-                        <Input type={"text"} name={"Phone Number"}/>
+                    <div style={{width: "25%"}}>
+                        <Input type={"text"} name={"Zip Code"}/>
+                    </div>
+                    <div style={{width: "45%", paddingLeft: "5px"}}>
+                        <Dropdown items={statesList}  title={"State"} current={statesList[0]} />
                     </div>
                 </div>
-                <div>
-                    <Input type={"text"} name={"description (optional)"} placeholder="Description about shipping that maybe we need to know "/>
-                </div>
-                <div>
-                    <Input type={"text"} name={"Full Address"} />
-                </div>
+                <div className="order-info-column"></div>
+                <div className="order-info-column"></div>
             </div>
+            <div className="cart-info"></div>
         </div>
     )
 }
