@@ -29,8 +29,16 @@ const ShippingInfo = () => {
                         <Dropdown items={statesList}  title={"State"} current={statesList[0]} />
                     </div>
                 </div>
-                <div className="order-info-column"></div>
-                <div className="order-info-column"></div>
+                <div className="order-info-column">
+                    <div className={"full-width"}>
+                        <Input type={"text"} name={"Address"} />
+                    </div>
+                </div>
+                <div className="order-info-column">
+                    <div className={"full-width"}>
+                        <Input type={"text"} name={"Address"} />
+                    </div>
+                </div>
             </div>
             <div className="cart-info"></div>
         </div>
