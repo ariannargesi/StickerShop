@@ -12,10 +12,14 @@
     color: gray;
     border-radius: $radius;
     outline: none;
-    border: 1px solid #d4d4d4;
+    border: 1px solid #c7c7c7;
     transition: $default-transition-duration;
     &:focus {
-      border: 1px solid gray;
+      border: 1px solid #808080;
+    }
+    &::placeholder {
+      color: rgba(128, 128, 128, 0.64);
+
     }
   }
   span {
@@ -25,7 +29,6 @@
   label {
     color: gray;
     width: 100%;
-    margin-left: 5px;
     display: inline-block;
     text-align: left;
   }
