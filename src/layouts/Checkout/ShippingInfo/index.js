@@ -2,6 +2,7 @@ import React from 'react'
 import './ShippingInfo.scss'
 import Input from "../../../components/Input/Input"
 import Dropdown from '../../../components/Dropdown'
+import CartItems from '../../../components/CartItems/CardItems'
 import { states as statesList } from '../../../staticDatas'
 const ShippingInfo = () => {
     return (
@@ -40,7 +41,9 @@ const ShippingInfo = () => {
                     </div>
                 </div>
             </div>
-            <div className="cart-info"></div>
+            <div className="cart-info">
+                <CartItems height={"100%"}/>
+            </div>
         </div>
     )
 }
