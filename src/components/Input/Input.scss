@@ -1,6 +1,5 @@
 @import "src/base";
 .input-wrapper {
-
   * {
     margin: 0.3rem 0;
     font-size: 18px;
@@ -11,7 +10,6 @@
     width: 95%;
     color: gray;
     border-radius: $radius;
-    padding: 0 0.5rem;
     outline: none;
     border: 1px solid #d4d4d4;
     transition: $default-transition-duration;
@@ -25,6 +23,9 @@
   }
   label {
     color: gray;
-    padding: 1rem 0 ;
+    width: 100%;
+    margin-left: 5px;
+    display: inline-block;
+    text-align: left;
   }
 }
