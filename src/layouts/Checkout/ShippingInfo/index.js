@@ -4,6 +4,7 @@ import Input from "../../../components/Input/Input"
 import Dropdown from '../../../components/Dropdown'
 import CartItems from '../../../components/CartItems/CardItems'
 import { states as statesList } from '../../../staticDatas'
+import useFinalPrice from "../../../hooks/useFinalPrice";
 const ShippingInfo = () => {
     return (
         <div className="shipping-info">
@@ -43,6 +44,10 @@ const ShippingInfo = () => {
             </div>
             <div className="cart-info">
                 <CartItems height={"100%"}/>
+                <div className="final-price">
+                    <b>Total Price</b>
+                    <span> $ {useFinalPrice()}</span>
+                </div>
             </div>
         </div>
     )
