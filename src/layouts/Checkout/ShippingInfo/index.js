@@ -25,7 +25,7 @@ const ShippingInfo = () => {
                     <div style={{width: "25%"}}>
                         <Input type={"text"} name={"Zip Code"}/>
                     </div>
-                    <div style={{width: "45%", paddingLeft: "5px"}}>
+                    <div style={{width: "43%", marginRight: "8px"}}>
                         <Dropdown items={statesList}  title={"State"} current={statesList[0]} />
                     </div>
                 </div>

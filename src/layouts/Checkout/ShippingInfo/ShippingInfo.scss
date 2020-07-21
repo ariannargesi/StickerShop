@@ -3,6 +3,11 @@
   margin-top: 3rem;
   display: flex;
   justify-content: space-between;
+  .dropdown {
+    text-align: left!important;
+    color: gray;
+    font-weight: 200;
+  }
   .order-info {
     width: 65%;
     box-shadow: 0 2px 10px rgba(31,45,61,.16);
