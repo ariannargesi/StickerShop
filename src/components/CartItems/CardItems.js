@@ -22,7 +22,7 @@ const CardItems = (props) => {
   }) : CartIsEmpty
 
   return (
-    <div className="card-items">
+    <div style={{height: props.height}} className="card-items">
         { renderCardItems }
     </div>
   )
