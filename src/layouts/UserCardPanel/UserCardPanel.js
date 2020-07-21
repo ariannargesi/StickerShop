@@ -13,7 +13,7 @@ const UserCardPanel = () => {
            icon="cart-outline"
            iconSize = "large"
     >
-       <CardItems />
+       <CardItems height={"80%"} />
        <Footer/>
     </Panel>
   )
