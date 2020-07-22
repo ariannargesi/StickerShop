@@ -7,9 +7,23 @@ import './Dropdown.scss'
 const Index = (props) => {
     const [isOpen, setState] = useToggle(false)
     const [selectedItem, setSelectedItem] = useState(props.current)
+    const [anim, setAnim] = useState("")
     const divRef = useRef(null)
     const onClickOutside = () => {
         if(isOpen) setState(false)
+    }
+    const clickHandler = () => {
+        if(isOpen){
+            setAnim("")
+            setTimeout(()=>{
+                setState(false)
+            },200)
+        } else {
+            setState(true);
+            setTimeout(()=> {
+                setAnim("open")
+            }, 0)
+        }
     }
     useClickOutside(divRef, onClickOutside)
 
@@ -17,14 +31,14 @@ const Index = (props) => {
     return (
         <div className="dropdown" ref={divRef}>
             <h4>{props.title}</h4>
-            <div className="dropdown-selected" onClick={() => setState(!isOpen) }>
+            <div className="dropdown-selected" onClick={ clickHandler }>
                 <span>{selectedItem}</span>
                 <span className={["material-icons", isOpen ? "down" : ""].join(" ")}>keyboard_arrow_up</span>
             </div>
 
             {
                 isOpen &&
-                <ul className="dropdown-items" >
+                <ul className={["dropdown-items", anim].join(" ")} >
                     {
                         props.items.map(item => {
                             return (
