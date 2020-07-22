@@ -1,4 +1,11 @@
+@import "src/base";
 .active {
-  border: 1px solid #eee;
-
+  -webkit-box-shadow:inset 0px 0px 0px 3px $success-color-light;
+  border-radius: 5px;
+}
+.select-item {
+  padding: 1rem;
+  margin: 1rem;
+  cursor: pointer;
+  transition: 300ms;
 }
