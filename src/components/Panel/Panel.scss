@@ -9,7 +9,8 @@
   .panel {
     background: white;
     width: 500px;
-    right: 0;
+    transition: 500ms;
+    right: -500px;
     height: 100vh;
     position: absolute;
     animation: panel-animation;
@@ -42,6 +43,9 @@
       height: 100%;
       overflow: hidden;
     }
+  }
+  .panel-open {
+    right:0px;
   }
 }
 
