@@ -1,6 +1,8 @@
 .wizard-tab {
   width: 1200px;
   margin: 0 auto;
+  overflow: auto;
+  padding-top: 3rem;
   text-align: center;
 }
 .wizard-navigation {
