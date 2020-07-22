@@ -1,3 +1,4 @@
+
 @import "src/base";
 .panel-wrapper{
   position: fixed;
@@ -9,8 +10,7 @@
   .panel {
     background: white;
     width: 500px;
-    transition: 500ms;
-    right: -500px;
+    right: 0;
     height: 100vh;
     position: absolute;
     animation: panel-animation;
@@ -44,8 +44,4 @@
       overflow: hidden;
     }
   }
-  .panel-open {
-    right:0px;
-  }
 }
-
