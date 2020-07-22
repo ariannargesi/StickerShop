@@ -39,7 +39,7 @@ const CardItem = props => {
                 <h5> {product.title} </h5>
                 <div className="size-and-type">
                     <span>type: {product.types[0]}</span>
-                    <span>size: {product.sizes[0]} </span>
+                    <span style={{marginLeft: "2rem"}}>size: {product.sizes[0]} </span>
                 </div>
                 <div className="card-item-footer">
                     <div>
