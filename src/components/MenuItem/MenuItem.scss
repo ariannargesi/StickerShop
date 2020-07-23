@@ -1,0 +1,24 @@
+@import '../../base';
+.menu-column{
+  width: 20%;
+  padding: 0 2rem;
+
+  a {
+    margin: 0 0.5rem;
+    padding: 0;
+    transition: 200ms;
+    &:hover {
+      color:$success-color;
+      border-radius: 0;
+    }
+  }
+  li{
+    padding-top: 0.8rem;
+    padding-left: 0;
+  }
+}
+.menu-title,menu-bold{
+  *{
+    font-weight: bold
+  }
+}

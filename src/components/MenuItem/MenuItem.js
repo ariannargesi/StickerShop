@@ -1,6 +1,6 @@
 import React from 'react'
 import {NavLink} from "react-router-dom";
-import './MenuItem.sass'
+import './MenuItem.scss'
 export default (props) => {
     let className = "menu-column"
     if(props.mode == "bold")
