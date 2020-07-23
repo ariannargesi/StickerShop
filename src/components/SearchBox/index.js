@@ -16,11 +16,14 @@ const SearchBox = () => {
     const ref = useRef(null)
 
     const clickOutsideHandler = () => {
+        setAnim("search")
         if(isOpen) {
-            setOpen(false)
-            setInput("")
+            setTimeout(() => {
+                setOpen(false)
+                setInput("")
+            }, 1000)
         }
-     
+
     }
     useClickOutside(ref, clickOutsideHandler)
     useEffect(() => {
@@ -44,6 +47,7 @@ const SearchBox = () => {
         }
     }
     function handelClose(){
+        if(isOpen)
         setAnim("search")
         setTimeout(() => {
             setOpen(false)
