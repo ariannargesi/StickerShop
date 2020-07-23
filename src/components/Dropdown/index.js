@@ -10,7 +10,12 @@ const Index = (props) => {
     const [anim, setAnim] = useState("")
     const divRef = useRef(null)
     const onClickOutside = () => {
-        if(isOpen) setState(false)
+        if(isOpen){
+            setAnim("")
+            setTimeout(()=>{
+                setState(false)
+            },200)
+        }
     }
     const clickHandler = () => {
         if(isOpen){
