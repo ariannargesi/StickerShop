@@ -13,8 +13,8 @@ const Index = (props) => {
                 setClassName("toast")
                 setTimeout(() => {
                     props.showToast("")
-                },500)
-            }, 1000)
+                },800)
+            }, 2000)
         }
     }, [toastTxt])
     return (
