@@ -1,27 +1,30 @@
-import React, { useEffect} from 'react'
+import React, { useEffect, useState} from 'react'
 import { connect } from 'react-redux'
 import {showToast} from '../../redux/actions'
 import './Toast.scss'
 const Index = (props) => {
-    const toastTxt = props.toast
-    let className = "toast"
-    if(toastTxt) className += " toast-open"
+   const [className, setClassName] = useState("toast")
+   let toastTxt = props.toast
+
     useEffect(() => {
-        if (toastTxt){
-            className = "toast"
+        if(toastTxt) {
+            setClassName("toast toast-open")
             setTimeout(() => {
-                props.showToast("")
+                setClassName("toast")
+                setTimeout(() => {
+                    props.showToast("")
+                },500)
             }, 1000)
-    }
-    })
-
-
+        }
+    }, [toastTxt])
     return (
         <div className={"toast-container"}>
-           <div className={className}> {toastTxt}</div>
+            {  toastTxt &&  <div className={className}> {toastTxt}</div> }
         </div>
     )
 }
+
+
 
 const mapStateToProps = ({ toast }) => {
     return {
