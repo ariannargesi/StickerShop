@@ -1,5 +1,4 @@
 import React,{ useRef, useState } from 'react'
-import { motion } from 'framer-motion'
 import useToggle from '../../hooks/useToggle'
 import useClickOutside from '../../hooks/useClickOutside'
 import {connect} from 'react-redux'
@@ -7,21 +6,27 @@ import './Panel.scss'
 
 const Panel = (props) => {
   const [state,setState] = useToggle(false)
+  const [anim, setAnim] = useState("panel")
   const ref = useRef(null)
-  const variants = {
-    open: { opacity: 1, x: "0" },
-    closed: { opacity: 1, x: "-500px" },
-    timeout: "200ms"
-  }
+
   console.log(state)
   const openHandler = () => {
     setState(true)
+    setTimeout(() => {
+      setAnim("panel panel-open")
+    },1)
   }
   const closeHandler = () => {
-    setState(false)
+    setAnim("panel")
+    setTimeout(() => {
+      setState(false)
+    },600)
   }
   const clickOutsideHandler = () => {
-    setState(false)
+    setAnim("panel")
+    setTimeout(() => {
+      setState(false)
+    },600)
   }
   useClickOutside(ref, clickOutsideHandler)
   return (
@@ -29,11 +34,7 @@ const Panel = (props) => {
       <span className="material-icons" onClick={ openHandler }>shopping_cart</span>
       { state &&
         <div className="panel-wrapper">
-          <motion.div
-              className="panel"
-              animate={state ? "open" : "closed"}
-              variants={variants}
-              ref={ref}>
+          <div className={anim} ref={ref}>
           <div className="panel-header">
            <span className="material-icons" onClick={closeHandler}>close</span>
             <h1>{props.title}</h1>
@@ -42,7 +43,7 @@ const Panel = (props) => {
             <div className="panel-data">
               {props.children}
             </div>
-          </motion.div>
+          </div>
         </div>
       }
     </div>

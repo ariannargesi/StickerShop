@@ -12,8 +12,10 @@
     direction: ltr;
     background: white;
     width: 500px;
+    right: -500px;
     height: 100vh;
     position: absolute;
+    transition: 0.2s;
     border: 1px solid #eee;
     display: flex;
     flex-direction: column;
@@ -42,5 +44,8 @@
       height: 100%;
       overflow: hidden;
     }
+  }
+  .panel-open {
+    right: 0!important;
   }
 }
