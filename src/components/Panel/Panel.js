@@ -20,13 +20,13 @@ const Panel = (props) => {
     setAnim("panel")
     setTimeout(() => {
       setState(false)
-    },600)
+    },200)
   }
   const clickOutsideHandler = () => {
     setAnim("panel")
     setTimeout(() => {
       setState(false)
-    },600)
+    },200)
   }
   useClickOutside(ref, clickOutsideHandler)
   return (
