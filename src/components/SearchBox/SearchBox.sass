@@ -3,19 +3,25 @@
   cursor: pointer
   position: relative
 
-.search-open
+.search
   justify-content: space-between
   width: 360px
   border: 1px solid gray
   display: flex
   border-radius: $radius
   align-items: center
+  transition: 0.3s
   position: absolute
   z-index: 5
+  opacity: 0
   padding: 0.3rem
   left: -200%
   top: -10%
-  transition: 0.3s
+
+.search-open
+  opacity: 1!important
+
+
 .close-search-box
 
 .input-search-box

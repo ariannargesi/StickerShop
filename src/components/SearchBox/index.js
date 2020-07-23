@@ -11,7 +11,10 @@ const SearchBox = () => {
     const [isOpen, setOpen] = useState(false)
     const [input, setInput] = useState("")
     const [data, setData] = useState(null)
+    const [anim, setAnim] = useState("search")
+
     const ref = useRef(null)
+
     const clickOutsideHandler = () => {
         if(isOpen) {
             setOpen(false)
@@ -33,12 +36,19 @@ const SearchBox = () => {
     },[input])
 
     function handelOpen(){
-        if(isOpen == false )
+        if(isOpen == false ){
             setOpen(true)
+            setTimeout(() => {
+                setAnim("search search-open");
+            }, 10);
+        }
     }
     function handelClose(){
-        setOpen(false)
-        setInput("")
+        setAnim("search")
+        setTimeout(() => {
+            setOpen(false)
+            setInput("")
+        },300)
     }
     function handelInputChange(event){
         setData(null)
@@ -51,7 +61,7 @@ const SearchBox = () => {
             <span className="material-icons">search</span>
             {
                 isOpen &&
-                <div className="search-open" ref={ref}>
+                <div className={anim} ref={ref}>
                     <div onClick={handelClose} className="close-search-box">
                         <img src={closeSvg} width="24px" height="24px" />
                     </div>
