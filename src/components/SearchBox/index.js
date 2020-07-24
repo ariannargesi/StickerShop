@@ -3,7 +3,7 @@ import useClickOutside from '../../hooks/useClickOutside'
 import searchSvg from '../../assets/icons/search.svg'
 import closeSvg from '../../assets/icons/close.svg'
 import axios from 'axios'
-import './SearchBox.sass'
+import './SearchBox.scss'
 import Loading from "../Loading/Loading";
 import SearchResultItem from "../SearchResultItem/SearchResultItem";
 
@@ -67,17 +67,12 @@ const SearchBox = () => {
                 isOpen &&
                 <div className={anim} ref={ref}>
                     <div onClick={handelClose} className="close-search-box">
-                        <img src={closeSvg} width="24px" height="24px" />
+                        <span className="material-icons">close</span>
                     </div>
                     <form action="">
                         <input value={input} onChange={handelInputChange} type="text" placeholder="Name or Category" className="input-search-box"/>
-                        <button disabled={input.length == 0 ? true : false}  type="submit"  className="submit-search-box" >search</button>
                     </form>
 
-                    {
-                        input  && data == null &&
-                            <Loading/>
-                    }
                 </div>
                 
             }
