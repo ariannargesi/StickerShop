@@ -33,21 +33,22 @@ const Footer = () => {
                     <h5>Contact Info</h5>
                     <ul>
                         <li><a href="mailto:ariannargesi@gmail.com">ariannargesi@gmail.com</a></li>
-                        <li><a href="">ariannargeis.ir</a></li>
-                        <li><a href="">+00989368069820</a></li>
+                        <li><a href="tel:00989368069820">+00989368069820</a></li>
                     </ul>
                     <div className="contact-info">
-                        <img src={linkedin} alt=""/>
-                        <img src={twitter} alt=""/>
-                        <img src={github} alt=""/>
-                        <img src={telegram} alt=""/>
+                        <a href="https://www.linkedin.com/in/arian-nargesi-b67a3b177/">
+                            <img src={linkedin} alt=""/>
+                        </a>
+                        <a href="https://twitter.com/ariannargesi">
+                            <img src={twitter} alt=""/>
+                        </a>
+                        <a href="https://github.com/ariannargesi">
+                            <img src={github} alt=""/>
+                        </a>
+                        <a href="https://telegram.me/ariannargesi">
+                            <img src={telegram} alt=""/>
+                        </a>
                     </div>
-                </div>
-            </div>
-            <div className="footer-bottom">
-                <p>Inspried by flerbo.ir</p>
-                <div>
-
                 </div>
             </div>
         </div>
