@@ -48,7 +48,7 @@ export default (props) => {
                     data.length  ?
                         <CategoryItems data={data}/>
                         :
-                        <Loading  height={"500px"} />
+                        <Loading  height={"700px"} />
                 }
                <Pagination
                    onNextClick={increasePage}

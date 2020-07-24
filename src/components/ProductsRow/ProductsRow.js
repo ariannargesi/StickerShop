@@ -55,7 +55,7 @@ const ProductsRow = (props) => {
         prevArrow: <PrevArrow />
     };
     if(products.length === 0)
-        return <Loading height={"300px"}/>
+        return <Loading height={"500px"}/>
 
     return (
         <>
