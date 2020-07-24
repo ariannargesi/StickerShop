@@ -1,13 +1,13 @@
 import React from 'react'
-
+import './Title.scss'
 const Title = ({content, styled, size}) => {
     const styles = {
         fontSize: size == "large" ? 32 : 24,
-        textAlign: "center",
-        padding: "1rem"
     }
     return (
-        <h1 style={styles}> {content} </h1>
+        <div className={"title-wrapper"}>
+             <h1 style={styles} className={"title"}>  {content} </h1>
+        </div>
     )
 }
 
