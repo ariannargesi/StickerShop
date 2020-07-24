@@ -41,14 +41,14 @@ export default () => (
             <div>
                 <h2>hexagon Stickers</h2>
                 <p>If you love stickers like us, but the unmatched size and shape of your Flaro laptop stickers will cause your OCD to recur, hexagonal stickers will be made for you! You can attach hexagonal stickers to your laptop like Beehive.</p>
-                <Button size={"medium"} type={"success"}> <Link to="/">View And Buy</Link></Button>
+                <Button size={"medium"} type={"success"}> <Link to="/Hexagon" style={{display:"block"}}>View And Buy</Link></Button>
             </div>
         </div>
             <div className={"Hexagon-sticker-index p-1"}>
             <div>
                 <h2>Credit card stickers</h2>
                 <p>Like us, you may be tired of the simple and ugly appearance of your credit cards. Credit card sticker made for you! You can stick the card sticker on the front and back of bank cards or other cards you have. You can even order any posts you want from us so that we can print cards on this sticker for you!</p>
-                <Button size={"medium"}  type={"success"}> <Link to="/">View And Buy</Link></Button>
+                <Button size={"medium"}  type={"success"}> <Link to="/Card" style={{display:"block"}}>View And Buy</Link></Button>
             </div>
             <div>
                 <img src={creditCardStickerImage} alt=""/>
