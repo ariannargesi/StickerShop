@@ -95,7 +95,7 @@ const SearchBox = () => {
                                 <ul>
                                     {
                                         data.length == 0 ? "nothing found" :
-                                            data.map((item,index) => <SearchResultItem title={item.title} key={index} img={item.images[0]}/>)
+                                            data.map((item,index) => <SearchResultItem title={item.title} key={index} url={item.url} img={item.images[0]}/>)
                                     }
                                 </ul>
 
