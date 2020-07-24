@@ -7,6 +7,8 @@ import ProductsRow from "../components/ProductsRow/ProductsRow"
 import Spinner from '../components/Spinner/Spinner'
 import Breadcrumbs from "../components/Breadcrumbs"
 import Title from "../components/Title/Title"
+import Instagram from "../layouts/InstagramImages";
+import Footer from "../layouts/Footer/Footer";
 import Loading from "../components/Loading/Loading"
 const SingleProduct = (props) => {
     const [product, setProduct] = useState({})
@@ -59,6 +61,8 @@ const SingleProduct = (props) => {
             <ProductsRow num={8} category={product.category} carousel />
 
         </div>
+        <Instagram/>
+        <Footer/>
     </div>
     )
 }

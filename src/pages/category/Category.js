@@ -3,6 +3,7 @@ import Header from "../../layouts/Header/Header";
 import Footer from "../../layouts/Footer/Footer";
 import CategoryItems from "../../components/CategoryItems/CategoryItems";
 import Pagination from "../../layouts/Pagination/Pagination";
+import Instagram from "../../layouts/InstagramImages";
 import axios from 'axios'
 
 export default (props) => {
@@ -50,6 +51,7 @@ export default (props) => {
                    value={input}
                />
             </div>
+            <Instagram/>
             <Footer/>
         </div>
     )
