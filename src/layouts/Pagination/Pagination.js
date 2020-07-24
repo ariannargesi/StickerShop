@@ -1,17 +1,18 @@
 import React, {useState,useRef} from 'react'
 import PaginationInput from "../../components/PaginationInput/PaginationInput";
-import './Pagination.css'
+import './Pagination.scss'
+import Button from "../../components/Button";
 
 const Pagination = (props) => {
     return (
         <div className="pagination">
-            <button disabled={ props.value == props.pagesCount ? true : false } onClick={props.onNextClick}>next page</button>
+            <Button type={"success"} size={"medium"}  width={"150px"}  disable={ props.value == props.pagesCount ? true : false } onClick={props.onNextClick}>next page</Button>
             <div className="input-wrapper">
-                <span>page</span>
+                <hq>page</hq>
                 <PaginationInput onChange={props.onInputChange} value={props.value}/>
-                <span>from {props.pagesCount}</span>
+                <hq>from {props.pagesCount}</hq>
             </div>
-            <button disabled={ props.value == 1? true: false } onClick={props.onPrevClick}>previous page</button>
+            <Button type={"success"} size={"medium"}  width={"150px"} disable={ props.value == 1? true: false } onClick={props.onPrevClick}>previous page</Button>
         </div>
     )
 }
