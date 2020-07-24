@@ -8,27 +8,25 @@ import github from '../../assets/icons/github.svg'
 import telegram from '../../assets/icons/telegram.svg'
 // logo
 import logo from '../../assets/logo.svg'
+import flerbo from '../../assets/flerbo.png'
 const Footer = () => {
     return (
         <div className="footer">
             <div className="footer-top">
                 <div className="footer-item">
-                    <img src={logo} className="logo" alt=""/>
+                    <h5>Inspired From flerbo.ir</h5>
+                    <div className="logo-wrapper" style={{display: "flex"}}>
+                        <a href="https://flerbo.ir">
+                            <img src={flerbo}  alt=""/>
+                        </a>
+                    </div>
                 </div>
                 <div className="footer-item">
                     <h5>Products</h5>
                     <ul>
-                        <li><Link>Card Stickers</Link></li>
-                        <li><Link>Micro Stickers</Link></li>
-                        <li><Link>Hexagon Stickers</Link></li>
-                    </ul>
-                </div>
-                <div className="footer-item">
-                    <h5>About</h5>
-                    <ul>
-                        <li><Link>About Project</Link></li>
-                        <li><Link>About Me</Link></li>
-                        <li><Link>Main site</Link></li>
+                        <li><Link to={"/Card"}>Card Stickers</Link></li>
+                        <li><Link to={"/Micro"}>Micro Stickers</Link></li>
+                        <li><Link to={"/Hexagon"}>Hexagon Stickers</Link></li>
                     </ul>
                 </div>
                 <div className="footer-item">
