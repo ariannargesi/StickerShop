@@ -13,7 +13,8 @@ const SearchBox = () => {
     const [data, setData] = useState(null)
     const [anim, setAnim] = useState("search")
 
-    const ref = useRef(null)
+    const searchBoxRef = useRef(null)
+    const searchResultRef=  useRef(null)
 
     const clickOutsideHandler = () => {
         setAnim("search")
@@ -25,7 +26,10 @@ const SearchBox = () => {
         }
 
     }
-    useClickOutside(ref, clickOutsideHandler)
+    useClickOutside(searchBoxRef, clickOutsideHandler)
+    useClickOutside(searchResultRef, () => {
+        setInput("")
+    })
     useEffect(() => {
         axios.get("https://flerbo.herokuapp.com/api/s/search/?term="+input)
             .then((data) => {
@@ -65,7 +69,7 @@ const SearchBox = () => {
             <span className="material-icons">search</span>
             {
                 isOpen &&
-                <div className={anim} ref={ref}>
+                <div className={anim} ref={searchBoxRef}>
                     <div onClick={handelClose} className="close-search-box">
                         <span className="material-icons">close</span>
                     </div>
@@ -78,7 +82,7 @@ const SearchBox = () => {
             }
             {
                 input &&
-                    <ul className="search-result">
+                    <ul className="search-result" ref={searchResultRef}>
                         {
                             data === null ?
                                 <Loading/> :
