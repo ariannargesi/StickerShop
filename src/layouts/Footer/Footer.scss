@@ -1,7 +1,6 @@
 @import 'src/base';
 .footer {
-  margin-top: 2rem;
-
+  margin-top: 1rem;
   .contact-info {
     text-align: center;
     a {
@@ -21,7 +20,6 @@
     margin: 0 auto;
     padding: 2rem 0;
     display: flex;
-    align-items: center;
     justify-content: space-around;
     .footer-item {
       display: flex;
@@ -53,11 +51,5 @@
         background: rgba(0, 0, 0, 0.66);
       }
     }
-  }
-  .footer-bottom {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    background: #eee;
   }
 }
