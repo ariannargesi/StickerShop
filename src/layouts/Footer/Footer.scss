@@ -1,9 +1,7 @@
 @import 'src/base';
 .footer {
   margin-top: 2rem;
-  .logo {
-    width: 80px;
-  }
+
   .contact-info {
     img {
       width: 18px;
@@ -14,7 +12,6 @@
   .footer-top {
     width: 1200px;
     margin: 0 auto;
-    border: 1px solid #eee;
     padding: 2rem 0;
     display: flex;
     align-items: center;
@@ -22,6 +19,17 @@
     .footer-item {
       display: flex;
       flex-direction: column;
+      .logo-wrapper {
+        img {
+          opacity: 0.7;
+          width: 90px;
+          border-radius: 100%;
+          transform: rotate(-45deg);
+        }
+        a{
+          background: none;
+        }
+      }
     }
     h5{
       font-size: 18px;
