@@ -5,6 +5,7 @@ import CategoryItems from "../../components/CategoryItems/CategoryItems";
 import Pagination from "../../layouts/Pagination/Pagination";
 import Instagram from "../../layouts/InstagramImages";
 import axios from 'axios'
+import Loading from "../../components/Loading/Loading";
 
 export default (props) => {
 
@@ -25,10 +26,11 @@ export default (props) => {
     },[page, props.location.pathname])
 
     const increasePage = () => {
+            setData([])
             setPage( page +1 )
     }
     const decreasePage = () => {
-
+            setData([])
             setPage( page -1 )
     }
 
@@ -42,7 +44,12 @@ export default (props) => {
         <div>
             <Header/>
             <div style={{ textAlign: "center",margin: "0 auto" ,justifyContent:"center"}}>
-               <CategoryItems data={data}/>
+                {
+                    data.length  ?
+                        <CategoryItems data={data}/>
+                        :
+                        <Loading  height={"500px"} />
+                }
                <Pagination
                    onNextClick={increasePage}
                    onPrevClick={decreasePage}
