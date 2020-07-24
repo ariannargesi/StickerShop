@@ -12,7 +12,13 @@ const SearchBox = () => {
     const [input, setInput] = useState("")
     const [data, setData] = useState(null)
     const [anim, setAnim] = useState("search")
-
+    const styles = {
+        searchResult: {
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center"
+        }
+    }
     const searchBoxRef = useRef(null)
     const searchResultRef=  useRef(null)
 
@@ -82,10 +88,10 @@ const SearchBox = () => {
             }
             {
                 input &&
-                    <ul className="search-result" ref={searchResultRef}>
+                    <ul className="search-result" style={ data== null ? styles.searchResult :  data.length == 0 ? styles.searchResult : {}  } ref={searchResultRef}>
                         {
                             data === null ?
-                                <Loading/> :
+                                <Loading /> :
                                 <ul>
                                     {
                                         data.length == 0 ? "nothing found" :
