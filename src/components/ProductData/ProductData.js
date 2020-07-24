@@ -13,7 +13,7 @@ const ProductData = ({title, category, price, description, sizes, types, images,
         <div className="product-data">
             <h1>{title}</h1>
             <i className="product-price"> $ {price} </i>
-<br/><br/>
+            <br/><br/>
             <hr/>
 <br/>
 

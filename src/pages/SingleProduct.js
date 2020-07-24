@@ -32,7 +32,7 @@ const SingleProduct = (props) => {
             <Breadcrumbs>
                 <a href="/">Home</a>
                 <a href={`/${product.category}`}>{product.category}</a>
-                <a href={`/${product.category}/${product.title}`}>{product.title}</a>
+                <a href={`/product/${product.url}`}>{product.title}</a>
             </Breadcrumbs>
         <div className="container"  style={{display: "flex", justifyContent: "space-around"}}>
 
