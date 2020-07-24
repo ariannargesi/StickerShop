@@ -5,6 +5,7 @@ import store from './redux/store'
 import Home from './pages/Home'
 import SingleProduct from './pages/SingleProduct'
 import Category from "./pages/category/Category"
+import About from './pages/About'
 import Checkout from './layouts/Checkout'
 const App = () => {
     return (
@@ -14,6 +15,7 @@ const App = () => {
                     <Route path="/" exact component={Home}/>
                     <Route path="/checkout" component={Checkout}/>
                     <Route path="/product/:id" component={SingleProduct} />
+                    <Route path="/about" component={About}/>
                     <Route path="/:catTitle" component={Category}/>
                 </Switch>
             </Router>
