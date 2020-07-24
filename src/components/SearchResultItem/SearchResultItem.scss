@@ -1,0 +1,20 @@
+@import "../../base";
+.search-result-item {
+  display: flex;
+  min-width: 50%;
+  justify-content: left;
+  margin: 0.5rem 0;
+  padding: 0.1rem ;
+  align-items: center;
+  transition: 200ms;
+  img {
+    width: 40px;
+    border-radius: $radius;
+  }
+  span {
+    margin-left: 1rem;
+  }
+  &:hover {
+    transform: scale(1.05);
+  }
+}
