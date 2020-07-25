@@ -10,7 +10,7 @@ export default (props) => {
              setMessage(props.message)
         else if(typeof props.message == "function")
              setMessage(props.message(input))
-    })
+    }, [input])
     const changeHandler = (event) => {
         setInput(event.target.value)
     }
