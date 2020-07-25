@@ -1,6 +1,7 @@
 {
   "name": "react-app",
   "version": "0.1.0",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -16,6 +17,7 @@
     "react-scripts": "3.4.1",
     "react-slick": "^0.26.1",
     "redux": "^4.0.5",
+    "serve": "^11.3.2",
     "slick-carousel": "^1.8.1",
     "validator": "^13.1.1"
   },
