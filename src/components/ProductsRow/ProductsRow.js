@@ -72,7 +72,7 @@ const ProductsRow = (props) => {
                     </Slider>
                     </div>
                     :
-                    <div style={{justifyContent: "center", margin: "0 auto", textAlign: "center"}}>
+                    <div style={{width: "1200px",justifyContent: "center", margin: "0 auto", textAlign: "center"}}>
                     {
                         products.map((item,index) => {
                             return <ProductCard item={item} index={index} />
