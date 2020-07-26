@@ -7,11 +7,12 @@ const Instagram = () => {
     return (
         <>
         <div className="svg-container">
+
+        </div>
+        <div className="instagram-wrapper">
             <div style={{width: "1200px", margin: "0 auto"}}>
                 <Button size={"medium"} width={"300px"}  type={"white"}> <Link to="/">Fallow us on instagram</Link></Button>
             </div>
-        </div>
-        <div className="instagram-wrapper">
         <a href="https://www.instagram.com/ariannargesi">
         <div className="instagram-images">
 
