@@ -7,6 +7,7 @@ import SingleProduct from './pages/SingleProduct'
 import Category from "./pages/category/Category"
 import About from './pages/About'
 import Checkout from './layouts/Checkout'
+import './responsive.scss'
 const App = () => {
     return (
         <Provider store={store}>

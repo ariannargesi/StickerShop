@@ -1,0 +1,12 @@
+@media only screen and (max-device-width : 600px){
+  .header-wrapper {
+    padding: 0.5rem;
+  }
+  header {
+    width: 90%;
+    padding: 0;
+  }
+  .user-account-modals {
+    display: none!important;
+  }
+}
