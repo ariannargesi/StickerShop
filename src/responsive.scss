@@ -3,11 +3,60 @@
     padding: 0.5rem;
   }
   header {
-    width: 98%;
+    width: 99%;
+    position: relative!important;
     padding: 0;
     margin-top: 10px;
+    >div {
+      > * {
+        padding: 0.2rem 1rem!important;
+      }
+    }
+    .menu {
+      display: none!important;
+    }
+    img {
+      width: 38px!important;
+    }
+    .search-wrapper {
+      position: unset;
+      .search {
+        width: 100%;
+        left: 0;
+        top:0;
+      }
+    }
   }
   .user-account-modals {
     display: none!important;
+  }
+  .products-row{
+    width: unset!important;
+    .product-card {
+      width: 90% !important;
+    }
+  }
+  .input-search-box{
+    line-height: 43px;
+  }
+//  right side panel
+  .panel-open {
+    width: 270px!important;
+    h1 {
+      font-size: 14px;
+    }
+    .user-card-panel-footer {
+      min-height: unset;
+    }
+  }
+  .container {
+    width: 100% !important;
+    > div {
+      display: flex;
+      flex-direction: column-reverse;
+        img {
+          width:100%;
+        }
+    }
   }
 }
