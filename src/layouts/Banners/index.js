@@ -36,6 +36,7 @@ const Banners = () => (
             </div>
         </Link>
         <div
+            className={"VQ4-gs-main"}
             style={{
                 width: "900px",
                 height: "700px",
