@@ -59,7 +59,7 @@ const ProductsRow = (props) => {
             settings: {
                 slidesToShow: 4,
                 slidesToScroll: 1,
-                infinite: false,
+                infinite: true,
                 dots: false
             }
         },

@@ -30,7 +30,7 @@ const SingleProduct = (props) => {
         Object.keys(product).length === 0? <Loading height="100vh"/> :
     <div>
         <Header/>
-        <div style={{width: "1200px", justifyContent:"center", margin: "0 auto"}}>
+        <div className="single-product-wrapper" style={{width: "1200px", justifyContent:"center", margin: "0 auto"}}>
             <Breadcrumbs>
                 <a href="/">Home</a>
                 <a href={`/${product.category}`}>{product.category}</a>

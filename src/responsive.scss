@@ -1,6 +1,5 @@
 @media only screen and (min-device-width : 320px) and (max-device-width : 460px){
   body {
-    overflow-x: hidden;
   }
   .header-wrapper {
     padding: 0.5rem;
@@ -172,5 +171,35 @@
     * {
       margin: 0.5rem 0;
     }
+  }
+  ///
+  .single-product-wrapper {
+    width: unset!important;
+    .container {
+      padding: 0.5rem;
+      .button-wrapper {
+        width: 100%;
+        button {
+          width: 100% !important;
+        }
+      }
+      .product-images {
+        width: unset!important;
+      }
+      flex-direction: column!important;
+      .product-data {
+        width: unset!important;
+        flex-direction: column!important;
+        padding: 0!important;
+        .dropdown-wrapper {
+          > div {
+            width: 100% !important  ;
+          }
+        }
+      }
+    }
+  }
+  .breadcrumbs {
+    padding: 10px!important;
   }
 }
