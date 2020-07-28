@@ -316,12 +316,15 @@
     width: 95%!important;
   }
 }
-@media only screen and (min-device-width: 900px) and (max-device-width: 1280px) {
+  @media only screen and (min-device-width: 900px) and (max-device-width: 1280px) {
   header {
-    padding: 0.5rem!important;
+    width: 98%!important;
+  }
+  .products-row {
+    width: 900px!important;
   }
   .title-wrapper {
-    margin: 0.5rem;
+    margin: 0.5rem!important;
   }
   .title {
     font-size: 26px!important;
@@ -347,7 +350,11 @@
       height: 65px!important;
     }
   }
+  .banners-index {
+    transform: scale(0.8);
+  }
   .container {
+    width: 900px!important;
     p{
       font-size: 18px;
     }
@@ -366,4 +373,23 @@
       height: 206px!important;
     }
   }
+  .banners-wrapper   {
+    display: flex!important;
+    justify-content: center;
+  }
+  .carousel-wrapper {
+    width: 900px!important;
+  }
+  .benefits {
+    width: 900px!important;
+  }
+  .footer-top {
+    width: 900px!important;
+  }
+    .single-product-wrapper {
+      width: 100% !important;
+    }
+    .breadcrumbs {
+      padding-left: 3rem!important; ;
+    }
 }

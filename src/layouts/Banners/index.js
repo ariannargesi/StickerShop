@@ -8,6 +8,7 @@ import Button from "../../components/Button";
 import { Link } from "react-router-dom";
 
 const Banners = () => (
+    <div className="banners-wrapper"  >
     <div className={"banners-index"}>
         <Link to={"/Websites"}>
             <div
@@ -138,6 +139,7 @@ const Banners = () => (
                 </div>
             </Link>
         </div>
+    </div>
     </div>
 );
 export default Banners;
