@@ -124,6 +124,9 @@
   }
 //  instagram images
   .instagram-wrapper {
+    &:first-child {
+      width: unset!important;
+    }
     padding: 0!important;
     margin: 0!important;
     background: none
