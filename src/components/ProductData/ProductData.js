@@ -32,7 +32,7 @@ const ProductData = ({title, category, price, description, sizes, types, images,
             <div className="button-wrapper">
             <Button onClick={() => { addToCard({title,category, price, description,sizes, types, images}) ;showToast("Product added to your card") } } size="medium" type={"success"}>Add To Card</Button>
             </div>
-            <div dangerouslySetInnerHTML={getDescription()}/>
+            <div className="description-wrapper" dangerouslySetInnerHTML={getDescription()}/>
         </div>
     )
 }

@@ -58,12 +58,22 @@ const ProductsRow = (props) => {
             breakpoint: 400,
             settings: {
                 slidesToShow: 4,
-                slidesToScroll: 1,
+                slidesToScroll: 2,
+                infinite: true,
+                dots: false
+            }
+        },
+        {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 2,
                 infinite: true,
                 dots: false
             }
         },
     ]
+
     };
     if(products.length === 0)
         return <Loading height={"500px"}/>
