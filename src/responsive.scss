@@ -1,4 +1,7 @@
 @media only screen and (max-device-width : 600px){
+  body {
+    //overflow-x: hidden;
+  }
   .header-wrapper {
     padding: 0.5rem;
   }
@@ -72,21 +75,8 @@
       margin: 0!important;
     }
   }
-  .benefits {
-    width: 100%;
-    display: unset!important;
-    text-align: center;
-  }
-  .instagram-images {
-    width: 100%;
-    div {
-      width: 100% !important;
-      display: block!important;
-      img {
-        width: 100% !important;
-      }
-    }
-  }
+
+
   .footer {
     border: 1px solid red;
   }
@@ -119,5 +109,34 @@
 //  slick slider
   .slick-arrow{
     display: none!important;
+  }
+//  benefits
+  .benefits {
+    width: 100%;
+    display: unset!important;
+    text-align: center;
+  }
+  .benefits-item {
+    width: unset!important;
+    *{
+      margin: 0.2rem;
+    }
+  }
+//  instagram images
+  .instagram-wrapper {
+    padding: 0!important;
+    margin: 0!important;
+    background: none
+  ;
+  }
+  .instagram-images {
+    width: 100%;
+    div {
+      width: 100% !important;
+      display: block!important;
+      img {
+        width: 100% !important;
+      }
+    }
   }
 }
