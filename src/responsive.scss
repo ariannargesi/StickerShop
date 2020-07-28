@@ -105,6 +105,17 @@
     }
   }
 //  slick slider
+  .slick-track {
+    .slick-slide {
+      padding: 0 0.4rem;
+    }
+  }
+  .slick-slide {
+    .product-card {
+      height: 390px!important;
+      width: 98% !important;
+    }
+  }
   .slick-arrow{
     display: none!important;
   }
@@ -122,7 +133,7 @@
   }
 //  instagram images
   .instagram-wrapper {
-    &:first-child {
+    .Gwry-19 {
       width: unset!important;
       text-align: center;
     }
