@@ -237,7 +237,7 @@
     width: 350px!important;
   }
 }
-@media only screen and (min-device-width: 500px) and (max-device-width: 850px) {
+@media only screen and (min-device-width: 500px) and (max-device-width: 1000px) {
   header {
     width: 100%!important;
     position: relative;
@@ -258,7 +258,7 @@
     width: 95% !important;
     .product-card {
       width: 160px!important;
-      height: 249px!important;
+      height: 282px!important;
     }
     .product-details-bottom{
       display: none!important;
@@ -315,4 +315,6 @@
   .about {
     width: 95%!important;
   }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
 }
