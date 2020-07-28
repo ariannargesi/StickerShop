@@ -72,7 +72,7 @@ const ProductsRow = (props) => {
         <>
             {
                 props.carousel ?
-                    <div style={{width: "1220px",textAlign: "center", margin: "0 auto"}}>
+                    <div className="carousel-wrapper" >
                     <Slider {...settings} >
 
                         {
