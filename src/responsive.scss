@@ -1,4 +1,4 @@
-@media only screen and (min-device-width : 320px) and (max-device-width : 460px){
+@media only screen and (max-device-width : 768px){
   body {
   }
   .header-wrapper {
@@ -41,7 +41,7 @@
   }
 //  right side panel
   .panel-open {
-    width: 270px!important;
+    width: 320px!important;
     h1 {
       font-size: 14px;
     }
@@ -201,5 +201,16 @@
   }
   .breadcrumbs {
     padding: 10px!important;
+  }
+  .card-item {
+    .price {
+      font-size: 14px!important;
+    }
+    .size-and-type {
+      font-size: 10px;
+    }
+    .card-item-footer {
+      margin-right: 1rem;
+    }
   }
 }
