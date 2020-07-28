@@ -76,10 +76,6 @@
     }
   }
 
-
-  .footer {
-    border: 1px solid red;
-  }
 //  product card
   .product-card {
     width: 90% !important;
@@ -141,5 +137,10 @@
         width: 100% !important;
       }
     }
+  }
+//  footer
+  .footer-top {
+    width: unset!important;
+    display: unset!important;
   }
 }
