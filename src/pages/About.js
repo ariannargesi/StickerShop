@@ -4,7 +4,6 @@ import Footer from "../layouts/Footer/Footer"
 import InstagramImages from "../layouts/InstagramImages";
 const About = () => {
     const styles = {
-        width: "1200px",
         minHeight: "500px",
         boxShadow: "0 3px 6px rgba(229, 170, 97, 0.15), 0 1px 3px rgba(0, 0, 0, 0.11)",
         margin: "0 auto",
@@ -14,7 +13,7 @@ const About = () => {
 
     }
     const about = (
-        <div style={styles}>
+        <div className="about" style={styles}>
             Some Data
         </div>
     )
