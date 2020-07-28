@@ -46,13 +46,24 @@ const ProductsRow = (props) => {
         )
     const settings = {
         dots: false,
-        swipe: false,
+        swipe: true,
         infinite: true,
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
         nextArrow: <NextArrow />,
-        prevArrow: <PrevArrow />
+        prevArrow: <PrevArrow />,
+    responsive: [
+        {
+            breakpoint: 400,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                infinite: false,
+                dots: false
+            }
+        },
+    ]
     };
     if(products.length === 0)
         return <Loading height={"500px"}/>
