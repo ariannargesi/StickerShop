@@ -32,9 +32,7 @@
   }
   .products-row{
     width: unset!important;
-    .product-card {
-      width: 90% !important;
-    }
+
   }
   .input-search-box{
     line-height: 43px;
@@ -91,5 +89,31 @@
   }
   .footer {
     border: 1px solid red;
+  }
+//  product card
+  .product-card {
+    width: 90% !important;
+    height: 430px!important;
+  }
+  .add-to-card-small {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+  }
+  .product-card-detail {
+    position: unset!important;
+  }
+//  title
+  .title {
+    font-size: 22px!important;
+  }
+//  container
+  .container {
+    p{
+      color: #616161;
+    }
+    h2{
+      font-size: 22px!important;
+    }
   }
 }
