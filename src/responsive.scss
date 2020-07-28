@@ -160,6 +160,12 @@
   .footer-top {
     width: unset!important;
     display: unset!important;
+    .footer-item {
+      padding: 1rem;
+      a {
+        background: none!important;
+      }
+    }
   }
   .banner-item {
     padding: 0.5rem;
