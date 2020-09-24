@@ -1,15 +1,20 @@
 import React from 'react'
-import './Breadcrumbs.scss'
-const Index = (props) => {
+import './Breadcrumb.scss'
+
+const Breadcrumb = ({ children }) => {
     return (
-        <div className="breadcrumbs">
-            {
-                props.children.map((item,index) => {
-                    return <span key={index} className="breadcrumb-item"><a href={item.props.href} key={index}> {item.props.children} </a></span>
+        <div className="breadcrumb">
+            {  
+                children.map(({ props },index) => {
+                    const { href, children } = props 
+                    return (
+                        <span key={index}>
+                            <a href={href}>{children}</a>
+                        </span>)
                 })
             }
         </div>
     )
 }
 
-export default Index
+export default Breadcrumb
