@@ -86,7 +86,7 @@
 
 //  product card
   .product-card {
-    width: 100%;
+    width: unset!important;
     height: 440px!important;
   }
   .add-to-card-small {
@@ -257,8 +257,8 @@
   .carousel-wrapper {
     width: 95% !important;
     .product-card {
-      width: 160px!important;
-      height: 282px!important;
+      width: 81%;
+      height: 395px !important;
     }
     .product-details-bottom{
       display: none!important;
@@ -271,8 +271,6 @@
     width: 95%;
     flex-direction: row!important;
     text-align: center;
-  }
-  .product-images {
   }
   .dropdown-wrapper {
     > div {
