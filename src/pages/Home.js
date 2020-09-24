@@ -1,7 +1,6 @@
 import React from 'react'
 import Header from '../layouts/Header/Header'
 import Footer from '../layouts/Footer/Footer'
-import Carousel from '../components/Carousel/Carousel'
 import Title from '../components/Title/Title'
 import Banners from '../layouts/Banners'
 import Slider from '../layouts/Slider'
@@ -25,7 +24,7 @@ export default () => (
         <Header/>
         <Title content={"Newest Products"} size={"large"}/>
         <div>
-          <ProductsRow num="8" order="1" />
+          <ProductsRow num="8" order="1" category="Movies"/>
         </div>
         <Title content={"About Flerbo Stickers"} size={"large"}/>
         <div className="container" style={{flexDirection: "column"}}>

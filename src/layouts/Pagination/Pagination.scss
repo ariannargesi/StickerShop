@@ -1,16 +1,15 @@
 @import '../../base';
 .pagination {
     width: 1220px;
+    border-top: 1px solid #80808026;
     height: auto;
-    margin: 0 auto;
-    border-radius:10px;
+    margin: 1rem auto;
+    padding-top: 1rem;
     display: flex;
     position: relative;
     justify-content: space-between;
     z-index: 10000;
     align-items: center;
-    border: 1px solid lightgray;
-    box-shadow: 0 2px 10px rgba(31, 45, 61, 0.16);
 
 }
 .pagination > * {
@@ -22,12 +21,10 @@
     margin: 5px;
 }
 .pagination input {
-    width: 100px;
+    width: 50px;
     height: 45px;
     border: 1px solid lightgray;
-    box-shadow: 0 2px 10px rgba(31, 45, 61, 0.16);    outline: none;
     text-align: center;
-    font-weight: bold;
     border-radius: 5px;
     font-size: 18px;
 }

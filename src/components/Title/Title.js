@@ -2,7 +2,7 @@ import React from 'react'
 import './Title.scss'
 const Title = ({content, styled, size}) => {
     const styles = {
-        fontSize: size == "large" ? 32 : 24,
+        fontSize: size == "large" ? 28 : 24,
     }
     return (
         <div className={"title-wrapper"}>

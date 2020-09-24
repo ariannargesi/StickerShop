@@ -3,12 +3,12 @@
 .product-card {
   display: inline-block;
   height: 360px;
-  width: 280px;
+  width: 265px;
   position: relative;
   overflow: hidden;
   border-radius: $radius;
   box-shadow: $basic-shadow;
-  margin: 10px;
+  margin: 15px;
   img {
     transition: .4s;
     width: 100%;

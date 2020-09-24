@@ -47,6 +47,7 @@ const Banners = () => (
         >
             <Link to={"/Developers"}>
                 <div
+                    id="developers-banner"
                     className="banner-item"
                     style={{
                         width: "540px",
