@@ -22,7 +22,6 @@ const ProductsRow = (props) => {
             if(data.status == 200)
                 setProducts(data.products)
         }).catch(err=>{
-            console.log(err)
         })
     },[])
 

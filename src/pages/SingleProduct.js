@@ -10,10 +10,12 @@ import Title from "../components/Title/Title"
 import Instagram from "../layouts/InstagramImages";
 import Footer from "../layouts/Footer/Footer";
 import Loading from "../components/Loading/Loading"
+
 const SingleProduct = (props) => {
     const [product, setProduct] = useState({})
-
+    
     useEffect(()=>{
+        window.scroll(0, 0)
         const baseUrl = "https://flerbo.herokuapp.com/api"
         const pathname = props.location.pathname
         const endpoint = baseUrl + pathname
@@ -25,7 +27,8 @@ const SingleProduct = (props) => {
             }
 
         })
-    },[])
+    },[props.location.pathname])
+    
     return (
         Object.keys(product).length === 0? <Loading height="100vh"/> :
     <div>
@@ -41,7 +44,6 @@ const SingleProduct = (props) => {
             <ProductImages
                 images={product.images} />
             {
-                console.log("single product state")
             }
             {
             }

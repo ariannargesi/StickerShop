@@ -63,7 +63,7 @@ const Banners = () => (
                         <h2>For Developers</h2>
                         <Button size={"medium"} type={"white"}>
                             {" "}
-                            <Link to="/">View And Buy</Link>
+                            View And Buy
                         </Button>
                     </div>
                     <div style={{ textAlign: "center" }}>
@@ -131,7 +131,7 @@ const Banners = () => (
                         <h2>Gamers Essential</h2>
                         <Button size={"medium"} type={"white"}>
                             {" "}
-                            <Link to="/">View And Buy</Link>
+                            View And Buy
                         </Button>
                     </div>
                     <div style={{ textAlign: "center" }}>

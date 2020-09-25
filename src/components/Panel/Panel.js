@@ -9,7 +9,6 @@ const Panel = (props) => {
   const [anim, setAnim] = useState("panel")
   const ref = useRef(null)
 
-  console.log(state)
   const openHandler = () => {
     setState(true)
     setTimeout(() => {

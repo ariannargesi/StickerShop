@@ -19,8 +19,10 @@ return (
                </a>
                <Menu title="Stickers" href="#">
                    <MenuItem title="For Geeks" href="/Geeks" mode="bold">
-                       <NavLink to="/Developers">For Developers</NavLink>
-                       <NavLink to="/Developers">For Developers</NavLink>
+                       <NavLink to="/Developers">For developers</NavLink>
+                       <NavLink to="/Websites">Websites icons</NavLink>
+                       <NavLink to="/Games">For gamers</NavLink>
+                       <NavLink to="/Designers">For Designers</NavLink>
                    </MenuItem>
                </Menu>
            </div>
