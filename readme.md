@@ -1,5 +1,5 @@
 # Sticker shop 
-<h3> Ecommerce website using react.js  </h3>
+<h3> Shopping site using react.js  </h3>
 
 Demo link *[Here](www.stickershop.netlify.app)*.
 
