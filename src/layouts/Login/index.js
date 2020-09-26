@@ -25,7 +25,7 @@ const Login = () => {
                     <Button  size="medium" type={"success"}>Login</Button>
                 </form>
                 <div style={{display: "flex"}}>
-                    <span style={{color: "gray"}}>Are You a new user? </span>
+                    <span style={{color: "gray"}}>Create a new account? </span>
                     <SignIn/>
                 </div>
             </div>

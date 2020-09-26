@@ -27,7 +27,7 @@ const SignIn = () => {
                     <Input type="password" placeholder= "Password" message={hints.password}/>
                     <Button  size="medium" type={"success"}>Sign up</Button>
                     <div style={loginStyles}>
-                        <span style={{color: "gray"}}> Already Have an account ? </span>
+                        <span style={{color: "gray"}}> Already Hhave an account ? </span>
                         <div>
                             <Login/>
                         </div>
