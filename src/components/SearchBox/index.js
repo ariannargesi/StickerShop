@@ -7,6 +7,8 @@ import './SearchBox.scss'
 import Loading from "../Loading/Loading";
 import SearchResultItem from "../SearchResultItem/SearchResultItem";
 
+import SearchIcon from '@material-ui/icons/Search';
+
 const SearchBox = () => {
     const [isOpen, setOpen] = useState(false)
     const [input, setInput] = useState("")
@@ -72,7 +74,7 @@ const SearchBox = () => {
 
     return (
         <div className="search-wrapper" onClick={handelOpen}>
-            <span className="material-icons">search</span>
+            <SearchIcon cursor="pointer" />
             {
                 isOpen &&
                 <div className={anim} ref={searchBoxRef}>

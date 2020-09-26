@@ -7,7 +7,7 @@ import twitter from '../../assets/icons/twitter.svg'
 import github from '../../assets/icons/github.svg'
 import telegram from '../../assets/icons/telegram.svg'
 // logo
-import logo from '../../assets/logo.svg'
+import logo from '../../assets/logo.png'
 import flerbo from '../../assets/flerbo.png'
 const Footer = () => {
     return (

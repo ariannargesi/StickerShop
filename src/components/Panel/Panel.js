@@ -4,6 +4,7 @@ import useClickOutside from '../../hooks/useClickOutside'
 import {connect} from 'react-redux'
 import './Panel.scss'
 
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 const Panel = (props) => {
   const [state,setState] = useToggle(false)
   const [anim, setAnim] = useState("panel")
@@ -30,7 +31,8 @@ const Panel = (props) => {
   useClickOutside(ref, clickOutsideHandler)
   return (
     <div className="panel-container">
-      <span className="material-icons" onClick={ openHandler }>shopping_cart</span>
+  
+      <ShoppingCartIcon onClick={openHandler} cursor="pointer" />
       { state &&
         <div className="panel-wrapper">
           <div className={anim} ref={ref}>

@@ -1,7 +1,7 @@
 import React from 'react'
 import './Header.scss'
 import { NavLink } from 'react-router-dom'
-import logo from '../../assets/logo.svg'
+import logo from '../../assets/logo.png'
 import Menu from '../../components/Menu/Menu'
 import MenuItem from '../../components/MenuItem/MenuItem'
 import Toast from '../../components/Toast'
