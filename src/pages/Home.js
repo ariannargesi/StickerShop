@@ -22,11 +22,11 @@ import {Link, NavLink} from 'react-router-dom'
 export default () => (
     <div>
         <Header/>
-        <Title content={"Newest Products"} size={"large"}/>
+        <Title content={"New products"} size={"large"}/>
         <div>
           <ProductsRow num="8" order="1" category="Movies"/>
         </div>
-        <Title content={"About Flerbo Stickers"} size={"large"}/>
+        <Title content={"About flerbo stickers"} size={"large"}/>
         <div className="container" style={{flexDirection: "column"}}>
             <div className={"about-us-index p-1"} style={{width: "100%"}}>
             <p>
@@ -57,12 +57,12 @@ export default () => (
 
         <Banners/>
         <Title
-            content={"Most Sell Product"}
+            content={"Best selling products"}
             size={"large"}
         />
         <Slider/>
         <Title
-            content={"a satisfying purchase"}
+            content={"Customers services"}
             size={"large"}
         />
         <Benefits/>

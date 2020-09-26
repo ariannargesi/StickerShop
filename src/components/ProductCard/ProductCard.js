@@ -3,6 +3,7 @@ import './ProductCard.scss'
 import {NavLink} from 'react-router-dom'
 import { addToCard, showToast } from '../../redux/actions'
 import { connect } from 'react-redux'
+import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 const ProductCard =  props => {
     const product = props.item
     const url = product.url
@@ -24,8 +25,8 @@ const ProductCard =  props => {
                             view product
                         </div>
                     </NavLink>
-                    <button className="add-to-card-small" onClick={()=> { props.addToCard(product); props.showToast("Sticker Added To You Cart")  }}>
-                        <span className="material-icons">enhanced_encryption</span>
+                    <button className="add-to-card-small" onClick={()=> { props.addToCard(product); props.showToast("Product added to your cart")  }}>
+                    <ShoppingBasketIcon cursor="pointer"/>
                     </button>
                 </div>
             </div>
