@@ -18,14 +18,14 @@ const loginStyles = {
 }
 const SignIn = () => {
     return (
-        <Modal title={"Sign in"}>
+        <Modal title={"Sign up"}>
             <div style={styles}>
                 <h2>Create a new account</h2>
                 <form action="" className="log-sign-form">
                     <Input type="text" placeholder="Username" message={hints.username} />
                     <Input type="email" placeholder={"Email"} message={hints.email} />
                     <Input type="password" placeholder= "Password" message={hints.password}/>
-                    <Button  size="medium" type={"success"}>Sign in</Button>
+                    <Button  size="medium" type={"success"}>Sign up</Button>
                     <div style={loginStyles}>
                         <span style={{color: "gray"}}> Already Have an account ? </span>
                         <div>
