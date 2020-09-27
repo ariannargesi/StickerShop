@@ -1,7 +1,7 @@
 # Sticker shop 
 <h3> Shopping site using react.js  </h3>
 
-Demo link *[Here](www.stickershop.netlify.app)*.
+<a href="https://stickermarket.netlify.com"> Demo here</a>
 
 <ul>
     <li> <h4>POINT </li>
