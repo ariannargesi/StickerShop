@@ -26,7 +26,7 @@ export default () => (
         <div>
           <ProductsRow num="8" order="1" category="Movies"/>
         </div>
-        <Title content={"About flerbo stickers"} size={"large"}/>
+        <Title content={"About stickerShop"} size={"large"}/>
         <div className="container" style={{flexDirection: "column"}}>
             <div className={"about-us-index p-1"} style={{width: "100%"}}>
             <p>
