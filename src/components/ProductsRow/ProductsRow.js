@@ -57,7 +57,7 @@ const ProductsRow = (props) => {
             breakpoint: 400,
             settings: {
                 slidesToShow: 4,
-                slidesToScroll: 2,
+                slidesToScroll: 1,
                 infinite: true,
                 dots: false
             }
