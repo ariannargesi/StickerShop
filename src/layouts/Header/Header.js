@@ -7,9 +7,12 @@ import MenuItem from '../../components/MenuItem/MenuItem'
 import Toast from '../../components/Toast'
 import Search from '../../components/SearchBox'
 import UserCardPanel from '../../layouts/UserCardPanel/UserCardPanel'
+import useCartItemCount from '../../hooks/useCartItemsCount'
 import SignIn from '../../layouts/SignIn'
 import Login from '../../layouts/Login'
+import useCardItemCount from '../../hooks/useCartItemsCount'
 export default () => {
+    const cartCount = useCardItemCount()
 return (
    <div className="header-wrapper">
        <header>
@@ -32,7 +35,11 @@ return (
                    |
                    <SignIn/>
                </div>
-               <UserCardPanel />
+               <div style={{display: "flex", position:"relative"}}> 
+                 <UserCardPanel />
+                 { cartCount != 0 &&   <span className="cart-count">{ cartCount }</span> }
+                 
+               </div>
                <Search/>
            </div>
        </header>

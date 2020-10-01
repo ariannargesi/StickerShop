@@ -36,3 +36,18 @@ header .menu > a:hover {
     color: white;
     background: rgba(0, 0, 0, 0.66);
 }
+.cart-count {
+    
+    width: 30px;
+    height: 30px;
+    background: mediumseagreen;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    opacity: 0.9;
+}
