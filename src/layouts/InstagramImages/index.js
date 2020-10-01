@@ -20,7 +20,7 @@ const Instagram = () => {
             </div>
             <div className="instagram-wrapper">
                 <div className="Gwry-19" style={{ width: "1200px", margin: "0 auto" }}>
-                    <Button size={"medium"} width={"300px"} type={"white"}> <Link to="/">Fallow us on instagram</Link></Button>
+                    <Button size={"medium"} width={"300px"} type={"white"}> <Link to="/">Follow us on Instagram</Link></Button>
                 </div>
                 <a href="https://www.instagram.com/ariannargesi">
                     <div className="instagram-images">
