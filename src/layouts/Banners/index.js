@@ -30,9 +30,7 @@ const Banners = () => (
                     <img className="banner-image" src={virgoolLogo} alt="" />
                 </div>
                 <div>
-                    <Button size={"medium"} type={"white"}>
-                        View And Buy
-                    </Button>
+                  
                 </div>
             </div>
         </Link>
@@ -61,10 +59,7 @@ const Banners = () => (
                     <div>
                         <h3 className="banner-description">Laptop Sticker</h3>
                         <h2>For Developers</h2>
-                        <Button size={"medium"} type={"white"}>
-                            {" "}
-                            View And Buy
-                        </Button>
+                        
                     </div>
                     <div style={{ textAlign: "center" }}>
                         <img className="banner-image" src={pythonLogo} alt="" />
@@ -129,10 +124,7 @@ const Banners = () => (
                     <div>
                         <h3 className="banner-description">For gamers</h3>
                         <h2>Gamers Essential</h2>
-                        <Button size={"medium"} type={"white"}>
-                            {" "}
-                            View And Buy
-                        </Button>
+                       
                     </div>
                     <div style={{ textAlign: "center" }}>
                         <img className="banner-image" src={gameLogo} alt="" />
