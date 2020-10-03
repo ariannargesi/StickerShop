@@ -62,7 +62,7 @@ export default () => (
         />
         <Slider/>
         <Title
-            content={"Customers Service"}
+            content={"Customer service"}
             size={"large"}
         />
         <Benefits/>
