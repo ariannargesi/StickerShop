@@ -21,7 +21,7 @@ import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';const Produ
                 <div className="product-details-bottom">
                     <NavLink to={productLink}>
                         <div className="view-product">
-                            view product
+                            View
                         </div>
                     </NavLink>
                     <button className="add-to-card-small" onClick={()=> { props.addToCard(product); props.showToast("Product added to your cart")  }}>
