@@ -21,7 +21,7 @@
     "redux": "^4.0.5",
     "serve": "^11.3.2",
     "slick-carousel": "^1.8.1",
-    "validator": "^13.1.1"
+    "validator": "^13.7.0"
   },
   "scripts": {
     "start": "react-scripts start",
