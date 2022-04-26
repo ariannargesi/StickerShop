@@ -6,20 +6,16 @@ import linkedin from '../../assets/icons/linkedin.svg'
 import twitter from '../../assets/icons/twitter.svg'
 import github from '../../assets/icons/github.svg'
 import telegram from '../../assets/icons/telegram.svg'
-// logo
-import logo from '../../assets/logo.png'
-import flerbo from '../../assets/flerbo.png'
+
 const Footer = () => {
     return (
         <div className="footer">
             <div className="footer-top">
                 <div className="footer-item">
-                    <h5>Inspired From flerbo.ir</h5>
-                    <div className="logo-wrapper" style={{display: "flex"}}>
-                        <a href="https://flerbo.ir">
-                            <img src={flerbo}  alt=""/>
+                    
+                    <a href="https://flerbo.ir">
+                    <h5>Inspired From flerbo.ir</h5>       
                         </a>
-                    </div>
                 </div>
                 <div className="footer-item">
                     <h5>Products</h5>

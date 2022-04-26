@@ -1,7 +1,6 @@
 import React from 'react'
 import Header from "../layouts/Header/Header"
 import Footer from "../layouts/Footer/Footer"
-import InstagramImages from "../layouts/InstagramImages";
 const About = () => {
     const styles = {
         minHeight: "500px",
@@ -21,7 +20,6 @@ const About = () => {
         <div>
             <Header/>
             { about }
-            <InstagramImages/>
             <Footer/>
         </div>
     )

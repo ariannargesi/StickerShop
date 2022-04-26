@@ -3,7 +3,6 @@ import Header from "../../layouts/Header/Header";
 import Footer from "../../layouts/Footer/Footer";
 import CategoryItems from "../../components/CategoryItems/CategoryItems";
 import Pagination from "../../layouts/Pagination/Pagination";
-import Instagram from "../../layouts/InstagramImages";
 import axios from "axios";
 import Loading from "../../components/Loading/Loading";
 
@@ -75,7 +74,6 @@ export default (props) => {
           />
         )}
       </div>
-      <Instagram />
       <Footer />
     </div>
   );
