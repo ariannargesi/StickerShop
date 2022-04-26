@@ -1,4 +1,7 @@
-# Sticker shop 
+# This project is not well written and code and strcuture is not clean.
+## I was real nobe when I wrote this project. and still I am. but at least I can write better code :)
+### Please consider that there is no payment functionality here. Nothing get recorded and It's just UI 
+
 <h3> Shopping site using react.js  </h3>
 
 <a href="https://stickershop.netlify.com"> Demo here</a>
